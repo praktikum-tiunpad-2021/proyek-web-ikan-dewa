@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://user-images.githubusercontent.com/79703382/132434988-1ecb1baa-14bf-47d4-926d-61ea5a161185.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/79703382/132434988-1ecb1baa-14bf-47d4-926d-61ea5a161185.png" alt="Logo" width="333" height="333">
   </a>
 
   <h3 align="center">Judul Proyek</h3>
