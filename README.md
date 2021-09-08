@@ -29,9 +29,9 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Janie Doe   |
+| 140810200003  | Affan R.    |
+| 140810200023  | Rheza P.    |
+| 140810200061  | Andyka B.   |
 
 <!-- Fungsi -->
 ## Fungsi
