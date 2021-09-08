@@ -29,9 +29,9 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810200003  | Affan R.    |
-| 140810200023  | Rheza P.    |
-| 140810200061  | Andyka B.   |
+| 140810200003  | Affan Rifqy Kurniaded    |
+| 140810200023  | Rheza Pandya Andhikaputar    |
+| 140810200061  | Andyka Baswara Putar   |
 
 <!-- Fungsi -->
 ## Fungsi
