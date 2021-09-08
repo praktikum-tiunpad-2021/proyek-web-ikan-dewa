@@ -2,11 +2,11 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://user-images.githubusercontent.com/79703382/132434988-1ecb1baa-14bf-47d4-926d-61ea5a161185.png" alt="Logo" width="420
+    <img src="logo1.png" alt="Logo" width="420
                                                                                                                                        " height="206">
   </a>
 
-  <h3 align="center">Judul Proyek</h3>
+  <h3 align="center">Aquafish Marketplace</h3>
 
   <p align="center">
     Deskripsi Proyek
