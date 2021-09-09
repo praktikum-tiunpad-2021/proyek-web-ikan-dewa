@@ -8,7 +8,7 @@
   <h3 align="center">Aquafish Marketplace</h3>
 
   <p align="center">
-    Deskripsi Proyek
+    Aquafish Marketplace adalah sebuah pasar online atau <i>marketplace</i> yang bergerak di bidang jual beli ikan hias
   </p>
 </p>
 
@@ -29,24 +29,32 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810200003  | Affan Rifqy Kurniaded    |
-| 140810200023  | Rheza Pandya Andhikaputar    |
-| 140810200061  | Andyka Baswara Putar   |
+| 140810200003  | Affan Rifqy Kurniadi    |
+| 140810200023  | Rheza Pandya Andhikaputra    |
+| 140810200061  | Andyka Baswara Putra   |
 
 <!-- Fungsi -->
 ## Fungsi
 
-TO;DO
+Adapun fungsi pengguna dari website ini, yaitu :
+1. Sebagai platform untuk jual beli ikan hias
+2. Sebagai platform untuk media informasi mengenai ikan hias
 
 <!-- Tujuan -->
 ## Tujuan
 
-TO;DO
+Adapun tujuan pengguna dari website ini, yaitu :
+1. Mengakomodir sebuah platform untuk mempermudah orang yang ingin menjual ikan hias
+2. Mengakomodir sebuah platform untuk mempermudah orang yang ingin membeli ikan hias
+3. Mengakomodir sebuah platform untuk mempermudah orang yang ingin mencari tahu informasi tentang ikan hias
 
 <!-- Target Pengguna -->
 ## Target Pengguna
 
-TO;DO
+Adapun target pengguna dari website ini, yaitu :
+1. Orang yang ingin membeli ikan hias
+2. Orang yang ingin menjual ikan hias
+3. Orang yang ingin mencari tahu tentang ikan hias
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
