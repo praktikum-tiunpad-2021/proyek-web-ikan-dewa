@@ -58,8 +58,8 @@ Adapun target pengguna dari website ini, yaitu :
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
+https://www.figma.com/file/obyh4T3e91S0MCShxmrTF3/Project-Pemrogaman-Web?node-id=0%3A1
 
-TO;DO
 
 Gambar mockup di sini atau [link figma](https://figma.com/).
 
