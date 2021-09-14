@@ -37,30 +37,28 @@
 ## Fungsi
 
 Adapun fungsi pengguna dari website ini, yaitu :
-1. Sebagai platform/media untuk jual beli ikan hias
-2. Sebagai platform/media untuk media informasi mengenai ikan hias
+1. Sebagai platform untuk jual beli ikan hias dengan mudah.
+2. Sebagai media informasi mengenai ikan hias.
 
 <!-- Tujuan -->
 ## Tujuan
 
 Adapun tujuan pengguna dari website ini, yaitu :
-1. Mengakomodir sebuah platform untuk mempermudah orang yang ingin menjual dan membeli ikan hias
-2. Mengakomodir sebuah platform untuk mempermudah orang yang ingin mencari tahu informasi tentang ikan hias
+1. Mengakomodir sebuah platform untuk mempermudah orang yang ingin menjual dan membeli ikan hias.
+2. Mengakomodir sebuah platform untuk mempermudah orang yang ingin mencari tahu informasi tentang ikan hias.
 
 <!-- Target Pengguna -->
 ## Target Pengguna
 
 Adapun target pengguna dari website ini, yaitu :
-1. Orang yang ingin membeli ikan hias
-2. Orang yang ingin menjual ikan hias
-3. Orang yang ingin mencari tahu tentang ikan hias
+1. Orang yang ingin membeli ikan hias.
+2. Orang yang ingin menjual ikan hias.
+3. Orang yang ingin mencari tahu tentang ikan hias.
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
+Figma :
 https://www.figma.com/file/obyh4T3e91S0MCShxmrTF3/Project-Pemrogaman-Web?node-id=0%3A1
-
-
-Gambar mockup di sini atau [link figma](https://figma.com/).
 
 <!-- Skema Database -->
 ## Skema Database
