@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="logo1.png" alt="Logo" width="250" height="250">
+    <img src="assets/Logo/800ppi/logo1.png" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Aquafish Marketplace</h3>
@@ -64,4 +64,4 @@ https://www.figma.com/file/obyh4T3e91S0MCShxmrTF3/Project-Pemrogaman-Web?node-id
 ## Skema Database
 
 <p>Skema Database Sementara</p>
-<img src="ERD sementara.png" alt="erd" width="650">
+<img src="ERD/ERD sementara.png" alt="erd" width="650">
