@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aquafish Marketplace</title>
+    </head>
+    <style>
+      *{
+       margin: 0;
+       padding: 0;
+       color: white;
+      }
+
+      nav ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav ul li.logo{
+        flex: 1;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      nav ul div.items{
+        padding: 0 30px;
+        display: inline-flex;
+      }
+      
+      nav ul div.account{
+        padding: 0 30px;
+        display: inline-flex;
+      }
+
+      nav ul div.items a{
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0 25px;
+      }
+
+      nav ul div.account a{
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0 10px;
+      }
+
+    </style>
+    <header>
+      <nav style="background: #004A4D; width: 100%; height: 62px; position: sticky;" >
+        <ul>
+          <li class="logo">AQUAfish</li>
+          <div class="items">
+            <li><a href="#">Saltwater Fish</a></li>
+            <li><a href="#">Freshwater Fish</a></li>
+          </div>
+          <li class="search-icon">
+            <input type="search" placeholder="Search">
+          </li>
+          <div class="account">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+</html>
