@@ -50,7 +50,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <input class="register-input" id="nama" type="text">
                     </div>
                     <div style="margin-top:20px">
-                        <p class="register-input-text-1">Tanggal Lahir</p>
+                        <p class="register-input-text-1">Tanggal Lahir (YYYY-MM-DD)</p>
                         <input class="register-input" id="date" type="text">
                     </div>
                     <div style="text-align:center">

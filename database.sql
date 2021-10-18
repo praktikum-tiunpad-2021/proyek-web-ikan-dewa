@@ -50,3 +50,13 @@ create table transaksi(
     foreign key (Id_Fish) references fish (Id_Fish),
     foreign key (Price_Fish) references fish (Price_Fish)
 );
+
+create table users(
+    Id_User int(11) not null primary key,
+    Email varchar(255) not null,
+    password varchar(255) not null,
+    Name_User varchar(255) not null,
+    Tanggal_Lahir date not null
+);
+
+alter table users modify Id_User int(11) not null auto_increment, auto_increment=0;
