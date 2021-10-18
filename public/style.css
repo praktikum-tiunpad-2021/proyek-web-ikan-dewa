@@ -179,7 +179,7 @@ nav ul input{
      -webkit-text-stroke-color: black;
 }
 
-/*REGISTER*/
+/*Login Box*/
 .login-box {
     position: absolute;
     top: 50%;
@@ -231,6 +231,65 @@ nav ul input{
     padding: 8px;
     padding-left: 72px;
     padding-right: 72px;
+    font-family: Lato-Light;
+    background-color: #004A4D;
+    color: white;
+    vertical-align: middle;
+    border: none;
+}
+
+/*Register Box*/
+.register-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 473px;
+    width: 330px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.register-banner {
+    background-image : url("assets/Pics/login-wave.jpg");
+    background-size: cover;
+    padding: 7px;
+    background-position: -5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.register-text-1{
+    flex: 1;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    font-family: Gotham-Medium;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.form-register {
+    line-height: 10px;
+}
+.register-input {
+    margin-top: -20px;
+}
+.register-input-text-1 {
+    font-size: 12px;
+    font-family: Lato-Light;
+}
+.register-input-text-2 {
+    font-size: 9px;
+    font-family: Lato-Light;
+    text-align: right;
+}
+.register-input-logo {
+    width: 15px;
+    height: 15px;
+}
+#register-input-submit {
+    padding: 8px;
+    padding-left: 65px;
+    padding-right: 65px;
     font-family: Lato-Light;
     background-color: #004A4D;
     color: white;
