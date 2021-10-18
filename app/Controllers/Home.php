@@ -26,4 +26,8 @@ class Home extends BaseController
     {
         return view('register');
     }
+    public function editAccount()
+    {
+        return view('editAccount');
+    }
 }

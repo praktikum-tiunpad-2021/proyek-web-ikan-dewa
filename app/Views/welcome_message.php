@@ -199,6 +199,7 @@
 			<li><a href="landing">landing</a></li>
 			<li><a href="login">login</a></li>
 			<li><a href="register">register</a></li>
+			<li><a href="editAccount">editAccount</a></li>
 		</li>
 </body>
 </html>

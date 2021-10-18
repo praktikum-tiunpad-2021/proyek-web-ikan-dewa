@@ -36,6 +36,7 @@ $routes->get('/login', 'Home::login');
 $routes->get('/register', 'Home::register');
 $routes->get('/catalog', 'Home::catalog');
 $routes->get('/landing', 'Home::landing');
+$routes->get('/editAccount', 'Home::editAccount');
 
 
 /*
