@@ -22,4 +22,8 @@ class Home extends BaseController
     {
         return view('landing');
     }
+    public function register2()
+    {
+        return view('register2');
+    }
 }
