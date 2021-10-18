@@ -35,7 +35,6 @@ $routes->get('/', 'Home::index');
 $routes->get('/register', 'Home::register');
 $routes->get('/catalog', 'Home::catalog');
 $routes->get('/landing', 'Home::landing');
-$routes->get('/register2', 'Home::register2');
 
 
 /*
