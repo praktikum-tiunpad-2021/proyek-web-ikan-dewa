@@ -14,9 +14,9 @@ class Home extends BaseController
         return view('catalog');
     }
 
-    public function register()
+    public function login()
     {
-        return view('register');
+        return view('login');
     }
     public function landing()
     {

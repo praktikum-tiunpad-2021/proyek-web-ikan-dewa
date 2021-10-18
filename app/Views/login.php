@@ -27,34 +27,34 @@ Tugas : Project Website Praktikum Pemrograman Web
         </style>
     </head>
     <body>
-        <div class="register-box">
+        <div class="login-box">
             <div class="container">
                 <div class="row">
-                    <div class="col register-banner">
-                        <h4 class="register-text-1">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic">fish</span></h4>
-                        <h4 class="register-text-1" style="font-size: 18px;letter-spacing: normal; font-style:italic; margin-top:-10px">Marketplace</h4>
+                    <div class="col login-banner">
+                        <h4 class="login-text-1">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic">fish</span></h4>
+                        <h4 class="login-text-1" style="font-size: 18px;letter-spacing: normal; font-style:italic; margin-top:-10px">Marketplace</h4>
                     </div>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px">
-                    <form class="form-register">
+                    <form class="form-login">
                         <div>
-                            <p class="register-input-text-1">Alamat Email*</p>
-                            <input class="register-input" id="email" type="text">
+                            <p class="login-input-text-1">Alamat Email*</p>
+                            <input class="login-input" id="email" type="text">
                         </div>
                         <div style="margin-top:20px">
-                            <p class="register-input-text-1">Kata Sandi*</p>
-                            <input class="register-input" id="password" type="password">
-                            <p class="register-input-text-2">Lupa kata sandi?</p>
+                            <p class="login-input-text-1">Kata Sandi*</p>
+                            <input class="login-input" id="password" type="password">
+                            <p class="login-input-text-2">Lupa kata sandi?</p>
                         </div>
                         <div style="text-align:center">
-                            <p class="register-input-text-1">Atau masuk lewat</p>
-                            <img class="register-input-logo" src="assets/Pics/google.png" style="margin-top:-15px">
+                            <p class="login-input-text-1">Atau masuk lewat</p>
+                            <img class="login-input-logo" src="assets/Pics/google.png" style="margin-top:-15px">
                         </div>
                         <div style="margin-top:10px">
-                            <input type="submit" id="register-input-submit" value="Login">
+                            <input type="submit" id="login-input-submit" value="Login">
                         </div>
                         <div>
-                            <p class="register-input-text-2" style="text-align:center; margin-top:1px">Belum Punya Akun? Daftar Disini</p>
+                            <p class="login-input-text-2" style="text-align:center; margin-top:1px">Belum Punya Akun? Daftar Disini</p>
                         </div>
                     </form>
                 </div>

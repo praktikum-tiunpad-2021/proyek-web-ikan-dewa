@@ -197,7 +197,7 @@
 		<ul>
 			<li><a href="catalog">catalog</a></li>
 			<li><a href="landing">landing</a></li>
-			<li><a href="register">register</a></li>
+			<li><a href="login">login</a></li>
 		</li>
 </body>
 </html>
