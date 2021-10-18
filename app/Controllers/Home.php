@@ -13,4 +13,9 @@ class Home extends BaseController
     {
         return view('catalog');
     }
+
+    public function register()
+    {
+        return view('register');
+    }
 }
