@@ -79,8 +79,8 @@ nav ul input{
     padding: 10px;
 }
 .catalog-img {
-    max-width: 265px;
-    max-height: 398px;
+    width: 265px;
+    height: 265px;
     margin-top: 20px;
 }
 .catalog-container {

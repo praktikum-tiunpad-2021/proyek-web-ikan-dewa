@@ -62,7 +62,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>
                     <div class="catalog-flex-row">
                         <div class="catalog-box">
-                            <img class="catalog-img" src="https://www.akuatik.id/wp-content/uploads/2020/10/Gambar-Harga-Ikan-Lemon.jpg">
+                            <img class="catalog-img" src="https://1.bp.blogspot.com/-8MxiRyds7do/XnHjRdEVLII/AAAAAAAAA6A/APPVW8Oer2UyHPmCAUI14R1iKeoEd9XMQCNcBGAsYHQ/s1600/Lemon-Cichlid-Si-Ikan-Kuning-Berkilau-yang-Suka-Jahil-1.png">
                             <h6 class="catalog-text-1">Lemon</h6>
                             <p class="catalog-text-2">Mulai dari Rp. 2.000</p>
                         </div>

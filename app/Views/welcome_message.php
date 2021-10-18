@@ -194,6 +194,9 @@
 	</style>
 </head>
 <body>
-hello world
+		<ul>
+			<li><a href="catalog">catalog</a></li>
+			<li><a href="register">register</a></li>
+		</li>
 </body>
 </html>
