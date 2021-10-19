@@ -30,4 +30,8 @@ class Home extends BaseController
     {
         return view('editAccount');
     }
+    public function product()
+    {
+        return view('product');
+    }
 }

@@ -15,6 +15,10 @@ Tugas : Project Website Praktikum Pemrograman Web
     src: url(assets/Fonts/Gotham-Font/GothamMedium.ttf);
 }
 @font-face {
+    font-family: Gotham-Thin;
+    src: url(assets/Fonts/Gotham-Font/Gotham-Thin.otf);
+}
+@font-face {
     font-family: Lato-Medium;
     src: url(assets/Fonts/Lato/Lato-Regular.ttf);
 }
@@ -340,4 +344,137 @@ nav ul input{
     color: white;
     vertical-align: middle;
     border: none;
+}
+
+/*Product Page*/
+.product-img-1 {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.product-img-2 {
+    width: 340px;
+    height: 476px;
+}
+.product-img-3 {
+    width: 50px;
+    height: 70px;
+}
+.product-text-1 {
+    font-family: Gotham-Medium;
+}
+.product-text-2 {
+    font-family: Gotham-Thin;
+}
+.product-text-3 {
+    font-family: Lato-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2px;
+}
+.product-text-4 {
+    font-family: Lato-Light;
+    font-size: 14px;
+}
+.product-text-5 {
+    font-family: Lato-Light;
+    font-size: 12px;
+}
+.product-text-6 {
+    font-family: Lato-Light;
+    font-size: 16px;
+}
+.product-text-7 {
+    font-family: Gotham-Medium;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding: 20px;
+}
+.product-desc-list {
+    line-height: 2px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+.product-star-rate {
+    padding: 4px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+}
+.product-ticket {
+    display :inline-block;
+    box-sizing :content-box;
+    filter :drop-shadow(0 2px 5px rgba(black,.5));
+    position :relative;
+    width: 91%;
+    height :auto;
+    padding :1em;
+    color :black;
+    font-size : 16px;
+    background-size :51% 100% ;
+    background-repeat :no-repeat;
+    background-image: radial-gradient(circle at 0 50%, rgba(255,255,224,0) 0.4em, silver 0.5em), radial-gradient(circle at 100% 50%, rgba(255,255,224,0) 0.4em, silver 0.5em);
+    background-position :top left, top right;
+}
+.product-box-main {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: silver;
+}
+.product-box-1 {
+    width:110px;
+    height: 33px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.product-box-2 {
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+}
+.product-box-3 {
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-box-4 {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: white;
+}
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: silver;
+    padding: 9px;
+    border-radius: 5px;
+}
+.product-card-img {
+    width: 70px;
+    height: 90px;
+    border-radius: 5px;
+}
+.product-card-star-yellow {
+    color:yellow;
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
+}
+.product-card-star-white {
+    color:white;
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
 }
