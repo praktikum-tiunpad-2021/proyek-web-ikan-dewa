@@ -9,6 +9,42 @@ Kelas : A
 Tugas : Project Website Praktikum Pemrograman Web
 -->
 
+<?php
+
+require_once("config.php");
+
+if(isset($_POST['register'])){
+
+    // filter data yang diinputkan
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $tanggal_lahir = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING);
+    // enkripsi password
+    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+
+    // menyiapkan query
+    $sql = "INSERT INTO users (Email, Password, Name_User, Tanggal_lahir) 
+            VALUES (:email, :password, :name, :date)";
+    $stmt = $db->prepare($sql);
+
+    // bind parameter ke query
+    $params = array(
+        ":email" => $email,
+        ":password" => $password,
+        ":name" => $name,
+        ":date" => $tanggal_lahir
+    );
+
+    // eksekusi query untuk menyimpan ke database
+    $saved = $stmt->execute($params);
+
+    // jika query simpan berhasil, maka user sudah terdaftar
+    // maka alihkan ke halaman login
+    if($saved) header("Location: login.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +72,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
             </div>
             <div class="row justify-content-md-center" style="margin-top:15px">
-                <form class="form-register">
+                <form action="<?php echo base_url(' ')?>" method="POST" class="form-register">
                     <div>
                         <p class="register-input-text-1">Alamat Email*</p>
                         <input class="register-input" id="email" type="text">
