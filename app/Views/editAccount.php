@@ -46,9 +46,26 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <h3 class="edit-account-text-1" style="margin-top:25px">Profile</h3>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px">
-                    
+                    <form>
+                        <div>
+                            <p class="edit-account-input-text-2">Alamat Email</p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                        </div>
+                        <div style="margin-top:-15px">
+                            <p class="edit-account-input-text-2">Kata Sandi</p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                        </div>
+                        <div style="margin-top:-15px">
+                            <p class="edit-account-input-text-2">Nama Lengkap</p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                        </div>
+                        <div style="margin-top:-15px">
+                            <p class="edit-account-input-text-2">Tanda Lahir</p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                        </div>
+                    </form>
                 </div>
-                <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:30px;">
+                <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
                     <form class="form-edit-account">
                         <div>
                             <p class="edit-account-input-text-2">Alamat Email*</p>
@@ -66,7 +83,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <p class="edit-account-input-text-2">Tanggal Lahir*</p>
                             <input class="edit-account-input" id="tanggal-lahir" type="date">
                         </div>
-                        <div style="margin-top:10px">
+                        <div style="margin-top:15px">
                             <input type="submit" id="edit-account-input-submit" value="Edit Data">
                         </div>
                     </form>
