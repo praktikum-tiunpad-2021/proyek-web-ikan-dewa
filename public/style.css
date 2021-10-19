@@ -156,6 +156,8 @@ nav ul input{
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+    background-image:url('assets/Pics/landing-banner.jpg');
+    background-size: cover;
 }
 .landing-img {
     width: 100%;
@@ -182,6 +184,27 @@ nav ul input{
     color:white;
     -webkit-text-stroke-width: 1px;
      -webkit-text-stroke-color: black;
+}
+.landing-banner-arrow-box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #417E77;
+}
+.landing-banner-arrow-left {
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size:18px; 
+    vertical-align:middle;
+}
+.landing-banner-arrow-right {
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size:18px; 
+    vertical-align:middle;
 }
 
 /*Login Box*/
@@ -353,7 +376,7 @@ nav ul input{
     margin-bottom: 15px;
 }
 .product-img-2 {
-    width: 340px;
+    width: 350px;
     height: 476px;
 }
 .product-img-3 {
@@ -419,7 +442,6 @@ nav ul input{
 }
 .product-box-main {
     padding: 10px;
-    border-radius: 5px;
     background-color: silver;
 }
 .product-box-1 {

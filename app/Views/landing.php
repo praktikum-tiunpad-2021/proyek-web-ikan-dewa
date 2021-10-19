@@ -42,8 +42,21 @@ Tugas : Project Website Praktikum Pemrograman Web
         </header>
         <main>
             <div class="container">
-                <div class="row">
-                    <img class="landing-banner" src="assets/Pics/landing-banner.jpg">
+                <div class="row">  
+                    <div class="landing-banner">
+                        <div class="row justify-content-between" style="margin-top:63px">
+                            <div class="col-1">
+                                <span class="landing-banner-arrow-box align-self-center">
+                                    <i class="material-icons landing-banner-arrow-left" style="margin-left:6px">arrow_back_ios</i>
+                                </span>
+                            </div>
+                            <div class="col-1">
+                                <span class="landing-banner-arrow-box align-self-center" style="margin-left:27px;">
+                                    <i class="material-icons landing-banner-arrow-right" style="margin-left:3px">arrow_forward_ios</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
                 <div class="row">
                     <h2 class="landing-text-1">Best Seller</h2>
