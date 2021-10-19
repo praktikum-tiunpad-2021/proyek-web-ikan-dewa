@@ -47,12 +47,11 @@ create table transaksi(
 );
 
 create table users(
-    Id_User int(11) not null primary key,
-    Email varchar(255) not null,
-    Password varchar(255) not null,
-    Name_User varchar(255) not null,
+    Email varchar(50) not null,
+    Password varchar(50) not null,
+    Name_User varchar(100) not null,
     Tanggal_Lahir date not null
 );
 
-alter table users add unique key Email(Email);
+alter table users add primary key Email;
 alter table users modify Id_User int(11) not null auto_increment, auto_increment=0;

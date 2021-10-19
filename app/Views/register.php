@@ -9,42 +9,6 @@ Kelas : A
 Tugas : Project Website Praktikum Pemrograman Web
 -->
 
-<?php
-
-require_once("config.php");
-
-if(isset($_POST['register'])){
-
-    // filter data yang diinputkan
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-    $tanggal_lahir = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING);
-    // enkripsi password
-    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-
-    // menyiapkan query
-    $sql = "INSERT INTO users (Email, Password, Name_User, Tanggal_lahir) 
-            VALUES (:email, :password, :name, :date)";
-    $stmt = $db->prepare($sql);
-
-    // bind parameter ke query
-    $params = array(
-        ":email" => $email,
-        ":password" => $password,
-        ":name" => $name,
-        ":date" => $tanggal_lahir
-    );
-
-    // eksekusi query untuk menyimpan ke database
-    $saved = $stmt->execute($params);
-
-    // jika query simpan berhasil, maka user sudah terdaftar
-    // maka alihkan ke halaman login
-    if($saved) header("Location: login.php");
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,22 +36,22 @@ if(isset($_POST['register'])){
                 </div>
             </div>
             <div class="row justify-content-md-center" style="margin-top:15px">
-                <form action="<?php echo base_url(' ')?>" method="POST" class="form-register">
+                <form method="post" class="form-register" action="<?= base_url(); ?>/register/process">
                     <div>
                         <p class="register-input-text-1">Alamat Email*</p>
-                        <input class="register-input" id="email" type="text">
+                        <input class="register-input" id="email" name="email" type="text">
                     </div>
                     <div style="margin-top:20px">
                         <p class="register-input-text-1">Kata Sandi*</p>
-                        <input class="register-input" id="password" type="password">
+                        <input class="register-input" id="password" name="password" type="password">
                     </div>
                     <div style="margin-top:20px">
                         <p class="register-input-text-1">Nama Lengkap</p>
-                        <input class="register-input" id="nama" type="text">
+                        <input class="register-input" id="nama" name="nama" type="text">
                     </div>
                     <div style="margin-top:20px">
                         <p class="register-input-text-1">Tanggal Lahir (YYYY-MM-DD)</p>
-                        <input class="register-input" id="date" type="text">
+                        <input class="register-input" id="date" name="date" type="text">
                     </div>
                     <div style="text-align:center">
                         <div style="margin-top:20px">
@@ -95,7 +59,7 @@ if(isset($_POST['register'])){
                         <img class="register-input-logo" src="assets/Pics/google.png" style="margin-top:-15px">
                     </div>
                     <div style="margin-top:10px">
-                        <input type="submit" id="register-input-submit" value="Register">
+                        <input type="submit" id="register-input-submit" name="register" value="Register">
                     </div>
                     <div>
                         <p class="register-input-text-2" style="text-align:center; margin-top:1px">Sudah Punya Akun? Login Disini</p>

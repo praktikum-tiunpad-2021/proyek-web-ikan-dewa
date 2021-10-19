@@ -18,18 +18,17 @@ class Home extends BaseController
     {
         return view('login');
     }
+
     public function landing()
     {
         return view('landing');
     }
-    public function register()
-    {
-        return view('register');
-    }
+
     public function editAccount()
     {
         return view('editAccount');
     }
+    
     public function product()
     {
         return view('product');
