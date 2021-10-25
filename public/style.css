@@ -111,22 +111,18 @@ nav ul input{
     margin-top: 5px;
     font-family: Lato-Medium;
     font-size: 14px;
-<<<<<<< HEAD
     color: black;
     margin-top: -4px;
     margin-left: 1px;
-=======
 }
 .footer1{
     width : 100%;
     background: #004A4D;
     padding-top: 20px;
     padding-bottom: 10px;
->>>>>>> b3cb04c0dff34c586cdaa64c506e44469c85f310
 }
 
 /*LANDING*/
-
 .landing-text-1 {
     font-family: Gotham-Medium;
     margin-left: auto;
@@ -469,12 +465,8 @@ nav ul input{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-<<<<<<< HEAD
     cursor: pointer;
     transition-duration: 0.4s;
-=======
-
->>>>>>> b3cb04c0dff34c586cdaa64c506e44469c85f310
 }
 .product-box-3 {
     width:100%;
