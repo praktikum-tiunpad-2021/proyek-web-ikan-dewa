@@ -91,12 +91,6 @@ nav ul input{
     outline: none;
     padding: 10px;
 }
-.footer1{
-    width : 100%;
-    background: #004A4D;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
 
 /*CATALOG*/
 .catalog-img {
@@ -112,24 +106,27 @@ nav ul input{
     font-family: Lato-Medium;
     font-size: 14px;
     font-weight: bold;
-    color: black;
 }
 .catalog-text-2{
+    margin-top: 5px;
     font-family: Lato-Medium;
     font-size: 14px;
-    color: black;
-    margin-top: -6px;
-    margin-left: 1px;
+}
+.footer1{
+    width : 100%;
+    background: #004A4D;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 /*LANDING*/
+
 .landing-text-1 {
     font-family: Gotham-Medium;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
     padding: 20px;
-    color: black;
 }
 .landing-text-2 {
     margin-top: 8px;
@@ -139,7 +136,6 @@ nav ul input{
     font-size: 14px;
     text-align: center;
     font-weight: bold;
-    color: black;
 }
 .landing-text-3{
     flex: 1;
@@ -149,26 +145,11 @@ nav ul input{
     margin-left: 10px;
     letter-spacing: 5px;
     font-weight: 100;
-    color: black;
 }
 .landing-text-4 {
-    font-family: Lato-Medium;
     margin-left: 10px;
     font-size: 14px;
     text-align: justify;
-    color: black;
-}
-.landing-text-5 {
-    font-family: Lato-Medium;
-    font-size: 24px;
-    color: black;
-    margin-bottom: 12px;
-}
-.landing-text-6 {
-    font-family: Lato-Light;
-    font-size: 14px;
-    color: black;
-    line-height: 2px;
 }
 .landing-banner {
     width: 97%;
@@ -266,13 +247,11 @@ nav ul input{
 .login-input-text-1 {
     font-size: 12px;
     font-family: Lato-Light;
-    color: black;
 }
 .login-input-text-2 {
     font-size: 9px;
     font-family: Lato-Light;
     text-align: right;
-    color: black;
 }
 .login-input-logo {
     width: 15px;
@@ -328,13 +307,11 @@ nav ul input{
 .register-input-text-1 {
     font-size: 12px;
     font-family: Lato-Light;
-    color: black;
 }
 .register-input-text-2 {
     font-size: 9px;
     font-family: Lato-Light;
     text-align: right;
-    color: black;
 }
 .register-input-logo {
     width: 15px;
@@ -357,13 +334,15 @@ nav ul input{
     margin-left: auto;
     margin-right: auto;
     font-size: 36px;
-    color: black;
 }
 .edit-account-text-2{
-    text-align: left;
-    font-size: 14px;
-    color: black;
-    font-family: Lato-Light;
+    flex: 1;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    font-family: Gotham-Medium;
+    letter-spacing: 5px;
+    font-weight: 100;
 }
 .edit-account-data-box {
     width: 280px;
@@ -407,33 +386,27 @@ nav ul input{
 }
 .product-text-1 {
     font-family: Gotham-Medium;
-    color: black;
 }
 .product-text-2 {
     font-family: Gotham-Thin;
-    color: black;
 }
 .product-text-3 {
     font-family: Lato-Medium;
     font-size: 14px;
     font-weight: 500;
     line-height: 2px;
-    color: black;
 }
 .product-text-4 {
     font-family: Lato-Light;
     font-size: 14px;
-    color: black;
 }
 .product-text-5 {
     font-family: Lato-Light;
     font-size: 12px;
-    color: black;
 }
 .product-text-6 {
     font-family: Lato-Light;
     font-size: 16px;
-    color: black;
 }
 .product-text-7 {
     font-family: Gotham-Medium;
@@ -441,19 +414,6 @@ nav ul input{
     margin-right: auto;
     font-size: 24px;
     padding: 20px;
-    color: black;
-}
-.product-text-8 {
-    font-family: Lato-Medium;
-    font-size: 24px;
-    color: black;
-    margin-bottom: 12px;
-}
-.product-text-9 {
-    font-family: Lato-Light;
-    font-size: 14px;
-    color: black;
-    line-height: 2px;
 }
 .product-desc-list {
     line-height: 2px;
@@ -502,6 +462,7 @@ nav ul input{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
+
 }
 .product-box-3 {
     width:100%;
