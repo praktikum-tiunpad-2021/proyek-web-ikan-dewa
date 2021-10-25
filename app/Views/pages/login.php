@@ -8,8 +8,6 @@ Nama & NPM :
 Kelas : A
 Tugas : Project Website Praktikum Pemrograman Web
 -->
-<?= $this->extend('/base'); ?>
-<?= $this->section('content'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -19,7 +17,7 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-grid.css">
         <style>
             body {
                 background-image: url("assets/Pics/great-blue-hole.jpg");
@@ -33,8 +31,8 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container">
                 <div class="row">
                     <div class="col login-banner">
-                        <h4 class="login-text-1">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic">fish</span></h4>
-                        <h4 class="login-text-1" style="font-size: 18px;letter-spacing: normal; font-style:italic; margin-top:-10px">Marketplace</h4>
+                        <h1 class="login-text-1">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic">fish</span></h1>
+                        <h1 class="login-text-1" style="font-size: 18px;letter-spacing: normal; font-style:italic; margin-top:-10px">Marketplace</h1>
                     </div>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px">
@@ -63,5 +61,4 @@ Tugas : Project Website Praktikum Pemrograman Web
             </div>
         </div>
     </body>
-    <?= $this->endSection('content'); ?>
 </html>

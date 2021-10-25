@@ -19,7 +19,7 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-grid.css">
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     </head>
     <body>
@@ -27,17 +27,17 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container" style="margin-top:30px; margin-bottom:30px;">
                 <div class="row">
                     <div class="col-1">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                     </div>
                     <div class="col-4">
-                        <img class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                        <img class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                     </div>
                     <div class="col-4">
-                        <h4 class="product-text-1">Lele Empang Cikanpundung</h4>
-                        <h5 class="product-text-2">Rp. 350.000,-</h5>
+                        <h2 class="product-text-1">Lele Empang Cikanpundung</h2>
+                        <h3 class="product-text-2">Rp. 350.000,-</h3>
                         <table style="margin-top:15px">
                             <tr>
                                 <td><p class="product-text-3">Species  </p></td>
@@ -84,20 +84,20 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <p class="product-text-5" style="font-weight:bold;">Kode voucher : brbseptember</p>
                             <span>
                                 <span class="product-text-5">Oxygen Packing Free</span>
-                                <span class="product-box-4 product-text-5" style="margin-left:100px; font-weight:bold;">Klaim Voucher</span>
+                                <button type="button" class="product-box-4 product-text-5" style="margin-left:100px; font-weight:bold;">Klaim Voucher</button>
                             </span>
                         </div>
                     </div>
                     <div class="col-3 text-center">
                         <div class="product-box-main">
                             <span>
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" style="margin-top:37px">
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" style="margin-top:37px">
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" style="margin-top:37px">
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" style="margin-top:37px">
+                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
+                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
+                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
+                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
                             </span>
                             <p class="product-text-5" style="margin-top:2px">Lihat koleksi lebih detail lagi</p>
-                            <table style="width:100%;">
+                            <table style="width:100%; margin-top:15px">
                                 <tr>
                                     <td class="product-text-4">Jenis</td>
                                     <td class="product-text-4">Warna</td>
@@ -109,9 +109,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </table>
                             <p class="product-text-4" style="color:red; margin-top:-10px">Koleksi Terbatas!</p>
                             <p class="product-text-3" style="margin-top:50px">500 orang baru saja melihat koleksi ini</p>
-                            <p class="product-box-2 product-text-6">Beli Sekarang</p>
-                            <p class="product-box-3 product-text-6">Tambahkan ke Wishlist</p>
-                            <p class="product-text-3" style="text-align:left; margin-top:5px; margin-bottom:38px; font-weight:bold;">Share</p>
+                            <button type="button" class="product-box-2 product-text-6">Beli Sekarang</button>
+                            <button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button>
+                            <p class="product-text-3" style="text-align:left; margin-top:50px; margin-bottom:38px; font-weight:bold;">Share</p>
                         </div>
                     </div>
                 </div>
@@ -123,10 +123,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="product-card">
                             <div class="row">
                                 <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h2 class="product-text-8">lele</h2>
+                                    <h3 class="product-text-8">lele</h3>
                                     <p class="product-text-9">lele</p>
                                     <p class="product-text-9">lele</p>
                                     <div>
@@ -144,10 +144,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="product-card">
                             <div class="row">
                                 <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h2 class="product-text-8">lele</h2>
+                                    <h3 class="product-text-8">lele</h3>
                                     <p class="product-text-9">lele</p>
                                     <p class="product-text-9">lele</p>
                                     <div>
@@ -165,10 +165,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="product-card">
                             <div class="row">
                                 <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h2 class="product-text-8">lele</h2>
+                                    <h3 class="product-text-8">lele</h3>
                                     <p class="product-text-9">lele</p>
                                     <p class="product-text-9">lele</p>
                                     <div>
@@ -186,10 +186,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="product-card">
                             <div class="row">
                                 <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h2 class="product-text-8">lele</h2>
+                                    <h3 class="product-text-8">lele</h3>
                                     <p class="product-text-9">lele</p>
                                     <p class="product-text-9">lele</p>
                                     <div>

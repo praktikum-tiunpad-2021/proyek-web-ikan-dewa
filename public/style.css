@@ -118,7 +118,7 @@ nav ul input{
     font-family: Lato-Medium;
     font-size: 14px;
     color: black;
-    margin-top: -6px;
+    margin-top: -4px;
     margin-left: 1px;
 }
 
@@ -399,7 +399,7 @@ nav ul input{
 }
 .product-img-2 {
     width: 350px;
-    height: 476px;
+    height: 526px;
 }
 .product-img-3 {
     width: 50px;
@@ -483,6 +483,7 @@ nav ul input{
 }
 .product-box-main {
     padding: 10px;
+    padding-bottom: 31px;
     background-color: silver;
 }
 .product-box-1 {
@@ -502,6 +503,8 @@ nav ul input{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 .product-box-3 {
     width:100%;
@@ -510,6 +513,9 @@ nav ul input{
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-top: 10px;
 }
 .product-box-4 {
     padding: 5px;
@@ -518,6 +524,12 @@ nav ul input{
     box-sizing: border-box;
     border: 1px solid black;
     background-color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.product-box-2:hover, .product-box-3:hover, .product-box-4:hover {
+    color: white;
+    background-color: #004A4D;
 }
 .product-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
