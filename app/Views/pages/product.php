@@ -8,6 +8,8 @@ Nama & NPM :
 Kelas : A
 Tugas : Project Website Praktikum Pemrograman Web
 -->
+<?= $this->extend('/base'); ?>
+<?= $this->section('content'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -98,7 +100,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <p class="product-text-4" style="margin-top:10px">Kupon Diskon</p>
                         <div class="product-ticket" style="margin-top:-10px">
                             <p class="product-text-3">Potongan 50%</p>
-                            <p class="product-text-5" style="margin-top:-8px"><b>Kode voucher : brbseptember</b></p>
+                            <p class="product-text-5"><b>Kode voucher : brbseptember</b></p>
                             <span>
                                 <span class="product-text-5">Oxygen Packing Free</span>
                                 <span class="product-box-4 product-text-5" style="margin-left:100px"><b>Klaim Voucher</b></span>
@@ -228,4 +230,5 @@ Tugas : Project Website Praktikum Pemrograman Web
             <p class="logo" style="font-size: 20px;letter-spacing: normal; margin-top:-25px">Marketplace</p>
         </footer>
     </body>
+    <?= $this->endSection('content'); ?>
 </html>

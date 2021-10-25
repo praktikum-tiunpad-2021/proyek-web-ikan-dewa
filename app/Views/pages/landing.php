@@ -8,6 +8,8 @@ Nama & NPM :
 Kelas : A
 Tugas : Project Website Praktikum Pemrograman Web
 -->
+<?= $this->extend('/base'); ?>
+<?= $this->section('content'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -21,42 +23,10 @@ Tugas : Project Website Praktikum Pemrograman Web
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav class="navbar1">
-              <ul>
-                <li class="logo">AQUA<span style="font-size: 24px;letter-spacing: normal;">fish</span></li>
-                <div class="items">
-                  <li><a href="#">Saltwater Fish</a></li>
-                  <li><a href="#">Freshwater Fish</a></li>
-                </div>
-                <li class="search-icon">
-                  <input type="search" placeholder="Search">
-                </li>
-                <div class="account">
-                  <li><a href="#"><img src="assets/Pics/keranjang.png" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
-                  <li><a href="#"><img src="assets/Pics/account.png" alt="acc" style="width: 27px; padding: 15px 3px;"></a></li>
-                  <li><a href="#"><img src="assets/Pics/wishlist.png" alt="wishlist" style="width: 25px; padding: 15px 3px;"></a></li>
-                </div>
-              </ul>
-            </nav>
-        </header>
         <main>
             <div class="container">
-                <div class="row">  
-                    <div class="landing-banner">
-                        <div class="row justify-content-between" style="margin-top:63px">
-                            <div class="col-1">
-                                <span class="landing-banner-arrow-box align-self-center">
-                                    <i class="material-icons landing-banner-arrow-left" style="margin-left:6px">arrow_back_ios</i>
-                                </span>
-                            </div>
-                            <div class="col-1">
-                                <span class="landing-banner-arrow-box align-self-center" style="margin-left:27px;">
-                                    <i class="material-icons landing-banner-arrow-right" style="margin-left:3px">arrow_forward_ios</i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>  
+                <div class="row">
+                    <img class="landing-banner" src="assets/Pics/landing-banner.jpg">
                 </div>
                 <div class="row">
                     <h2 class="landing-text-1">Best Seller</h2>
@@ -181,4 +151,5 @@ Tugas : Project Website Praktikum Pemrograman Web
             <p class="logo" style="font-size: 20px;letter-spacing: normal; margin-top:-25px">Marketplace</p>
         </footer>
     </body>
+    <?= $this->endSection('content'); ?>
 </html>

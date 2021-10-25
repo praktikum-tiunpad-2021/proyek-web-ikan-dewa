@@ -8,6 +8,8 @@ Nama & NPM :
 Kelas : A
 Tugas : Project Website Praktikum Pemrograman Web
 -->
+<?= $this->extend('/base'); ?>
+<?= $this->section('content'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -61,4 +63,5 @@ Tugas : Project Website Praktikum Pemrograman Web
             </div>
         </div>
     </body>
+    <?= $this->endSection('content'); ?>
 </html>
