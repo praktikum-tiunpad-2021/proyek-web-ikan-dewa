@@ -23,25 +23,6 @@ Tugas : Project Website Praktikum Pemrograman Web
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav class="navbar1">
-              <ul>
-                <li class="logo">AQUA<span style="font-size: 24px;letter-spacing: normal;">fish</span></li>
-                <div class="items">
-                  <li><a href="#">Saltwater Fish</a></li>
-                  <li><a href="#">Freshwater Fish</a></li>
-                </div>
-                <li class="search-icon">
-                  <input type="search" placeholder="Search">
-                </li>
-                <div class="account">
-                  <li><a href="#"><img src="assets/Pics/keranjang.png" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
-                  <li><a href="#"><img src="assets/Pics/account.png" alt="acc" style="width: 27px; padding: 15px 3px;"></a></li>
-                  <li><a href="#"><img src="assets/Pics/wishlist.png" alt="wishlist" style="width: 25px; padding: 15px 3px;"></a></li>
-                </div>
-              </ul>
-            </nav>
-        </header>
         <main>
             <div class="container" style="margin-top:30px; margin-bottom:30px;">
                 <div class="row">
@@ -81,11 +62,11 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </table>
                         <p class="product-text-3" style="margin-top:10px">Deskripsi :</p>
                         <ul class="product-desc-list">
-                            <li><p class="product-text-3">a</p></li>
-                            <li><p class="product-text-3">a</p></li>
-                            <li><p class="product-text-3">a</p></li>
-                            <li><p class="product-text-3">a</p></li>
-                            <li><p class="product-text-3">a</p></li>
+                            <li style="color:black;"><p class="product-text-3">a</li>
+                            <li style="color:black;"><p class="product-text-3">a</p></li>
+                            <li style="color:black;"><p class="product-text-3">a</p></li>
+                            <li style="color:black;"><p class="product-text-3">a</p></li>
+                            <li style="color:black;"><p class="product-text-3">a</p></li>
                         </ul>
                         <div class="product-star-rate" style="margin-top:30px">
                             <span class="product-text-3" style="vertical-align:middle">Berikan Ulasan</span>
@@ -100,10 +81,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <p class="product-text-4" style="margin-top:10px">Kupon Diskon</p>
                         <div class="product-ticket" style="margin-top:-10px">
                             <p class="product-text-3">Potongan 50%</p>
-                            <p class="product-text-5"><b>Kode voucher : brbseptember</b></p>
+                            <p class="product-text-5" style="font-weight:bold;">Kode voucher : brbseptember</p>
                             <span>
                                 <span class="product-text-5">Oxygen Packing Free</span>
-                                <span class="product-box-4 product-text-5" style="margin-left:100px"><b>Klaim Voucher</b></span>
+                                <span class="product-box-4 product-text-5" style="margin-left:100px; font-weight:bold;">Klaim Voucher</span>
                             </span>
                         </div>
                     </div>
@@ -127,10 +108,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </tr>
                             </table>
                             <p class="product-text-4" style="color:red; margin-top:-10px">Koleksi Terbatas!</p>
-                            <p class="product-text-3" style="margin-top:50px"><b>500 orang baru saja melihat koleksi ini</b></p>
+                            <p class="product-text-3" style="margin-top:50px">500 orang baru saja melihat koleksi ini</p>
                             <p class="product-box-2 product-text-6">Beli Sekarang</p>
                             <p class="product-box-3 product-text-6">Tambahkan ke Wishlist</p>
-                            <p class="product-text-3" style="text-align:left; margin-top:5px; margin-bottom:38px"><b>Share</b></p>
+                            <p class="product-text-3" style="text-align:left; margin-top:5px; margin-bottom:38px; font-weight:bold;">Share</p>
                         </div>
                     </div>
                 </div>
@@ -145,9 +126,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h5>lele</h5>
-                                    <p>lele</p>
-                                    <p>lele</p>
+                                    <h2 class="product-text-8">lele</h2>
+                                    <p class="product-text-9">lele</p>
+                                    <p class="product-text-9">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -166,9 +147,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h5>lele</h5>
-                                    <p>lele</p>
-                                    <p>lele</p>
+                                    <h2 class="product-text-8">lele</h2>
+                                    <p class="product-text-9">lele</p>
+                                    <p class="product-text-9">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -187,9 +168,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h5>lele</h5>
-                                    <p>lele</p>
-                                    <p>lele</p>
+                                    <h2 class="product-text-8">lele</h2>
+                                    <p class="product-text-9">lele</p>
+                                    <p class="product-text-9">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -208,9 +189,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h5>lele</h5>
-                                    <p>lele</p>
-                                    <p>lele</p>
+                                    <h2 class="product-text-8">lele</h2>
+                                    <p class="product-text-9">lele</p>
+                                    <p class="product-text-9">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>

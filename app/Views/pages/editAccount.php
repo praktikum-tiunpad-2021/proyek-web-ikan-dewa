@@ -31,19 +31,19 @@ Tugas : Project Website Praktikum Pemrograman Web
                 <div class="row justify-content-md-center" style="margin-top:15px">
                     <form>
                         <div>
-                            <p class="edit-account-input-text-2">Alamat Email</p>
+                            <p class="edit-account-text-2">Alamat Email</p>
                             <p class="edit-account-data-box" style="margin-top:-15px"></p>
                         </div>
                         <div style="margin-top:-15px">
-                            <p class="edit-account-input-text-2">Kata Sandi</p>
+                            <p class="edit-account-text-2">Kata Sandi</p>
                             <p class="edit-account-data-box" style="margin-top:-15px"></p>
                         </div>
                         <div style="margin-top:-15px">
-                            <p class="edit-account-input-text-2">Nama Lengkap</p>
+                            <p class="edit-account-text-2">Nama Lengkap</p>
                             <p class="edit-account-data-box" style="margin-top:-15px"></p>
                         </div>
                         <div style="margin-top:-15px">
-                            <p class="edit-account-input-text-2">Tanda Lahir</p>
+                            <p class="edit-account-text-2">Tanda Lahir</p>
                             <p class="edit-account-data-box" style="margin-top:-15px"></p>
                         </div>
                     </form>
@@ -51,19 +51,19 @@ Tugas : Project Website Praktikum Pemrograman Web
                 <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
                     <form class="form-edit-account">
                         <div>
-                            <p class="edit-account-input-text-2">Alamat Email*</p>
+                            <p class="edit-account-text-2">Alamat Email*</p>
                             <input class="edit-account-input" id="email" type="text">
                         </div>
                         <div style="margin-top:10px">
-                            <p class="edit-account-input-text-2">Kata Sandi*</p>
+                            <p class="edit-account-text-2">Kata Sandi*</p>
                             <input class="edit-account-input" id="password" type="password">
                         </div>
                         <div style="margin-top:10px">
-                            <p class="edit-account-input-text-2">Nama Lengkap*</p>
+                            <p class="edit-account-text-2">Nama Lengkap*</p>
                             <input class="edit-account-input" id="nama-lengkap" type="text">
                         </div>
                         <div style="margin-top:10px">
-                            <p class="edit-account-input-text-2">Tanggal Lahir*</p>
+                            <p class="edit-account-text-2">Tanggal Lahir*</p>
                             <input class="edit-account-input" id="tanggal-lahir" type="date">
                         </div>
                         <div style="margin-top:15px">

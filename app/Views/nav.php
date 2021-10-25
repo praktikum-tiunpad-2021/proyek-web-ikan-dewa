@@ -5,6 +5,11 @@
         <title>Aquafish Marketplace</title>
     </head>
     <style>
+      @font-face {
+        font-family: Gotham-Medium;
+        src: url(assets/Fonts/Gotham-Font/GothamMedium.ttf);
+      }
+
       *{
        margin: 0;
        padding: 0;
@@ -21,8 +26,12 @@
 
       nav ul li.logo{
         flex: 1;
-        font-size: 30px;
-        font-weight: 700;
+        font-size: 32px;
+        color: white;
+        font-family: Gotham-Medium;
+        margin-left: 70px;
+        letter-spacing: 6px;
+        font-style : italic;
       }
 
       nav ul div.items{
@@ -65,7 +74,7 @@
     <header>
       <nav style="background: #004A4D; width: 100%; height: 62px; position: sticky;" >
         <ul>
-          <li class="logo">AQUAfish</li>
+          <li class="logo">AQUA<span style="font-size:22px; font-style:normal; letter-spacing:1px">fish</span></li>
           <div class="items">
             <li><a href="#">Saltwater Fish</a></li>
             <li><a href="#">Freshwater Fish</a></li>
