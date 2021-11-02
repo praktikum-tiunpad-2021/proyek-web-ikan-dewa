@@ -11,12 +11,20 @@ Tugas : Project Website Praktikum Pemrograman Web
 
 /*FONT FAMILY*/
 @font-face {
+    font-family: Gotham-Bold;
+    src: url(assets/Fonts/Gotham-Font/GothamBold.ttf);
+}
+@font-face {
     font-family: Gotham-Medium;
     src: url(assets/Fonts/Gotham-Font/GothamMedium.ttf);
 }
 @font-face {
     font-family: Gotham-Thin;
     src: url(assets/Fonts/Gotham-Font/Gotham-Thin.otf);
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url(assets/Fonts/Lato/Lato-Bold.ttf);
 }
 @font-face {
     font-family: Lato-Medium;
@@ -561,4 +569,100 @@ nav ul input{
     color:white;
     -webkit-text-stroke-width: 1px;
      -webkit-text-stroke-color: black;
+}
+
+/*Order Page*/
+.order-img-1 {
+    width: 75px;
+    height: 75px;
+}
+.order-img-2 {
+    width: 75px;
+    height: 100px;
+}
+.order-text-1 {
+    font-family: Gotham-Bold;
+    font-size: 18px;
+    color: black;
+}
+.order-text-2 {
+    font-family: Lato-Light;
+    font-size: 16px;
+    color: black;
+}
+.order-text-3 {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+    background-color: silver;
+}
+.order-text-4 {
+    font-family: Lato-Medium;
+    font-size: 14px;
+    color: black;
+}
+.order-text-5 {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: black;
+}
+.order-text-5 {
+    font-family: Lato-Light;
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+}
+.order-text-6 {
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: black;
+}
+.order-text-7 {
+    font-family: Lato-Light;
+    font-size: 24px;
+    color: black;
+}
+.order-text-8 {
+    font-family: Lato-Medium;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+.order-card-1 {
+    padding: 10px;
+    background-color: silver ;
+}
+.order-card-2 {
+    padding: 5px;
+    padding-bottom: 0px;
+    background-color: #f6f6f6 ;
+}
+.order-input {
+    height: 36px;
+}
+#order-input-submit {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    padding: 3px;
+}
+#order-input-submit:hover {
+    color: white;
+    background-color: #004A4D;
+}
+.order-box-1 {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.order-box-1:hover {
+    color: white;
+    background-color: #004A4D;
 }

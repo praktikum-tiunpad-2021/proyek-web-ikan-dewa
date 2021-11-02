@@ -33,4 +33,9 @@ class Home extends BaseController
     {
         return view('pages/product');
     }
+
+    public function order()
+    {
+        return view('pages/order');
+    }
 }

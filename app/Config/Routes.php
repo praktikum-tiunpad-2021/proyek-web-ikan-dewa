@@ -37,6 +37,7 @@ $routes->get('/catalog', 'Home::catalog');
 $routes->get('/landing', 'Home::landing');
 $routes->get('/editAccount', 'Home::editAccount');
 $routes->get('/product', 'Home::product');
+$routes->get('/order', 'Home::order');
 $routes->get('/register', 'Register::register');
 $routes->post('/register/process', 'Register::process');
 
