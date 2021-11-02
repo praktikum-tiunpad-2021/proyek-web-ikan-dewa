@@ -31,26 +31,26 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container">
                 <div class="row">
                     <div class="col login-banner">
-                        <h1 class="login-text-1">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic">fish</span></h1>
-                        <h1 class="login-text-1" style="font-size: 18px;letter-spacing: normal; font-style:italic; margin-top:-10px">Marketplace</h1>
+                        <h1 class="login-text-1" style="margin-top:-5px">AQUA<span style="font-size: 18px;letter-spacing: normal;">fish</span></h1>
+                        <h1 class="login-text-1" style="font-size: 18px;letter-spacing: normal; margin-top:-3px">Marketplace</h1>
                     </div>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px">
                     <form class="form-login">
                         <div>
-                            <p class="login-input-text-1">Alamat Email*</p>
+                            <p class="login-input-text-1" style="padding-bottom:13px">Alamat Email*</p>
                             <input class="login-input" id="email" type="text">
                         </div>
                         <div style="margin-top:20px">
-                            <p class="login-input-text-1">Kata Sandi*</p>
+                            <p class="login-input-text-1" style="padding-bottom:13px">Kata Sandi*</p>
                             <input class="login-input" id="password" type="password">
                             <p class="login-input-text-2">Lupa kata sandi?</p>
                         </div>
                         <div style="text-align:center">
-                            <p class="login-input-text-1">Atau masuk lewat</p>
-                            <img class="login-input-logo" src="assets/Pics/google.png" style="margin-top:-15px">
+                            <p class="login-input-text-1" style="margin-top:15px">Atau masuk lewat</p>
+                            <img class="login-input-logo" src="assets/Pics/google.png" style="margin-top:10px">
                         </div>
-                        <div style="margin-top:10px">
+                        <div style="margin-top:20px">
                             <input type="submit" id="login-input-submit" value="Login">
                         </div>
                         <div>

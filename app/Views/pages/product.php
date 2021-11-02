@@ -21,23 +21,28 @@ Tugas : Project Website Praktikum Pemrograman Web
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap-grid.css">
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <script type="text/javascript">
+            function changeImage(a) {
+                document.getElementById("prod-img-large").src=a;
+            }
+        </script>
     </head>
     <body>
         <main>
             <div class="container" style="margin-top:30px; margin-bottom:30px;">
                 <div class="row">
                     <div class="col-1">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" onclick='changeImage("https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg");'>
+                        <img class="product-img-1" src="https://asset.kompas.com/crops/ndM9-S72se_BVNExfI_Jex9m9UY=/99x55:1000x656/750x500/data/photo/2020/11/12/5fac84d72fd73.jpg" alt="Ikan Guppy" onclick='changeImage("https://asset.kompas.com/crops/ndM9-S72se_BVNExfI_Jex9m9UY=/99x55:1000x656/750x500/data/photo/2020/11/12/5fac84d72fd73.jpg");'>
+                        <img class="product-img-1" src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/28/2957222270.jpg" alt="Ikan Guppy" onclick='changeImage("https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/28/2957222270.jpg");'>
+                        <img class="product-img-1" src="https://gerava.com/wp-content/uploads/2019/07/Ikan-Manfish.jpg" alt="Ikan Guppy"  onclick='changeImage("https://gerava.com/wp-content/uploads/2019/07/Ikan-Manfish.jpg");'>
                     </div>
                     <div class="col-4">
-                        <img class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                        <img id="prod-img-large" class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-left:-15px">
                     </div>
                     <div class="col-4">
-                        <h2 class="product-text-1">Lele Empang Cikanpundung</h2>
-                        <h3 class="product-text-2">Rp. 350.000,-</h3>
+                        <h1 class="product-text-1">Lele Empang Cikanpundung</h1>
+                        <h2 class="product-text-2" style="margin-top:-2px">Rp. 350.000,-</h2>
                         <table style="margin-top:15px">
                             <tr>
                                 <td><p class="product-text-3">Species  </p></td>
@@ -69,8 +74,8 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <li style="color:black;"><p class="product-text-3">a</p></li>
                         </ul>
                         <div class="product-star-rate" style="margin-top:30px">
-                            <span class="product-text-3" style="vertical-align:middle">Berikan Ulasan</span>
-                            <span style="margin-left:135px">
+                            <span class="product-text-3" style="vertical-align:middle">Fish Rating</span>
+                            <span style="margin-left:160px; padding-bottom:5px">
                                 <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
                                 <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
                                 <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
@@ -96,7 +101,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
                                 <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
                             </span>
-                            <p class="product-text-5" style="margin-top:2px">Lihat koleksi lebih detail lagi</p>
+                            <p class="product-text-5" style="margin-top:2px">Lihat koleksi lainnya</p>
                             <table style="width:100%; margin-top:15px">
                                 <tr>
                                     <td class="product-text-4">Jenis</td>

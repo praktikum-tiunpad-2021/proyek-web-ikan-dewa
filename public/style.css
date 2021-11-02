@@ -117,6 +117,12 @@ nav ul input{
     margin-left: 1px;
     color: black;
 }
+.catalog-text-3 {
+    font-family: Gotham-Medium;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
 .footer1{
     width : 100%;
     background: #004A4D;
@@ -243,8 +249,8 @@ nav ul input{
 .login-banner {
     background-image : url("assets/Pics/login-wave.jpg");
     background-size: cover;
-    padding: 7px;
-    background-position: -5px;
+    padding: 12px;
+    background-position: -15px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -263,6 +269,8 @@ nav ul input{
 .login-input {
     margin-top: -20px;
     width: 240px;
+    height: 25px;
+    border: 1px solid black;
 }
 .login-input-text-1 {
     font-size: 12px;
@@ -397,7 +405,7 @@ nav ul input{
     margin-bottom: 15px;
 }
 .product-img-2 {
-    width: 350px;
+    width: 368px;
     height: 526px;
 }
 .product-img-3 {
@@ -407,10 +415,13 @@ nav ul input{
 .product-text-1 {
     font-family: Gotham-Medium;
     color: black;
+    font-size: 32px;
+    line-height: 35px;
 }
 .product-text-2 {
     font-family: Gotham-Thin;
     color: black;
+    font-size: 28px;
 }
 .product-text-3 {
     font-family: Lato-Medium;

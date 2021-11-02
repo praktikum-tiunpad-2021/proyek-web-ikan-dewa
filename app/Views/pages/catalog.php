@@ -23,7 +23,8 @@ Tugas : Project Website Praktikum Pemrograman Web
     <body>
         <main>
             <div class="container">
-                <div class="row" style="margin-top:30px">
+                <h1 class="catalog-text-3" style="margin-top:30px">Saltwater Fish Catalog</h1>
+                <div class="row" style="margin-top:10px">
                     <div class="col-3">
                         <img class="catalog-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                         <h2 class="catalog-text-1">Guppy</h2>
