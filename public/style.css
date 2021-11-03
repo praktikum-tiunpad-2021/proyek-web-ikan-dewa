@@ -99,6 +99,22 @@ nav ul input{
     outline: none;
     padding: 10px;
 }
+.universal-text-1 {
+    font-family: Gotham-Medium;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.universal-text-2 {
+    font-family: Gotham-Medium;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+}
 
 /*CATALOG*/
 .catalog-img {
@@ -125,12 +141,6 @@ nav ul input{
     margin-left: 1px;
     color: black;
 }
-.catalog-text-3 {
-    font-family: Gotham-Medium;
-    font-size: 24px;
-    color: black;
-    text-align: center;
-}
 .footer1{
     width : 100%;
     background: #004A4D;
@@ -140,14 +150,6 @@ nav ul input{
 
 /*LANDING*/
 .landing-text-1 {
-    font-family: Gotham-Medium;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
-    padding: 20px;
-    color: black;
-}
-.landing-text-2 {
     margin-top: 8px;
     width: 92%;
     padding-bottom: 10px;
@@ -157,7 +159,7 @@ nav ul input{
     font-weight: bold;
     color: black;
 }
-.landing-text-3{
+.landing-text-2 {
     flex: 1;
     font-size: 28px;
     color: black;
@@ -167,19 +169,19 @@ nav ul input{
     font-weight: 100;
     color: black;
 }
-.landing-text-4 {
+.landing-text-3 {
     margin-left: 10px;
     font-size: 14px;
     text-align: justify;
     color: black;
 }
-.landing-text-5 {
+.landing-text-4 {
     font-family: Lato-Medium;
     font-size: 24px;
     color: black;
     margin-bottom: 12px;
 }
-.landing-text-6 {
+.landing-text-5 {
     font-family: Lato-Light;
     font-size: 14px;
     color: black;
@@ -368,13 +370,6 @@ nav ul input{
 
 /*Edit Account*/
 .edit-account-text-1 {
-    font-family: Gotham-Medium;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 36px;
-    color: black;
-}
-.edit-account-text-2{
     text-align: left;
     font-size: 14px;
     color: black;
@@ -454,20 +449,12 @@ nav ul input{
     color: black;
 }
 .product-text-7 {
-    font-family: Gotham-Medium;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
-    padding: 20px;
-    color: black;
-}
-.product-text-8 {
     font-family: Lato-Medium;
     font-size: 24px;
     color: black;
     margin-bottom: 12px;
 }
-.product-text-9 {
+.product-text-8 {
     font-family: Lato-Light;
     font-size: 14px;
     color: black;
@@ -479,7 +466,7 @@ nav ul input{
     font-size: 14px;
 }
 .product-star-rate {
-    padding: 4px;
+    padding: 7px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     vertical-align: middle;
@@ -577,7 +564,7 @@ nav ul input{
     height: 75px;
 }
 .order-img-2 {
-    width: 75px;
+    width: 80px;
     height: 100px;
 }
 .order-text-1 {
@@ -594,29 +581,33 @@ nav ul input{
     font-family: Lato-Light;
     font-size: 14px;
     color: black;
-    padding: 5px;
-    background-color: silver;
+    display: block;
+    margin: 0 auto;
 }
 .order-text-4 {
     font-family: Lato-Medium;
-    font-size: 14px;
-    color: black;
-}
-.order-text-5 {
-    font-family: Lato-Light;
-    font-size: 14px;
-    color: black;
-}
-.order-text-5 {
-    font-family: Lato-Light;
     font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.order-text-5 {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: black;
+    display: block;
+    margin: 0 auto;
+}
+.order-text-5 {
+    font-family: Lato-Light;
+    font-size: 14px;
     color: black;
     line-height: 20px;
 }
 .order-text-6 {
     font-family: Lato-Bold;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
+    text-align: center;
 }
 .order-text-7 {
     font-family: Lato-Light;
@@ -634,12 +625,16 @@ nav ul input{
     background-color: silver ;
 }
 .order-card-2 {
+    padding: 15px;
+    background-color: #eeeeee ;
+}
+.order-card-3 {
+    background-color: silver ;
     padding: 5px;
-    padding-bottom: 0px;
-    background-color: #f6f6f6 ;
 }
 .order-input {
-    height: 36px;
+    height: 34px;
+    width: 150px;
 }
 #order-input-submit {
     color: black;
@@ -647,13 +642,15 @@ nav ul input{
     cursor: pointer;
     transition-duration: 0.4s;
     padding: 3px;
+    width: 75px;
 }
 #order-input-submit:hover {
     color: white;
     background-color: #004A4D;
 }
 .order-box-1 {
-    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
     box-sizing: border-box;
     border: 1px solid black;
     display: block;

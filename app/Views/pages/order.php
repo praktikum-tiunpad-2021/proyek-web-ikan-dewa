@@ -22,8 +22,9 @@ Tugas : Project Website Praktikum Pemrograman Web
     </head>
     <body>
         <main>
-            <div class="container">
-                <div class="row">
+            <div class="container" style="margin-top:30px; margin-bottom:60px">
+                <h1 class="universal-text-1">Your Order</h1>
+                <div class="row" style="margin-top:20px">
                     <div class="col-9">
                         <div class="row order-card-2">
                             <div class="col-2 my-auto">
@@ -35,7 +36,11 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <div class="col-2 my-auto">
                                 <p class="order-text-2">Selengkapnya</p>
                             </div>
-                            <p class="order-text-3">Dapatkan diskon untuk setiap penukaran voucher!</p>
+                        </div>
+                        <div class="row order-card-3">
+                            <div class="col-12">
+                                <p class="order-text-3">Dapatkan diskon untuk setiap penukaran voucher!</p>
+                            </div>
                         </div>
                         <div class="row order-card-2" style="margin-top:20px">
                             <div class="col-2 my-auto">
@@ -43,52 +48,52 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </div>
                             <div class="col-5 my-auto">
                                 <h3 class="order-text-4">Lele Empang Cikanpundung</h3>
-                                <table>
+                                <table style="width:200px; height:70px">
                                     <tr>
                                         <td><p class="order-text-5">Jumlah</p></td>
-                                        <td><p class="order-text-5">1</p></td>
+                                        <td><p class="order-text-5">: 1</p></td>
                                     </tr>
                                     <tr>
                                         <td><p class="order-text-5">Jenis</p></td>
-                                        <td><p class="order-text-5">Lorem Ipsum</p></td>
+                                        <td><p class="order-text-5">: Lorem Ipsum</p></td>
                                     </tr>
                                     <tr>
                                         <td><p class="order-text-5">Warna</p></td>
-                                        <td><p class="order-text-5">Lorem Ipsum</p></td>
+                                        <td><p class="order-text-5">: Lorem Ipsum</p></td>
                                     </tr>
                                 </table>
                             </div>
                             <div class="col-5 my-auto">
-                                <p class="order-text-5" style="font-size:18px">Rp. 50000</p>
-                                <p class="order-text-5">Kota Bandung dan sekitarnya 1-2 hari, luar<br>kota Bandung 3-5 hari</p>
+                                <p class="order-text-5" style="font-size:18px; margin-top:2px; text-align:right">Rp. 50000</p>
+                                <p class="order-text-5" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar<br>kota Bandung 3-5 hari</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="order-card-1">
+                        <div class="order-card-1" style="padding-top:20px; padding-bottom:20px">
                             <h3 class="order-text-6">Masukkan Kode Voucher</h3>
-                            <form>
-                                <input type="text" class="order-input">
+                            <form style="margin-top:15px">
+                                <input type="text" class="order-input" style="margin-left:3px">
                                 <input type="submit" id="order-input-submit" value="Cek">
                             </form>
                         </div>
                         <div class="order-card-1" style="margin-top:20px">
-                            <table>
+                            <table style="width:210px;height:110px; margin-left:auto; margin-right:auto">
                                 <tr>
                                     <td><p class="order-text-5">Jumlah</p></td>
-                                    <td><p class="order-text-5">Rp. 100000</p></td>
+                                    <td><p class="order-text-5" style="text-align:right">Rp. 100000</p></td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Potongan Harga</p></td>
-                                    <td><p class="order-text-5">Rp. 20000</p></td>
+                                    <td><p class="order-text-5" style="text-align:right">Rp. 20000</p></td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Jumlah Total</p></td>
-                                    <td><p class="order-text-5">Rp. 80000</p></td>
+                                    <td><p class="order-text-5" style="text-align:right">Rp. 80000</p></td>
                                 </tr>
                             </table>
-                            <button type="button" class="order-box-1 order-text-7">CHECKOUT</button>
-                            <h3 class="order-text-8" style="margin-top:100px">Metode Pembayaran</h3>
+                            <button type="button" class="order-box-1 order-text-7" style="margin-top:10px">CHECKOUT</button>
+                            <h3 class="order-text-8" style="margin-top:100px; margin-bottom:60px">Metode Pembayaran</h3>
                         </div>
                     </div>
                 </div>

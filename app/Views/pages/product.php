@@ -74,8 +74,8 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <li style="color:black;"><p class="product-text-3">a</p></li>
                         </ul>
                         <div class="product-star-rate" style="margin-top:30px">
-                            <span class="product-text-3" style="vertical-align:middle">Fish Rating</span>
-                            <span style="margin-left:160px; padding-bottom:5px">
+                            <span class="product-text-3" style="vertical-align:middle">Rating</span>
+                            <span style="margin-left:180px;">
                                 <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
                                 <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
                                 <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
@@ -121,7 +121,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>
                 </div>
                 <div class="row"  style="margin-top:5px">
-                    <h2 class="product-text-7">Similar Search</h2>
+                    <h2 class="universal-text-2">Similar Search</h2>
                 </div>
                 <div class="row" style="margin-bottom:40px">
                     <div class="col-3">
@@ -131,9 +131,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-8">lele</h3>
-                                    <p class="product-text-9">lele</p>
-                                    <p class="product-text-9">lele</p>
+                                    <h3 class="product-text-7">lele</h3>
+                                    <p class="product-text-8">lele</p>
+                                    <p class="product-text-8">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -152,9 +152,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-8">lele</h3>
-                                    <p class="product-text-9">lele</p>
-                                    <p class="product-text-9">lele</p>
+                                    <h3 class="product-text-7">lele</h3>
+                                    <p class="product-text-8">lele</p>
+                                    <p class="product-text-8">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -173,9 +173,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-8">lele</h3>
-                                    <p class="product-text-9">lele</p>
-                                    <p class="product-text-9">lele</p>
+                                    <h3 class="product-text-7">lele</h3>
+                                    <p class="product-text-8">lele</p>
+                                    <p class="product-text-8">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -194,9 +194,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-8">lele</h3>
-                                    <p class="product-text-9">lele</p>
-                                    <p class="product-text-9">lele</p>
+                                    <h3 class="product-text-7">lele</h3>
+                                    <p class="product-text-8">lele</p>
+                                    <p class="product-text-8">lele</p>
                                     <div>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>

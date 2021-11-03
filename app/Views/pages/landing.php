@@ -42,28 +42,28 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>  
                 </div>
                 <div class="row">
-                    <h1 class="landing-text-1">Best Seller</h1>
+                    <h1 class="universal-text-2">Best Seller</h1>
                 </div>
                 <div class="row" style="margin-top:-20px">
                     <div class="col-3">
                         <img class="landing-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                        <h2 class="landing-text-2">Guppy</h2>
+                        <h2 class="landing-text-1">Guppy</h2>
                     </div>
                     <div class="col-3">
                         <img class="landing-img" src="https://asset.kompas.com/crops/ndM9-S72se_BVNExfI_Jex9m9UY=/99x55:1000x656/750x500/data/photo/2020/11/12/5fac84d72fd73.jpg" alt="Ikan Molly">
-                        <h2 class="landing-text-2">Molly</h2>
+                        <h2 class="landing-text-1">Molly</h2>
                     </div>
                     <div class="col-3">
                         <img class="landing-img" src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/28/2957222270.jpg" alt="Ikan Cupang">
-                        <h2 class="landing-text-2">Cupang</h2>
+                        <h2 class="landing-text-1">Cupang</h2>
                     </div>
                     <div class="col-3">
                         <img class="landing-img" src="https://gerava.com/wp-content/uploads/2019/07/Ikan-Manfish.jpg" alt="Ikan Manfish">
-                        <h2 class="landing-text-2">Manfish</h2>
+                        <h2 class="landing-text-1">Manfish</h2>
                     </div>
                 </div>
                 <div class="row"  style="margin-top:-20px">
-                    <h2 class="landing-text-1">Top Search</h2>
+                    <h2 class="universal-text-2">Top Search</h2>
                 </div>
                 <div class="row">
                     <div class="col-3">
@@ -73,9 +73,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="landing-text-5">lele</h3>
-                                    <p class="landing-text-6">lele</p>
-                                    <p class="landing-text-6">lele</p>
+                                    <h3 class="landing-text-4">lele</h3>
+                                    <p class="landing-text-5">lele</p>
+                                    <p class="landing-text-5">lele</p>
                                     <div style="margin-top:-4px;">
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -94,9 +94,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="landing-text-5">lele</h3>
-                                    <p  class="landing-text-6">lele</p>
-                                    <p  class="landing-text-6">lele</p>
+                                    <h3 class="landing-text-4">lele</h3>
+                                    <p  class="landing-text-5">lele</p>
+                                    <p  class="landing-text-5">lele</p>
                                     <div>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -115,9 +115,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="landing-text-5">lele</h3>
-                                    <p  class="landing-text-6">lele</p>
-                                    <p  class="landing-text-6">lele</p>
+                                    <h3 class="landing-text-4">lele</h3>
+                                    <p  class="landing-text-5">lele</p>
+                                    <p  class="landing-text-5">lele</p>
                                     <div>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -136,9 +136,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
-                                    <h3 class="landing-text-5">lele</h3>
-                                    <p  class="landing-text-6">lele</p>
-                                    <p  class="landing-text-6">lele</p>
+                                    <h3 class="landing-text-4">lele</h3>
+                                    <p  class="landing-text-5">lele</p>
+                                    <p  class="landing-text-5">lele</p>
                                     <div>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
                                         <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -152,10 +152,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>
                 </div>
                 <div class="row" style="margin-top:30px">
-                    <h2 class="landing-text-3">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic; color:black;">fish Marketplace</span></h2>
+                    <h2 class="landing-text-2">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic; color:black;">fish Marketplace</span></h2>
                 </div>
                 <div class="row" style="margin-top:10px; margin-bottom:20px; width:101.5%">
-                    <p class="landing-text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales felis volutpat lectus tempor, eu auctor augue pharetra. Nullam at suscipit nisi. Sed scelerisque, orci at facilisis sollicitudin, velit urna feugiat arcu, non molestie lorem velit faucibus tellus. Sed sit amet varius nulla, a ornare velit. Phasellus varius leo vitae nulla fermentum iaculis. Nunc scelerisque vulputate libero eget aliquam. Nunc vel odio a est dignissim condimentum sed vel leo. In ut facilisis orci. Aenean nibh orci, hendrerit non fringilla a, mattis at nulla. Morbi nisl erat, fermentum dapibus rutrum vitae, volutpat vitae orci. Suspendisse potenti. Aliquam eget ipsum in augue eleifend venenatis. Quisque lectus lacus, mattis sed pellentesque et, tincidunt eget augue. Mauris ac urna at quam egestas pulvinar sit amet et risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut ipsum non metus pellentesque molestie. Vivamus libero ex, elementum nec blandit et, suscipit eget eros. Fusce eu metus diam. Vivamus pellentesque pharetra tempus. Quisque sit amet tincidunt lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam auctor fermentum ante, quis volutpat lectus mollis vel. Vestibulum mollis nisl vitae dui efficitur, vitae ullamcorper magna porttitor.</p>
+                    <p class="landing-text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales felis volutpat lectus tempor, eu auctor augue pharetra. Nullam at suscipit nisi. Sed scelerisque, orci at facilisis sollicitudin, velit urna feugiat arcu, non molestie lorem velit faucibus tellus. Sed sit amet varius nulla, a ornare velit. Phasellus varius leo vitae nulla fermentum iaculis. Nunc scelerisque vulputate libero eget aliquam. Nunc vel odio a est dignissim condimentum sed vel leo. In ut facilisis orci. Aenean nibh orci, hendrerit non fringilla a, mattis at nulla. Morbi nisl erat, fermentum dapibus rutrum vitae, volutpat vitae orci. Suspendisse potenti. Aliquam eget ipsum in augue eleifend venenatis. Quisque lectus lacus, mattis sed pellentesque et, tincidunt eget augue. Mauris ac urna at quam egestas pulvinar sit amet et risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut ipsum non metus pellentesque molestie. Vivamus libero ex, elementum nec blandit et, suscipit eget eros. Fusce eu metus diam. Vivamus pellentesque pharetra tempus. Quisque sit amet tincidunt lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam auctor fermentum ante, quis volutpat lectus mollis vel. Vestibulum mollis nisl vitae dui efficitur, vitae ullamcorper magna porttitor.</p>
                 </div>
             </div>
         </main>
