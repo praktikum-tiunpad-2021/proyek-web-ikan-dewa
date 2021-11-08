@@ -24,6 +24,13 @@ Tugas : Project Website Praktikum Pemrograman Web
                 background-position: 50% 10%;
                 background-size: cover;
             }
+            .bottom-text {
+                color:blue;
+                text-decoration:none;
+            }
+            .bottom-text:hover {
+                color:purple;
+            }
         </style>
     </head>
     <body>
@@ -36,25 +43,37 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px">
-                    <form class="form-login">
+                    <form class="form-login" action="/login" method="post">
+                        <?php if (session()->get('success')) : ?>
+                            <div class="alert alert-success" role="alert">
+                                <?= session()->get('success') ?>
+                            </div>
+                        <?php endif; ?>
                         <div>
                             <p class="login-input-text-1" style="padding-bottom:13px">Alamat Email*</p>
-                            <input class="login-input" id="email" type="text">
+                            <input class="login-input" id="email" type="text" name="email" value="<?= set_value('email') ?>">
                         </div>
                         <div style="margin-top:20px">
                             <p class="login-input-text-1" style="padding-bottom:13px">Kata Sandi*</p>
-                            <input class="login-input" id="password" type="password">
+                            <input class="login-input" id="password" type="password" name="password" value="">
                             <p class="login-input-text-2">Lupa kata sandi?</p>
                         </div>
+                        <?php if (isset($validation)) : ?>
+                            <div class="col">
+                                <div class="alert alert-danger" role="alert">
+                                <?= $validation->listErrors() ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
                         <div style="text-align:center">
                             <p class="login-input-text-1" style="margin-top:15px">Atau masuk lewat</p>
                             <img class="login-input-logo" src="assets/Pics/google.png" style="margin-top:10px">
                         </div>
                         <div style="margin-top:20px">
-                            <input type="submit" id="login-input-submit" value="Login">
+                            <button id="login-input-submit" type="submit" onclick="output()">Masuk</button>
                         </div>
                         <div>
-                            <p class="login-input-text-2" style="text-align:center; margin-top:1px">Belum Punya Akun? Daftar Disini</p>
+                            <p class="login-input-text-2" style="text-align:center; margin-top:1px"><a class="bottom-text" href="/register">Belum Punya Akun? Daftar Disini</a></p>
                         </div>
                     </form>
                 </div>

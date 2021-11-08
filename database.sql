@@ -1,5 +1,4 @@
 create database aquafish_marketplace;
-
 use aquafish_marketplace;
 
 create table seller(
@@ -47,11 +46,15 @@ create table transaksi(
 );
 
 create table users(
-    Email varchar(50) not null,
-    Password varchar(50) not null,
+    id int(3) not null primary key,
+    email varchar(255) not null,
+    password varchar(255) not null,
     Name_User varchar(100) not null,
-    Tanggal_Lahir date not null
+    Born_Date date not null
 );
 
-alter table users add primary key Email;
-alter table users modify Id_User int(11) not null auto_increment, auto_increment=0;
+INSERT INTO `users` VALUES
+(1, 'admin@gmail.com', '$2y$10$H8XMclojGCPfyf2iCdex3uSJkVTgkW4fBtdD0zdnX1QjzZWns87wK', "Admin1", "2002-03-20");
+
+alter table users modify id int(3) not null auto_increment, auto_increment=0;
+commit;

@@ -19,6 +19,11 @@ class Home extends BaseController
         return view('pages/login');
     }
 
+    public function register()
+    {
+        return view('pages/register');
+    }
+
     public function landing()
     {
         return view('pages/landing');
@@ -37,5 +42,12 @@ class Home extends BaseController
     public function order()
     {
         return view('pages/order');
+    }
+
+    public function landing_after_login()
+    {
+        $data = [];
+
+        return view('pages/landing',$data);
     }
 }

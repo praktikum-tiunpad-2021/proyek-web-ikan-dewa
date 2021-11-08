@@ -259,8 +259,8 @@ nav ul input{
 .login-banner {
     background-image : url("assets/Pics/login-wave.jpg");
     background-size: cover;
-    padding: 12px;
-    background-position: -15px;
+    padding: 7px;
+    background-position: 0px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -278,9 +278,7 @@ nav ul input{
 }
 .login-input {
     margin-top: -20px;
-    width: 240px;
-    height: 25px;
-    border: 1px solid black;
+    width: 260px;
 }
 .login-input-text-1 {
     font-size: 12px;
@@ -347,11 +345,13 @@ nav ul input{
 .register-input-text-1 {
     font-size: 12px;
     font-family: Lato-Light;
+    color: black;
 }
 .register-input-text-2 {
     font-size: 9px;
     font-family: Lato-Light;
     text-align: right;
+    color: black;
 }
 .register-input-logo {
     width: 15px;
