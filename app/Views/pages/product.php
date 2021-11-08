@@ -114,7 +114,8 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </table>
                             <p class="product-text-4" style="color:red; margin-top:-10px">Koleksi Terbatas!</p>
                             <p class="product-text-3" style="margin-top:50px">500 orang baru saja melihat koleksi ini</p>
-                            <button type="button" class="product-box-2 product-text-6">Beli Sekarang</button>
+                            <a href="/order"><button type="button" class="product-box-2 product-text-6">Beli Sekarang</button></a>
+                            <button type="button" class="product-box-2 product-text-6" style="margin-top:10px">Tambahkan ke Keranjang</button>
                             <button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button>
                             <p class="product-text-3" style="text-align:left; margin-top:50px; margin-bottom:38px; font-weight:bold;">Share</p>
                         </div>

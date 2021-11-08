@@ -31,6 +31,11 @@ Tugas : Project Website Praktikum Pemrograman Web
             .bottom-text:hover {
                 color:purple;
             }
+            .alert {
+                padding:10px;
+                line-height:18px;
+                font-size:14px
+            }
     </style>
 </head>
 <body>
@@ -58,11 +63,11 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>
                     <div style="margin-top:20px">
                         <p class="register-input-text-1" style="padding-bottom:13px">Tanggal Lahir (YYYY-MM-DD)</p>
-                        <input class="register-input" id="Born_Date" type="text" name="Born_Date" values="">
+                        <input class="register-input" id="Born_Date" type="date" name="Born_Date" values="">
                     </div>
                     <?php if(isset($validation)) : ?>
-                        <div class="row">  
-                            <div class="alert alert-danger" role="alert">
+                        <div class="row" style="margin-left:15px">  
+                            <div class="alert" role="alert">
                             <?= $validation->listErrors() ?>
                             </div>
                         </div>
@@ -71,7 +76,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <p class="register-input-text-1" style="margin-top:15px">Atau daftar lewat</p>
                         <img class="register-input-logo" src="assets/Pics/google.png" style="margin-top: 10px">
                     </div>
-                    <div style="margin-top:10px">
+                    <div style="margin-top:20px">
                         <button id="register-input-submit" type="submit">Register</button>
                     </div>
                     <div>

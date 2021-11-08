@@ -31,6 +31,11 @@ Tugas : Project Website Praktikum Pemrograman Web
             .bottom-text:hover {
                 color:purple;
             }
+            .alert {
+                padding:10px;
+                line-height:18px;
+                font-size:14px
+            }
         </style>
     </head>
     <body>
@@ -45,7 +50,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 <div class="row justify-content-md-center" style="margin-top:15px">
                     <form class="form-login" action="/login" method="post">
                         <?php if (session()->get('success')) : ?>
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert" role="alert">
                                 <?= session()->get('success') ?>
                             </div>
                         <?php endif; ?>
@@ -60,7 +65,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <?php if (isset($validation)) : ?>
                             <div class="col">
-                                <div class="alert alert-danger" role="alert">
+                                <div class="alert" role="alert">
                                 <?= $validation->listErrors() ?>
                                 </div>
                             </div>

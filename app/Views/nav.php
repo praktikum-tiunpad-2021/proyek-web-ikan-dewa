@@ -19,6 +19,16 @@
         justify-content: center;
       }
 
+      nav ul li a {
+        color:white;
+        text-decoration:none;
+      }
+
+      nav ul li a:hover {
+        color:white;
+        text-decoration:none;
+      }
+
       nav ul li.logo{
         flex: 1;
         font-size: 30px;
@@ -66,17 +76,17 @@
     <header>
       <nav style="background: #004A4D; width: 100%; height: 62px; position: sticky;" >
         <ul>
-          <li class="logo">AQUAfish</li>
+          <li class="logo"><a href="/base_landing">AQUAfish</a></li>
           <div class="items">
-            <li><a href="#">Saltwater Fish</a></li>
-            <li><a href="#">Freshwater Fish</a></li>
+            <li><a href="/catalog">Saltwater Fish</a></li>
+            <li><a href="/catalog">Freshwater Fish</a></li>
           </div>
           <li class="search-icon">
             <input type="search" placeholder="Search">
           </li>
           <div class="account">
-            <li><a href="#"><img src="assets/Pics/keranjang.png" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
-            <li><a href="#"><img src="assets/Pics/account.png" alt="acc" style="width: 27px; padding: 15px 3px;"></a></li>
+            <li><a href="/order"><img src="assets/Pics/keranjang.png" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
+            <li><a href="/editAccount"><img src="assets/Pics/account.png" alt="acc" style="width: 27px; padding: 15px 3px;"></a></li>
             <li><a href="#"><img src="assets/Pics/wishlist.png" alt="wishlist" style="width: 25px; padding: 15px 3px;"></a></li>
           </div>
         </ul>

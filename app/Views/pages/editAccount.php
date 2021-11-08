@@ -48,7 +48,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                     </form>
                 </div>
-                <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
+                <div class="row justify-content-md-center" style="margin-top:15px;">
                     <form class="form-edit-account">
                         <div>
                             <p class="edit-account-text-1">Alamat Email*</p>
@@ -70,6 +70,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <input type="submit" id="edit-account-input-submit" value="Edit Data">
                         </div>
                     </form>
+                </div>
+                <div class="row justify-content-md-center"  style="margin-top:15px; margin-bottom:40px;">
+                    <a href="/logout"><button id="edit-account-logout" >Logout</button></a>
                 </div>
             </div>
         </main>

@@ -24,7 +24,7 @@ class Home extends BaseController
         return view('pages/register');
     }
 
-    public function landing()
+    public function base_landing()
     {
         return view('pages/landing');
     }

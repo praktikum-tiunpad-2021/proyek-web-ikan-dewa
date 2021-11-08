@@ -250,11 +250,12 @@ nav ul input{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 330px;
+    height: max-content;
     width: 330px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 20px;
 }
 .login-banner {
     background-image : url("assets/Pics/login-wave.jpg");
@@ -279,6 +280,7 @@ nav ul input{
 .login-input {
     margin-top: -20px;
     width: 260px;
+    border: 1px solid black;
 }
 .login-input-text-1 {
     font-size: 12px;
@@ -312,11 +314,12 @@ nav ul input{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 473px;
+    height: max-content;
     width: 330px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 20px;
 }
 .register-banner {
     background-image : url("assets/Pics/login-wave.jpg");
@@ -341,6 +344,7 @@ nav ul input{
 .register-input {
     margin-top: -20px;
     width: 260px;
+    border: 1px solid black;
 }
 .register-input-text-1 {
     font-size: 12px;
@@ -398,7 +402,22 @@ nav ul input{
     background-color: #004A4D;
     color: white;
     vertical-align: middle;
-    border: none;
+    border: 1px solid #004A4D;
+}
+#edit-account-logout {
+    padding: 3px;
+    padding-left: 117px;
+    padding-right: 117px;
+    font-family: Lato-Light;
+    background-color: white;
+    color: #004A4D;
+    vertical-align: middle;
+    border: 1px solid #004A4D;
+    transition:0.4s;
+}
+#edit-account-logout:hover{
+    background-color: red;
+    color: white;
 }
 
 /*Product Page*/
