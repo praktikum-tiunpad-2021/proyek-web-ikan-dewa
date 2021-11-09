@@ -41,6 +41,9 @@ Tugas : Project Website Praktikum Pemrograman Web
     margin: 0;
     padding: 0;
 }
+.pic-anchor:hover {
+    text-decoration:none;
+}
 .universal-text-1 {
     font-family: Gotham-Medium;
     font-size: 32px;
@@ -597,6 +600,12 @@ nav ul input{
     color: black;
     text-align: center;
 }
+.order-text-9 {
+    font-family: Lato-Bold;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
 .order-card-1 {
     padding: 10px;
     background-color: silver ;
@@ -639,12 +648,16 @@ nav ul input{
 .order-box-1:hover {
     color: white;
     background-color: #004A4D;
+    text-decoration: none;
 }
 
 /*Checkout*/
-.checkout-logo {
+.checkout-logo-1 {
     height: 60px;
     width: 60px;
+}
+.checkout-logo-2 {
+    height: 14px;
 }
 .checkout-text-1 {
     color: black;
@@ -671,6 +684,43 @@ nav ul input{
     font-size: 14px;
     color: black;
     line-height: 20px;
+}
+.checkout-text-5 {
+    color: black;
+    font-size:24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Lato-Bold;
+}
+.checkout-text-6 {
+    font-family: Lato-Light;
+    color: black;
+    font-size: 16px;
+}
+.checkout-text-7 {
+    color: black;
+    font-size: 16px;
+    font-family: Lato-Bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.checkout-box-1 {
+    background-color:#C4C4C4;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.checkout-box-2 {
+    padding: 5px;
+    background-color: #FFE6E6;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+.checkout-box-3 {
+    background-color:#C4C4C4;
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .form-checkout {
     line-height: 10px;
@@ -724,4 +774,23 @@ nav ul input{
     padding: 15px;
     background-color: white ;
     border: 1px solid black;
+}
+
+/*Keranjang (myOrder & Wishlist)*/
+.keranjang-text-1 {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: white;
+}
+.keranjang-box-1 {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #004A4D;
+    background-color: #004A4D;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.keranjang-box-1:hover {
+    color: #004A4D;
+    background-color: #ebebeb;
 }

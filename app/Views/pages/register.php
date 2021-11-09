@@ -24,18 +24,6 @@ Tugas : Project Website Praktikum Pemrograman Web
                 background-position: 50% 10%;
                 background-size: cover;
             }
-            .bottom-text {
-                color:blue;
-                text-decoration:none;
-            }
-            .bottom-text:hover {
-                color:purple;
-            }
-            .alert {
-                padding:10px;
-                line-height:18px;
-                font-size:14px
-            }
     </style>
 </head>
 <body>

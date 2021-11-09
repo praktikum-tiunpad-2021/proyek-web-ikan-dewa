@@ -19,11 +19,6 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap-grid.css">
-        <style>
-            .pic-anchor:hover {
-                text-decoration:none;
-            }
-        </style>
     </head>
     <body>
         <main>

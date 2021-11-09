@@ -49,6 +49,21 @@ class Home extends BaseController
         return view('pages/checkout');
     }
 
+    public function checkout2()
+    {
+        return view('pages/checkout2');
+    }
+
+    public function myOrder()
+    {
+        return view('pages/myOrder');
+    }
+
+    public function wishlist()
+    {
+        return view('pages/wishlist');
+    }
+
     public function landing_after_login()
     {
         $data = [];

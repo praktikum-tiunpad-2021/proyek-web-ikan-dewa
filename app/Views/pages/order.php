@@ -92,7 +92,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <td><p class="order-text-5" style="text-align:right">Rp. 80000</p></td>
                                 </tr>
                             </table>
-                            <button type="button" class="order-box-1 order-text-7" style="margin-top:10px">CHECKOUT</button>
+                            <a href="/checkout"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px">CHECKOUT</button></a>
                             <h3 class="order-text-8" style="margin-top:100px; margin-bottom:60px">Metode Pembayaran</h3>
                         </div>
                     </div>

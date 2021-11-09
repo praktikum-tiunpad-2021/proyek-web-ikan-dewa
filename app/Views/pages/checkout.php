@@ -21,9 +21,6 @@ Tugas : Project Website Praktikum Pemrograman Web
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap-grid.css">
         <style>
-            .center {
-                text-align:center;
-            }
             .black {
                 color:black;
             }
@@ -33,8 +30,8 @@ Tugas : Project Website Praktikum Pemrograman Web
         <main>
             <div class="container">
                 <div class="row" style="margin-top:40px">
-                    <div class="col center">
-                        <img class="checkout-logo" src="assets/Logo/800ppi/logo1.png" alt="logo">
+                    <div class="col text-center">
+                        <img class="checkout-logo-1" src="assets/Logo/800ppi/logo1.png" alt="logo">
                         <span class="checkout-text-1" style="margin-left:10px">AQUA<span style="font-size: 22px;letter-spacing: normal;color:black;"> fish Marketplace</span></span>
                     </div>                
                 </div>
@@ -105,7 +102,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
                     <form class="form-checkout">
-                        <div class="row center">
+                        <div class="row text-center">
                             <div class="col-6 offset-3">
                                 <p class="checkout-text-2" style="margin-left:40px">Opsi Pengiriman</p>
                                 <select class="checkout-input-1" name="opsi_pengiriman" id="opsi_pengiriman">
@@ -117,7 +114,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </select>
                             </div>
                         </div>
-                        <div class="row center">
+                        <div class="row text-center">
                             <div class="col-6 offset-3" style="margin-top:15px">
                                 <p class="checkout-text-2" style="margin-left:40px">Opsi Pembayaran</p>
                                 <div style="text-align:left; margin-left:40px;">
@@ -158,15 +155,15 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
                             </div>
                         </div>
-                        <div class="row center">
+                        <div class="row text-center">
                             <div class="col-6 offset-3" style="margin-top:35px">
                                 <p class="checkout-text-2" style="margin-left:40px">Total Pembayaran</p>
                                 <p class="checkout-data-box" style="margin-top:-10px; margin-left:40px"></p>
                             </div>
                         </div>
-                        <div class="row center" style="margin-top:15px">
+                        <div class="row text-center" style="margin-top:15px">
                             <div class="col">
-                                <button id="checkout-input-submit-2" type="submit">Pesan</button>
+                                <button id="checkout-input-submit-2" type="submit" onclick="">Pesan</button>
                             </div>
                         </div>
                     </form>
