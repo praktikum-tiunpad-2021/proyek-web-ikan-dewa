@@ -36,6 +36,7 @@ $routes->get('/catalog', 'Home::catalog');
 $routes->get('/editAccount', 'Home::editAccount');
 $routes->get('/product', 'Home::product');
 $routes->get('/order', 'Home::order');
+$routes->get('/checkout', 'Home::checkout');
 $routes->get('/base_landing', 'Home::base_landing');
 $routes->get('/login', 'Login::index');
 $routes->get('logout','Login::logout');

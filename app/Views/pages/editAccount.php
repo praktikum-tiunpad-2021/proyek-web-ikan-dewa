@@ -20,7 +20,6 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap-grid.css">
-        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     </head>
     <body>
         <main>

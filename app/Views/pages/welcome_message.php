@@ -16,6 +16,7 @@
 			<li><a href="editAccount">editAccount</a></li>
 			<li><a href="product">product</a></li>
 			<li><a href="order">order</a></li>
-		</li>
+			<li><a href="checkout">checkout</a></li>
+		</ul>
 </body>
 </html>
