@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="assets/Logo/800ppi/logo1.png" alt="Logo" width="250" height="250">
+    <img src="public/assets/Logo/800ppi/logo1.png" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Aquafish Marketplace</h3>
