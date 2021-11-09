@@ -115,8 +115,14 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <p class="product-text-4" style="color:red; margin-top:-10px">Koleksi Terbatas!</p>
                             <p class="product-text-3" style="margin-top:50px">500 orang baru saja melihat koleksi ini</p>
                             <a href="/order"><button type="button" class="product-box-2 product-text-6">Beli Sekarang</button></a>
-                            <a href="/myOrder"><button type="button" class="product-box-2 product-text-6" style="margin-top:10px">Tambahkan ke Keranjang</button></a>
-                            <a href="/wishlist"><button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button></a>
+                            <table>
+                                <tr>
+                                    <td style="text-align:left"><a href="/myOrder"><button type="button" class="product-box-3 product-text-6" style="margin-top:10px">Tambahkan ke Keranjang</button></a></td>
+                                    <td style="text-align:right"><a href="/wishlist"><button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button></a></td>
+                                </tr>
+                            </table>
+                            
+                            
                             <p class="product-text-3" style="text-align:left; margin-top:50px; margin-bottom:38px; font-weight:bold;">Share</p>
                         </div>
                     </div>
@@ -126,96 +132,100 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row" style="margin-bottom:40px">
                     <div class="col-3">
-                        <div class="product-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                </div>
-                                <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-7">lele</h3>
-                                    <p class="product-text-8">lele</p>
-                                    <p class="product-text-8">lele</p>
-                                    <div>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                        <a href="/product" class="pic-anchor">
+                            <div class="product-card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                    </div>
+                                    <div class="col-8" style="line-height:5px">
+                                        <h3 class="product-text-7">lele</h3>
+                                        <p class="product-text-8">lele</p>
+                                        <p class="product-text-8">lele</p>
+                                        <div>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-3">
-                        <div class="product-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                </div>
-                                <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-7">lele</h3>
-                                    <p class="product-text-8">lele</p>
-                                    <p class="product-text-8">lele</p>
-                                    <div>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                        <a href="/product" class="pic-anchor">
+                            <div class="product-card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                    </div>
+                                    <div class="col-8" style="line-height:5px">
+                                        <h3 class="product-text-7">lele</h3>
+                                        <p class="product-text-8">lele</p>
+                                        <p class="product-text-8">lele</p>
+                                        <div>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-3">
-                        <div class="product-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                </div>
-                                <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-7">lele</h3>
-                                    <p class="product-text-8">lele</p>
-                                    <p class="product-text-8">lele</p>
-                                    <div>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                        <a href="/product" class="pic-anchor">
+                            <div class="product-card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                    </div>
+                                    <div class="col-8" style="line-height:5px">
+                                        <h3 class="product-text-7">lele</h3>
+                                        <p class="product-text-8">lele</p>
+                                        <p class="product-text-8">lele</p>
+                                        <div>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-3">
-                        <div class="product-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                </div>
-                                <div class="col-8" style="line-height:5px">
-                                    <h3 class="product-text-7">lele</h3>
-                                    <p class="product-text-8">lele</p>
-                                    <p class="product-text-8">lele</p>
-                                    <div>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                        <a href="/product" class="pic-anchor">
+                            <div class="product-card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="product-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                    </div>
+                                    <div class="col-8" style="line-height:5px">
+                                        <h3 class="product-text-7">lele</h3>
+                                        <p class="product-text-8">lele</p>
+                                        <p class="product-text-8">lele</p>
+                                        <div>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-yellow" style="font-size:18px">star_rate</i>
+                                            <i class="material-icons product-card-star-white" style="font-size:18px">star_rate</i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer1">
-            <p class="logo">AQUA<span style="font-size: 20px;letter-spacing: normal;">fish</span></p>
-            <p class="logo" style="font-size: 20px;letter-spacing: normal; margin-top:-25px">Marketplace</p>
-        </footer>
     </body>
     <?= $this->endSection('content'); ?>
 </html>

@@ -119,6 +119,7 @@ nav ul input{
     padding: 10px;
 }
 
+
 /*CATALOG*/
 .catalog-img {
     width: 240px;
@@ -143,12 +144,6 @@ nav ul input{
     margin-top: -4px;
     margin-left: 1px;
     color: black;
-}
-.footer1{
-    width : 100%;
-    background: #004A4D;
-    padding-top: 20px;
-    padding-bottom: 10px;
 }
 
 /*LANDING*/
@@ -492,8 +487,8 @@ nav ul input{
     transition-duration: 0.4s;
 }
 .product-box-3 {
-    width:100%;
-    padding: 10px;
+    width:97%;
+    padding: 5px;
     box-sizing: border-box;
     border: 1px solid black;
     margin-left: auto;

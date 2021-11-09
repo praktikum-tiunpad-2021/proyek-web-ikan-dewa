@@ -175,10 +175,6 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
             </div>
         </main>
-        <footer class="footer1">
-            <p class="logo">AQUA<span style="font-size: 20px;letter-spacing: normal;">fish</span></p>
-            <p class="logo" style="font-size: 20px;letter-spacing: normal; margin-top:-25px">Marketplace</p>
-        </footer>
     </body>
     <?= $this->endSection('content'); ?>
 </html>
