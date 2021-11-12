@@ -41,7 +41,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <img id="prod-img-large" class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-left:-15px">
                     </div>
                     <div class="col-4">
-                        <h1 class="product-text-1">Lele Empang Cikanpundung</h1>
+                        <h1 class="product-text-1">Lele Empang</h1>
                         <h2 class="product-text-2" style="margin-top:-2px">Rp. 350.000,-</h2>
                         <table style="margin-top:15px">
                             <tr>

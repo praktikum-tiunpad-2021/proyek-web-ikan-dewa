@@ -1,0 +1,128 @@
+/*
+Nama Website : Aquafish Marketplace
+Nama Kelompok : Ikan Dewa
+Nama & NPM : 
+    1. Affan Rifqy Kurniadi         - 140810200003
+    2. Rheza Pandya Andhikaputra    - 140810200023
+    3. Andyka Baswara Putra         - 140810200061
+Kelas : A
+Tugas : Project Website Praktikum Pemrograman Web
+*/
+
+/*FONT FAMILY*/
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(assets/Fonts/Gotham-Font/GothamBold.ttf);
+}
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(assets/Fonts/Gotham-Font/GothamMedium.ttf);
+}
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(assets/Fonts/Gotham-Font/Gotham-Thin.otf);
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url(assets/Fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato-Medium;
+    src: url(assets/Fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url(assets/Fonts/Lato/Lato-Light.ttf);
+}
+
+/*UNIVERSAL*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Admin Login*/
+.login-register-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: max-content;
+    width: 330px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+}
+.login-banner {
+    background-image : url("assets/Pics/login-wave.jpg");
+    background-size: cover;
+    padding: 7px;
+    background-position: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.register-banner {
+    background-image : url("assets/Pics/login-wave.jpg");
+    background-size: cover;
+    padding: 7px;
+    background-position: -5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.login-register-text-1{
+    flex: 1;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    font-family: Gotham-Medium;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.form-login-register {
+    line-height: 10px;
+}
+.login-register-input {
+    margin-top: -20px;
+    width: 260px;
+    border: 1px solid black;
+    height: 25px;
+}
+.login-register-input-text-1 {
+    font-size: 12px;
+    font-family: Lato-Light;
+    color: black;
+}
+.login-register-input-text-2 {
+    font-size: 10px;
+    font-family: Lato-Light;
+    text-align: right;
+    color: black;
+}
+.login-register-input-logo {
+    width: 15px;
+    height: 15px;
+}
+.login-register-input-submit {
+    padding: 8px;
+    padding-left: 101px;
+    padding-right: 101px;
+    font-family: Lato-Light;
+    background-color: #004A4D;
+    color: white;
+    vertical-align: middle;
+    border: none;
+}
+.login-register-bottom-text {
+    color:blue;
+    text-decoration:none;
+}
+.login-register-bottom-text:hover {
+    color:purple;
+}
+.login-register-alert {
+    padding:10px;
+    line-height:18px;
+    font-size:14px
+}

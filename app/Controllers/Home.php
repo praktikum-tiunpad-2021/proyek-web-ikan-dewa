@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\FishDataModel;
 
 class Home extends BaseController
 {
@@ -11,7 +12,9 @@ class Home extends BaseController
 
     public function catalog()
     {
-        return view('pages/catalog');
+        $model = new FishDataModel();
+        $data['fish'] = $model->getCargo();
+        echo view('pages/catalog', $data);
     }
 
     public function login()
