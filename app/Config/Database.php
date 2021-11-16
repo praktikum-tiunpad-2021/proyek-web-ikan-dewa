@@ -34,7 +34,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => '',
+        'password' => 'admin',
         'database' => 'aquafish_marketplace;',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',

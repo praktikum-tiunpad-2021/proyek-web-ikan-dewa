@@ -44,11 +44,11 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <?php endif; ?>
                         <div>
                             <p class="login-register-input-text-1" style="padding-bottom:13px">Alamat Email*</p>
-                            <input class="login-register-input" id="email" type="text" name="email" value="<?= set_value('email') ?>" placeholder=" example@gmail.com">
+                            <input class="login-register-input" id="email" type="text" name="email" value="<?= @get_cookie('login_email') ?>" placeholder=" example@gmail.com">
                         </div>
                         <div style="margin-top:20px">
                             <p class="login-register-input-text-1" style="padding-bottom:13px">Kata Sandi*</p>
-                            <input class="login-register-input" id="password" type="password" name="password" value="" placeholder=" your password">
+                            <input class="login-register-input" id="password" type="password" name="password" value="<?= @get_cookie('login_password') ?>" placeholder=" your password">
                             <p class="login-register-input-text-2" style="margin-top:3px">Lupa kata sandi?</p>
                         </div>
                         <?php if (isset($validation)) : ?>
@@ -58,6 +58,13 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </div>
                             </div>
                         <?php endif; ?>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="remember"<?= get_cookie('login_email') ? 'checked' : '' ?>>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Remember Me
+                                </label>
+                            </div>
                         <div style="text-align:center">
                             <p class="login-register-input-text-1" style="margin-top:15px">Atau masuk lewat</p>
                             <img class="login-register-input-logo" src="assets/Pics/google.png" style="margin-top:10px">
