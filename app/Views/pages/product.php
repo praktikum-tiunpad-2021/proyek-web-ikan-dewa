@@ -32,13 +32,14 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container" style="margin-top:30px; margin-bottom:30px;">
                 <div class="row">
                     <div class="col-1">
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" onclick='changeImage("https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg");'>
-                        <img class="product-img-1" src="https://asset.kompas.com/crops/ndM9-S72se_BVNExfI_Jex9m9UY=/99x55:1000x656/750x500/data/photo/2020/11/12/5fac84d72fd73.jpg" alt="Ikan Guppy" onclick='changeImage("https://asset.kompas.com/crops/ndM9-S72se_BVNExfI_Jex9m9UY=/99x55:1000x656/750x500/data/photo/2020/11/12/5fac84d72fd73.jpg");'>
-                        <img class="product-img-1" src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/28/2957222270.jpg" alt="Ikan Guppy" onclick='changeImage("https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/28/2957222270.jpg");'>
-                        <img class="product-img-1" src="https://gerava.com/wp-content/uploads/2019/07/Ikan-Manfish.jpg" alt="Ikan Guppy"  onclick='changeImage("https://gerava.com/wp-content/uploads/2019/07/Ikan-Manfish.jpg");'>
+                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_1']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_2']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_2']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_3']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_3']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_4']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>"  onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_4']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_5']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>"  onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_5']); ?>");'>
                     </div>
                     <div class="col-4">
-                        <img id="prod-img-large" class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-left:-15px">
+                        <img id="prod-img-large" class="product-img-2" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="Ikan Guppy" style="margin-left:-15px">
                     </div>
                     <div class="col-4">
                         <h1 class="product-text-1"><?= $fishData[0]['Name_Fish']; ?></h1>
@@ -58,16 +59,16 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </tr>
                             <tr>
                                 <td><p class="product-text-3">Seller</p></td>
-                                <td><p class="product-text-3" style="margin-left:5px">: Seller</p></td>
+                                <td><p class="product-text-3" style="margin-left:5px">: <?= $fishData[0]['Name_Seller']; ?></p></td>
                             </tr>
                         </table>
                         <p class="product-text-3" style="margin-top:10px">Deskripsi :</p>
                         <ul class="product-desc-list">
-                            <li style="color:black;"><p class="product-text-3">a</li>
-                            <li style="color:black;"><p class="product-text-3">a</p></li>
-                            <li style="color:black;"><p class="product-text-3">a</p></li>
-                            <li style="color:black;"><p class="product-text-3">a</p></li>
-                            <li style="color:black;"><p class="product-text-3">a</p></li>
+                            <li style="color:black;"><p class="product-text-3"><?= $fishData[0]['Desc_Fish_1']; ?></li>
+                            <li style="color:black;"><p class="product-text-3"><?= $fishData[0]['Desc_Fish_2']; ?></p></li>
+                            <li style="color:black;"><p class="product-text-3"><?= $fishData[0]['Desc_Fish_3']; ?></p></li>
+                            <li style="color:black;"><p class="product-text-3"><?= $fishData[0]['Desc_Fish_4']; ?></p></li>
+                            <li style="color:black;"><p class="product-text-3"><?= $fishData[0]['Desc_Fish_5']; ?></p></li>
                         </ul>
                         <div class="product-star-rate" style="margin-top:30px">
                             <span class="product-text-3" style="vertical-align:middle">Rating</span>

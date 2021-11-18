@@ -79,12 +79,12 @@ class Home extends BaseController
 
     public function landing_after_login()
     {
-        $model = new FishDataModel();
-        $data['users'] = $model->getNameUser();
+        $userData = $this->UserModel->getNameUser(session()->get('Name_User'));
         $data = [
             'activePage' => 'home',
+            'users' => $userData,
         ];
-
+        
         return view('pages/landing',$data);
     }
 }

@@ -16,13 +16,18 @@ create table fish(
     foreign key (Id_Seller) references seller (Id_Seller)
 );
 
-create table fish_desc (
+create table fish_detail (
     Id_Fish varchar (10) not null,
     Desc_Fish_1 varchar(255),
     Desc_Fish_2 varchar(255),
     Desc_Fish_3 varchar(255),
     Desc_Fish_4 varchar(255),
     Desc_Fish_5 varchar(255),
+    Img_Fish_1 varchar(255),
+    Img_Fish_2 varchar(255),
+    Img_Fish_3 varchar(255),
+    Img_Fish_4 varchar(255),
+    Img_Fish_5 varchar(255),
     foreign key (Id_Fish) references fish (Id_Fish)
 );
 

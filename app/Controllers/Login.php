@@ -37,8 +37,8 @@ class Login extends BaseController
 
         $this->setUserSession($user);
         if (!empty($this->request->getVar('email'))) {
-          set_cookie('login_email',$this->request->getVar('email'),1800);
-          set_cookie('login_password',$this->request->getVar('password'),1800);
+          set_cookie('login_email',$this->request->getVar('email'),7200);
+          set_cookie('login_password',$this->request->getVar('password'),7200);
         }else{
           set_cookie('login_email','');
           set_cookie('login_password','');

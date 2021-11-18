@@ -20,7 +20,9 @@ class FishDataModel extends Model
   public function getFishAll($Id_Fish)
   {
     $query = $this->db->table('fish')
-    ->where(['Id_Fish' => $Id_Fish])
+    ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
+    ->join('seller', 'fish.Id_Seller = seller.Id_Seller', 'JOIN')
+    ->where(['fish.Id_Fish' => $Id_Fish])
     ->get()->getResultArray();
     return $query;
   }
