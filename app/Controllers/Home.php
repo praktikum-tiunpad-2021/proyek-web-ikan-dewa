@@ -69,7 +69,9 @@ class Home extends BaseController
 
     public function landing_after_login()
     {
-        $data = [];
+        $data = [
+            'activePage' => 'home',
+        ];
 
         return view('pages/landing',$data);
     }

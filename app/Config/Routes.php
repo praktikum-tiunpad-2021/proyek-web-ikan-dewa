@@ -32,14 +32,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/catalog', 'Home::catalog');
-$routes->get('/editAccount', 'Home::editAccount');
-$routes->get('/product', 'Home::product');
-$routes->get('/order', 'Home::order');
-$routes->get('/checkout', 'Home::checkout');
-$routes->get('/checkout2', 'Home::checkout2');
-$routes->get('/myOrder', 'Home::myOrder');
-$routes->get('/wishlist', 'Home::wishlist');
+$routes->get('/catalog', 'Home::catalog',['filter' => 'auth']);
+$routes->get('/editAccount', 'Home::editAccount',['filter' => 'auth']);
+$routes->get('/product', 'Home::product',['filter' => 'auth']);
+$routes->get('/order', 'Home::order',['filter' => 'auth']);
+$routes->get('/checkout', 'Home::checkout',['filter' => 'auth']);
+$routes->get('/checkout2', 'Home::checkout2',['filter' => 'auth']);
+$routes->get('/myOrder', 'Home::myOrder',['filter' => 'auth']);
+$routes->get('/wishlist', 'Home::wishlist',['filter' => 'auth']);
 $routes->get('/base_landing', 'Home::base_landing');
 $routes->get('/login', 'Login::index');
 $routes->get('logout','Login::logout');

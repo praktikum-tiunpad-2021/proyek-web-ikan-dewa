@@ -24,6 +24,11 @@ Tugas : Project Website Praktikum Pemrograman Web
                 background-position: 50% 10%;
                 background-size: cover;
             }
+            .center {
+                display: block;
+                margin: 0 auto;
+                text-align:center;
+            }
         </style>
     </head>
     <body>
@@ -35,7 +40,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <h1 class="login-register-text-1" style="font-size: 18px;letter-spacing: normal; margin-top:-3px">Marketplace</h1>
                     </div>
                 </div>
-                <div class="row justify-content-md-center" style="margin-top:15px">
+                <div class="row center" style="margin-top:15px">
                     <form class="form-login-register" action="/login" method="post">
                         <?php if (session()->get('success')) : ?>
                             <div class="login-register-alert" role="alert">
@@ -43,23 +48,23 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </div>
                         <?php endif; ?>
                         <div>
-                            <p class="login-register-input-text-1" style="padding-bottom:13px">Alamat Email*</p>
+                            <p class="login-register-input-text-1" style="padding-bottom:13px; text-align:left; margin-left:20px">Alamat Email*</p>
                             <input class="login-register-input" id="email" type="text" name="email" value="<?= @get_cookie('login_email') ?>" placeholder=" example@gmail.com">
                         </div>
                         <div style="margin-top:20px">
-                            <p class="login-register-input-text-1" style="padding-bottom:13px">Kata Sandi*</p>
+                            <p class="login-register-input-text-1" style="padding-bottom:13px; text-align:left; margin-left:20px">Kata Sandi*</p>
                             <input class="login-register-input" id="password" type="password" name="password" value="<?= @get_cookie('login_password') ?>" placeholder=" your password">
-                            <p class="login-register-input-text-2" style="margin-top:3px">Lupa kata sandi?</p>
+                            <p class="login-register-input-text-2" style="margin-top:3px;  margin-right:20px">Lupa kata sandi?</p>
                         </div>
                         <?php if (isset($validation)) : ?>
-                            <div class="col">
+                            <div class="col" style="text-align:left; margin-left:7px">
                                 <div class="login-register-alert" role="alert">
                                 <?= $validation->listErrors() ?>
                                 </div>
                             </div>
                         <?php endif; ?>
-                        <div class="row">
-                            <div class="col-12 text-right">
+                        <div class="row center">
+                            <div class="col-12 text-right" style="text-align:left; margin-left:7px">
                                 <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="remember"<?= get_cookie('login_email') ? 'checked' : '' ?>>
                                 <label class="form-check-label" for="flexCheckDefault">
                                 Remember Me

@@ -8,7 +8,13 @@ class Login extends BaseController
 {
 	public function index()
   {
-    $data = [];
+    $data = [
+      'activePage' => 'login',
+    ];
+    if (session()->get('isLoggedIn')) {
+      session()->setFlashData('error', 'You\'ve already logged in!');
+      return redirect()->to('landing');
+    }
     helper(['form']);
     if ($this->request->getMethod() == 'post') {
       // validation
@@ -37,7 +43,7 @@ class Login extends BaseController
           set_cookie('login_email','');
           set_cookie('login_password','');
         }
-        return redirect()->to('landing')->withCookie();
+        return redirect()->to('landing')->withCookies();
       }
     }
     return view('pages/login', $data);
@@ -55,7 +61,13 @@ class Login extends BaseController
 
   public function register()
   {
-    $data = [];
+    $data = [
+      'activePage' => 'register',
+    ];
+    if (session()->get('isLoggedIn')) {
+        session()->setFlashData('error', 'You\'ve already logged in!');
+        return redirect()->to('landing');
+    }
     helper(['form']);
     if ($this->request->getMethod() == 'post') {
       // validation
