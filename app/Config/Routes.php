@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/catalog', 'Home::catalog',['filter' => 'auth']);
 $routes->get('/editAccount', 'Home::editAccount',['filter' => 'auth']);
-$routes->get('/product', 'Home::product',['filter' => 'auth']);
+$routes->get('/product/(:segment)', 'Home::product/$1',['filter' => 'auth']);
 $routes->get('/order', 'Home::order',['filter' => 'auth']);
 $routes->get('/checkout', 'Home::checkout',['filter' => 'auth']);
 $routes->get('/checkout2', 'Home::checkout2',['filter' => 'auth']);

@@ -339,6 +339,7 @@ nav ul input{
     height: 33px;
     box-sizing: border-box;
     border: 1px solid black;
+    color: black;
 }
 .form-edit-account {
     line-height: 10px;

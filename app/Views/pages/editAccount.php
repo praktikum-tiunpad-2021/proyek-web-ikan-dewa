@@ -31,19 +31,15 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <form>
                         <div>
                             <p class="edit-account-text-1">Alamat Email</p>
-                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
-                        </div>
-                        <div style="margin-top:-15px">
-                            <p class="edit-account-text-1">Kata Sandi</p>
-                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"><?= $users['email']; ?></p>
                         </div>
                         <div style="margin-top:-15px">
                             <p class="edit-account-text-1">Nama Lengkap</p>
-                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"><?= $users['Name_User']; ?></p>
                         </div>
                         <div style="margin-top:-15px">
-                            <p class="edit-account-text-1">Tanda Lahir</p>
-                            <p class="edit-account-data-box" style="margin-top:-15px"></p>
+                            <p class="edit-account-text-1">Tanggal Lahir</p>
+                            <p class="edit-account-data-box" style="margin-top:-15px"><?= $users['Born_Date']; ?></p>
                         </div>
                     </form>
                 </div>

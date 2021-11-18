@@ -8,7 +8,7 @@ class FishData extends Controller{
   public function indexCatalog()
   {
     $model = new FishDataModel();
-    $data['fish'] = $model->getCargo();
+    $data['fish'] = $model->getFishAll();
     echo view('/catalog', $data);
   }
 }

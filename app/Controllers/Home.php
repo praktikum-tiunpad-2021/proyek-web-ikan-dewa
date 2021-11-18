@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\FishDataModel;
+use App\Models\UserModel;
 
 class Home extends BaseController
 {
@@ -34,12 +35,21 @@ class Home extends BaseController
 
     public function editAccount()
     {
-        return view('pages/editAccount');
+        $userData = $this->UserModel->getNameUser(session()->get('Name_User'));
+        $data = [
+            'users' => $userData,
+        ];
+        return view('pages/editAccount', $data);
     }
     
-    public function product()
+    public function product($Id_Fish)
     {
-        return view('pages/product');
+        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+
+        $data = [
+            'fishData' => $Id_Fish,
+        ];
+        return view('pages/product', $data);
     }
 
     public function order()
@@ -69,6 +79,8 @@ class Home extends BaseController
 
     public function landing_after_login()
     {
+        $model = new FishDataModel();
+        $data['users'] = $model->getNameUser();
         $data = [
             'activePage' => 'home',
         ];

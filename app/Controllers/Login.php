@@ -53,6 +53,7 @@ class Login extends BaseController
   {
     $data = [
       'email' => $user['email'],
+      'Name_User' => $user['Name_User'],
       'isLoggedIn' => true,
     ];
     session()->set($data);

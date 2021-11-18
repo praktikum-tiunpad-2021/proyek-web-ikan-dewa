@@ -96,9 +96,9 @@
               <input type="search" placeholder="Search">
             </li>
             <div class="account">
-              <li><a href="/myOrder"><img src="assets/Pics/keranjang.png" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
-              <li><a href="/editAccount"><img src="assets/Pics/account.png" alt="acc" style="width: 27px; padding: 15px 3px;"></a></li>
-              <li><a href="/wishlist"><img src="assets/Pics/wishlist.png" alt="wishlist" style="width: 25px; padding: 15px 3px;"></a></li>
+              <li><a href="/myOrder"><img src="<?php echo base_url('assets/Pics/keranjang.png') ?>" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
+              <li><a href="/editAccount"><img src="<?php echo base_url('assets/Pics/account.png') ?>" alt="acc" style="width: 27px; padding: 15px 3px;"></a></li>
+              <li><a href="/wishlist"><img src="<?php echo base_url('assets/Pics/wishlist.png') ?>" alt="wishlist" style="width: 25px; padding: 15px 3px;"></a></li>
             </div>
           </ul>
         </nav>

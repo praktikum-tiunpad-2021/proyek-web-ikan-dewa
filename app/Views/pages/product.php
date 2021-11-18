@@ -18,7 +18,7 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="<?php echo base_url('style.css'); ?>">
         <link rel="stylesheet" href="bootstrap-grid.css">
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         <script type="text/javascript">
@@ -41,24 +41,20 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <img id="prod-img-large" class="product-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-left:-15px">
                     </div>
                     <div class="col-4">
-                        <h1 class="product-text-1">Lele Empang</h1>
-                        <h2 class="product-text-2" style="margin-top:-2px">Rp. 350.000,-</h2>
+                        <h1 class="product-text-1"><?= $fishData[0]['Name_Fish']; ?></h1>
+                        <h2 class="product-text-2" style="margin-top:-2px">Rp. <?= $fishData[0]['Price_Fish']; ?>,-</h2>
                         <table style="margin-top:15px">
                             <tr>
-                                <td><p class="product-text-3">Species  </p></td>
-                                <td><p class="product-text-3" style="margin-left:5px">: Species</p></td>
-                            </tr>
-                            <tr>
                                 <td><p class="product-text-3">Class</p></td>
-                                <td><p class="product-text-3" style="margin-left:5px">: Class</p></td>
+                                <td><p class="product-text-3" style="margin-left:5px">: <?= $fishData[0]['Class_Fish']; ?></p></td>
                             </tr>
                             <tr>
                                 <td><p class="product-text-3">Region</p></td>
-                                <td><p class="product-text-3" style="margin-left:5px">: Region</p></td>
+                                <td><p class="product-text-3" style="margin-left:5px">: <?= $fishData[0]['Region_Fish']; ?></p></td>
                             </tr>
                             <tr>
                                 <td><p class="product-text-3">Age</p></td>
-                                <td><p class="product-text-3" style="margin-left:5px">: Age</p></td>
+                                <td><p class="product-text-3" style="margin-left:5px">: <?= $fishData[0]['Age_Fish']; ?></p></td>
                             </tr>
                             <tr>
                                 <td><p class="product-text-3">Seller</p></td>

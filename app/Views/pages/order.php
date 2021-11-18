@@ -19,8 +19,21 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap-grid.css">
+        <script>
+            function kalkulasiHargaFinal(){
+                var hTotal = document.getElementById("hargaTotal").innerHTML;
+                var hDiskon = document.getElementById("diskon").innerHTML;
+                var hFinal = null;
+
+                hFinal = hTotal - hDiskon;
+
+                document.getElementById("hargaFinal").innerHTML = hFinal;
+
+                return false;
+            }
+        </script>
     </head>
-    <body>
+    <body onload="kalkulasiHargaFinal();">
         <main>
             <div class="container" style="margin-top:30px; margin-bottom:60px">
                 <h1 class="universal-text-1">Your Order</h1>
@@ -81,18 +94,18 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <table style="width:210px;height:110px; margin-left:auto; margin-right:auto">
                                 <tr>
                                     <td><p class="order-text-5">Jumlah</p></td>
-                                    <td><p class="order-text-5" style="text-align:right">Rp. 100000</p></td>
+                                    <td><p id="hargaTotal" class="order-text-5" style="text-align:right" value="100000">100000</p></td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Potongan Harga</p></td>
-                                    <td><p class="order-text-5" style="text-align:right">Rp. 20000</p></td>
+                                    <td><p id="diskon" class="order-text-5" style="text-align:right" value="20000">20000</p></td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Jumlah Total</p></td>
-                                    <td><p class="order-text-5" style="text-align:right">Rp. 80000</p></td>
+                                    <td><p id="hargaFinal" class="order-text-5" style="text-align:right"></p></td>
                                 </tr>
                             </table>
-                            <a href="/checkout"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px">CHECKOUT</button></a>
+                            <a href="/checkout"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px;">CHECKOUT</button></a>
                             <h3 class="order-text-8" style="margin-top:100px; margin-bottom:60px">Metode Pembayaran</h3>
                         </div>
                     </div>
@@ -100,5 +113,6 @@ Tugas : Project Website Praktikum Pemrograman Web
             </div>
         </main>
     </body>
+    
     <?= $this->endSection('content'); ?>
 </html>

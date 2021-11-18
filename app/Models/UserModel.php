@@ -19,4 +19,13 @@ class UserModel extends Model
 
     return $data;
   }
+
+  public function getNameUser($Name_User,$id = true)
+  {
+    if($id === false){
+      return $this->findAll();
+    } else {
+      return $this->where('Name_User', $Name_User)->first();
+    }
+  }
 }
