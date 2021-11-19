@@ -436,6 +436,13 @@ nav ul input{
     color: black;
     line-height: 2px;
 }
+.product-text-9 {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: black;
+    display: block;
+    margin: 0 auto;
+}
 .product-desc-list {
     line-height: 2px;
     margin-left: 30px;
@@ -488,8 +495,8 @@ nav ul input{
     transition-duration: 0.4s;
 }
 .product-box-3 {
-    width:97%;
-    padding: 5px;
+    width:100%;
+    padding: 10px;
     box-sizing: border-box;
     border: 1px solid black;
     margin-left: auto;
@@ -532,6 +539,11 @@ nav ul input{
     color:white;
     -webkit-text-stroke-width: 1px;
      -webkit-text-stroke-color: black;
+}
+.product-share-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 /*Order Page*/
@@ -788,5 +800,28 @@ nav ul input{
 }
 .keranjang-box-1:hover {
     color: #004A4D;
+    background-color: #ebebeb;
+}
+.keranjang-box-2 {
+    display:block; 
+    margin:0 auto;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #004A4D;
+    background-color: #004A4D;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.keranjang-box-2:hover {
+    color: #004A4D;
+    background-color: #ebebeb;
+}
+.keranjang-box-3 {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+.keranjang-box-3:hover{
     background-color: #ebebeb;
 }

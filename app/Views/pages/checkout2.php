@@ -18,7 +18,7 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="<?php echo base_url('style.css'); ?>">
         <link rel="stylesheet" href="bootstrap-grid.css">
         <style>
             .margin-center {
@@ -44,7 +44,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </tr>
                             <tr>
                                 <td class="checkout-text-6">Total Pembayaran</td>
-                                <td class="checkout-text-6">: Rp. 50000</td>
+                                <td class="checkout-text-6">: Rp. <?= $fishData[0]['Price_Fish']; ?></td>
                             </tr>
                             <tr>
                                 <td class="checkout-text-6">Opsi Pembayaran</td>
@@ -76,7 +76,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <p class="checkout-text-7 text-center">12345678910</p>
                     </div>
                     <div class="col col-lg-1 checkout-box-3">
-                        <img class="checkout-logo-2" src="assets/Logo/gopay.png" alt="logo_gopay" style="margin-top:-5px">
+                        <img class="checkout-logo-2" src="<?= base_url('assets/Logo/gopay.png'); ?>" alt="logo_gopay" style="margin-top:-5px">
                     </div>
                 </div>
                 <div class="row" style="margin-top:60px; margin-bottom:30px">
@@ -86,27 +86,23 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row checkout-card margin-center" style="margin-top:35px; margin-bottom:30px; width:1000px;">
                     <div class="col-2 my-auto">
-                        <img class="checkout-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                        <img class="checkout-img" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
                     </div>
                     <div class="col-5 my-auto">
-                        <h3 class="checkout-text-3">Lele Empang Cikanpundung</h3>
+                        <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>
                         <table style="width:200px;height:70px; margin-top:5px">
                             <tr>
-                                <td class="checkout-text-4">Jumlah</td>
-                                <td class="checkout-text-4">: 1</td>
-                            </tr>
-                            <tr>
                                 <td class="checkout-text-4">Jenis</td>
-                                <td class="checkout-text-4">: Lorem Ipsum</td>
+                                <td class="checkout-text-4">: <?= $fishData[0]['Type_Fish']; ?></td>
                             </tr>
                             <tr>
                                 <td class="checkout-text-4">Warna</td>
-                                <td class="checkout-text-4">: Lorem Ipsum</td>
+                                <td class="checkout-text-4">: <?= $fishData[0]['Color_Fish']; ?></td>
                             </tr>
                         </table>
                     </div>
                     <div class="col-5 my-auto">
-                        <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. 50000</p>
+                        <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
                         <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
                     </div>
                 </div>

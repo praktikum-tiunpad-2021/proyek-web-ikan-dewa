@@ -17,7 +17,7 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="<?php echo base_url('style.css'); ?>">
         <link rel="stylesheet" href="bootstrap-grid.css">
         <script>
             function kalkulasiHargaFinal(){
@@ -41,7 +41,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <div class="col-9">
                         <div class="row order-card-2">
                             <div class="col-2 my-auto">
-                                <img class="order-img-1" src="assets/Pics/delivery.png" alt="delivery">
+                                <img class="order-img-1" src="<?= base_url('assets/Pics/delivery.png') ?>" alt="delivery">
                             </div>
                             <div class="col-8 my-auto">
                                 <h2 class="order-text-1">Nikmati pengiriman secara ekslusif untuk ikan hias anda</h2>
@@ -57,27 +57,23 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <div class="row order-card-2" style="margin-top:20px">
                             <div class="col-2 my-auto">
-                                <img class="order-img-2" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                <img class="order-img-2" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
                             </div>
                             <div class="col-5 my-auto">
-                                <h3 class="order-text-4">Lele Empang Cikanpundung</h3>
+                                <h3 class="order-text-4"><?= $fishData[0]['Name_Fish']; ?></h3>
                                 <table style="width:200px; height:70px">
                                     <tr>
-                                        <td><p class="order-text-5">Jumlah</p></td>
-                                        <td><p class="order-text-5">: 1</p></td>
-                                    </tr>
-                                    <tr>
                                         <td><p class="order-text-5">Jenis</p></td>
-                                        <td><p class="order-text-5">: Lorem Ipsum</p></td>
+                                        <td><p class="order-text-5">: <?= $fishData[0]['Type_Fish']; ?></p></td>
                                     </tr>
                                     <tr>
                                         <td><p class="order-text-5">Warna</p></td>
-                                        <td><p class="order-text-5">: Lorem Ipsum</p></td>
+                                        <td><p class="order-text-5">: <?= $fishData[0]['Color_Fish']; ?></p></td>
                                     </tr>
                                 </table>
                             </div>
                             <div class="col-5 my-auto">
-                                <p class="order-text-5" style="font-size:18px; margin-top:2px; text-align:right">Rp. 50000</p>
+                                <p class="order-text-5" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
                                 <p class="order-text-5" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar<br>kota Bandung 3-5 hari</p>
                             </div>
                         </div>
@@ -94,18 +90,18 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <table style="width:210px;height:110px; margin-left:auto; margin-right:auto">
                                 <tr>
                                     <td><p class="order-text-5">Jumlah</p></td>
-                                    <td><p id="hargaTotal" class="order-text-5" style="text-align:right" value="100000">100000</p></td>
+                                    <td><p id="hargaTotal" class="order-text-5" style="text-align:right"><?= $fishData[0]['Price_Fish']; ?></p></td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Potongan Harga</p></td>
-                                    <td><p id="diskon" class="order-text-5" style="text-align:right" value="20000">20000</p></td>
+                                    <td><p id="diskon" class="order-text-5" style="text-align:right">0</p></td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Jumlah Total</p></td>
                                     <td><p id="hargaFinal" class="order-text-5" style="text-align:right"></p></td>
                                 </tr>
                             </table>
-                            <a href="/checkout"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px;">CHECKOUT</button></a>
+                            <a href="/checkout/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px;">CHECKOUT</button></a>
                             <h3 class="order-text-8" style="margin-top:100px; margin-bottom:60px">Metode Pembayaran</h3>
                         </div>
                     </div>

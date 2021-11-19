@@ -86,7 +86,7 @@
       <header>
         <nav style="background: #004A4D; width: 100%; height: 62px; position: sticky;" >
           <ul>
-            <li class="logo"><a href="/base_landing">AQUA<span style="font-size: 22px;letter-spacing: normal;color:white; margin-left:-5px"> fish</span></a></li>
+            <li class="logo"><a href="/landing">AQUA<span style="font-size: 22px;letter-spacing: normal;color:white; margin-left:-5px"> fish</span></a></li>
             
             <div class="items">
               <li><a href="/catalog">Saltwater Fish</a></li>

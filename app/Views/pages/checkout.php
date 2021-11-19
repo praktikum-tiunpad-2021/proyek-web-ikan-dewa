@@ -18,7 +18,7 @@ Tugas : Project Website Praktikum Pemrograman Web
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="<?php echo base_url('style.css'); ?>">
         <link rel="stylesheet" href="bootstrap-grid.css">
         <style>
             .black {
@@ -31,7 +31,7 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container">
                 <div class="row" style="margin-top:40px">
                     <div class="col text-center">
-                        <img class="checkout-logo-1" src="assets/Logo/800ppi/logo1.png" alt="logo">
+                        <img class="checkout-logo-1" src="<?php echo base_url('assets/Logo/800ppi/logo1.png'); ?>" alt="logo">
                         <span class="checkout-text-1" style="margin-left:10px">AQUA<span style="font-size: 22px;letter-spacing: normal;color:black;"> fish Marketplace</span></span>
                     </div>                
                 </div>
@@ -131,27 +131,23 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <div class="row checkout-card" style="margin-top:35px">
                             <div class="col-2 my-auto">
-                                <img class="checkout-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                <img class="checkout-img" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
                             </div>
                             <div class="col-5 my-auto">
-                                <h3 class="checkout-text-3">Lele Empang Cikanpundung</h3>
+                                <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>
                                 <table style="width:200px;height:70px; margin-top:5px">
                                     <tr>
-                                        <td class="checkout-text-4">Jumlah</td>
-                                        <td class="checkout-text-4">: 1</td>
-                                    </tr>
-                                    <tr>
                                         <td class="checkout-text-4">Jenis</td>
-                                        <td class="checkout-text-4">: Lorem Ipsum</td>
+                                        <td class="checkout-text-4">: <?= $fishData[0]['Type_Fish']; ?></td>
                                     </tr>
                                     <tr>
                                         <td class="checkout-text-4">Warna</td>
-                                        <td class="checkout-text-4">: Lorem Ipsum</td>
+                                        <td class="checkout-text-4">: <?= $fishData[0]['Color_Fish']; ?></td>
                                     </tr>
                                 </table>
                             </div>
                             <div class="col-5 my-auto">
-                                <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. 50000</p>
+                                <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
                                 <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
                             </div>
                         </div>
@@ -163,7 +159,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <div class="row text-center" style="margin-top:15px">
                             <div class="col">
-                                <button id="checkout-input-submit-2" type="submit" onclick="">Pesan</button>
+                                <a href="/checkout2/<?= $fishData[0]['Id_Fish'] ?>"><button id="checkout-input-submit-2" type="button">Pesan</button></a>
                             </div>
                         </div>
                     </form>

@@ -14,7 +14,7 @@ class Home extends BaseController
     public function catalog()
     {
         $model = new FishDataModel();
-        $data['fish'] = $model->getCargo();
+        $data['fish'] = $model->getDataAll();
         echo view('pages/catalog', $data);
     }
 
@@ -45,44 +45,77 @@ class Home extends BaseController
     public function product($Id_Fish)
     {
         $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+        $Top_Search = $this->FishDataModel->getTopSearchFish();
 
         $data = [
             'fishData' => $Id_Fish,
+            'topSearchFish' => $Top_Search,
         ];
         return view('pages/product', $data);
     }
 
-    public function order()
+    public function order($Id_Fish)
     {
-        return view('pages/order');
+        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+
+        $data = [
+            'fishData' => $Id_Fish,
+        ];
+
+        return view('pages/order', $data);
     }
 
-    public function checkout()
+    public function checkout($Id_Fish)
     {
-        return view('pages/checkout');
+        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+
+        $data = [
+            'fishData' => $Id_Fish,
+        ];
+
+        return view('pages/checkout', $data);
     }
 
-    public function checkout2()
+    public function checkout2($Id_Fish)
     {
-        return view('pages/checkout2');
+        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+
+        $data = [
+            'fishData' => $Id_Fish,
+        ];
+
+        return view('pages/checkout2', $data);
     }
 
     public function myOrder()
     {
-        return view('pages/myOrder');
+        $dataMyOrder = $this->FishDataModel->getFishMyOrder(session()->get('id'));
+        $data = [
+            'fishDataMyOrder' => $dataMyOrder
+        ];
+        return view('pages/myOrder', $data);
     }
 
     public function wishlist()
     {
-        return view('pages/wishlist');
+        $dataWishlist = $this->FishDataModel->getFishWishlist(session()->get('id'));
+        $data = [
+            'fishDataWishlist' => $dataWishlist
+        ];
+        return view('pages/wishlist', $data);
     }
 
     public function landing_after_login()
     {
-        $userData = $this->UserModel->getNameUser(session()->get('Name_User'));
+        $Id_Fish = $this->FishDataModel->getDataAll();
+        $Best_Seller = $this->FishDataModel->getBestSellerFish();
+        $Top_Search = $this->FishDataModel->getTopSearchFish();
+
         $data = [
             'activePage' => 'home',
-            'users' => $userData,
+            'fishData' => $Id_Fish,
+            'bestSellerFish' => $Best_Seller,
+            'topSearchFish' => $Top_Search,
         ];
         
         return view('pages/landing',$data);

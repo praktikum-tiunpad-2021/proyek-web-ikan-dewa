@@ -45,46 +45,35 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <h1 class="universal-text-2">Best Seller</h1>
                 </div>
                 <div class="row" style="margin-top:-20px">
+                <?php
+                        for ($i = 0; $i < 4; $i++){
+                ?>
                     <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <img class="landing-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                            <h2 class="landing-text-1">Guppy</h2>
+                        <a href="/product/<?= $bestSellerFish[$i]['Id_Fish'] ?>" class="pic-anchor">
+                            <img class="landing-img" src="<?= base_url($bestSellerFish[$i]['Img_Fish']); ?>" alt="<?= base_url($bestSellerFish[$i]['Alt_Img_Fish']); ?>">
+                            <h2 class="landing-text-1"><?= $bestSellerFish[$i]['Name_Fish']; ?></h2>
                         </a>
                     </div>
-                    <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <img class="landing-img" src="https://asset.kompas.com/crops/ndM9-S72se_BVNExfI_Jex9m9UY=/99x55:1000x656/750x500/data/photo/2020/11/12/5fac84d72fd73.jpg" alt="Ikan Molly">
-                            <h2 class="landing-text-1">Molly</h2>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <img class="landing-img" src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/28/2957222270.jpg" alt="Ikan Cupang">
-                            <h2 class="landing-text-1">Cupang</h2>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <img class="landing-img" src="https://gerava.com/wp-content/uploads/2019/07/Ikan-Manfish.jpg" alt="Ikan Manfish">
-                            <h2 class="landing-text-1">Manfish</h2>
-                        </a>
-                    </div>
+                <?php } ?>
                 </div>
                 <div class="row"  style="margin-top:-20px">
                     <h2 class="universal-text-2">Top Search</h2>
                 </div>
                 <div class="row">
+                    <?php
+                            for ($i = 0; $i < 4; $i++){
+                    ?>
                     <div class="col-3">
-                        <a href="/product" class="pic-anchor">
+                        <a href="/product/<?= $topSearchFish[$i]['Id_Fish'] ?>" class="pic-anchor">
                             <div class="landing-card">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
+                                        <img class="landing-card-img" src="<?= base_url($topSearchFish[$i]['Img_Fish']); ?>" alt="<?= base_url($topSearchFish[$i]['Alt_Img_Fish']); ?>">
                                     </div>
                                     <div class="col-8" style="line-height:5px">
-                                        <h3 class="landing-text-4">lele</h3>
-                                        <p class="landing-text-5">lele</p>
-                                        <p class="landing-text-5">lele</p>
+                                        <h3 class="landing-text-4"><?= $topSearchFish[$i]['Name_Fish']; ?></h3>
+                                        <p class="landing-text-5"><?= $topSearchFish[$i]['Type_Fish']; ?></p>
+                                        <p class="landing-text-5"><?= $topSearchFish[$i]['Color_Fish']; ?></p>
                                         <div style="margin-top:-4px;">
                                             <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
                                             <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
@@ -97,75 +86,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <div class="landing-card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                    </div>
-                                    <div class="col-8" style="line-height:5px">
-                                        <h3 class="landing-text-4">lele</h3>
-                                        <p  class="landing-text-5">lele</p>
-                                        <p  class="landing-text-5">lele</p>
-                                        <div>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <div class="landing-card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                    </div>
-                                    <div class="col-8" style="line-height:5px">
-                                        <h3 class="landing-text-4">lele</h3>
-                                        <p  class="landing-text-5">lele</p>
-                                        <p  class="landing-text-5">lele</p>
-                                        <div>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="/product" class="pic-anchor">
-                            <div class="landing-card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img class="landing-card-img" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy">
-                                    </div>
-                                    <div class="col-8" style="line-height:5px">
-                                        <h3 class="landing-text-4">lele</h3>
-                                        <p  class="landing-text-5">lele</p>
-                                        <p  class="landing-text-5">lele</p>
-                                        <div>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <?php } ?>
                 </div>
                 <div class="row" style="margin-top:30px">
                     <h2 class="landing-text-2">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic; color:black;">fish Marketplace</span></h2>
