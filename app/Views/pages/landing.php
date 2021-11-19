@@ -75,11 +75,17 @@ Tugas : Project Website Praktikum Pemrograman Web
                                         <p class="landing-text-5"><?= $topSearchFish[$i]['Type_Fish']; ?></p>
                                         <p class="landing-text-5"><?= $topSearchFish[$i]['Color_Fish']; ?></p>
                                         <div style="margin-top:-4px;">
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                            <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
+                                        <?php
+                                            for ($x = 0; $x < 5;$x++){
+                                                if($x < $topSearchFish[$i]['Rating_Fish']){
+                                                    ?>
+                                                        <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
+                                                    <?php
+                                                } else {
+                                                    ?>
+                                                        <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
+                                                    <?php
+                                                } } ?>
                                         </div>
                                     </div>
                                 </div>

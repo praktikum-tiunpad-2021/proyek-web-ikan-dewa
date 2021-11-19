@@ -81,11 +81,17 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="product-star-rate" style="margin-top:30px">
                             <span class="product-text-3" style="vertical-align:middle">Rating</span>
                             <span style="margin-left:180px;">
-                                <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
-                                <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
-                                <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
-                                <i class="material-icons landing-card-star-yellow" style="font-size:18px; vertical-align:middle;">star_rate</i>
-                                <i class="material-icons landing-card-star-white" style="font-size:18px; vertical-align:middle;">star_rate</i>
+                            <?php
+                                for ($x = 0; $x < 5;$x++){
+                                    if($x < $fishData[0]['Rating_Fish']){
+                                        ?>
+                                            <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
+                                        <?php
+                                    } else {
+                                        ?>
+                                            <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
+                                        <?php
+                                } } ?>
                             </span>
                         </div>
                         <p class="product-text-3" style="text-align:left; margin-top:30px;font-weight:bold;">Estimasi Pengiriman</p>
@@ -97,24 +103,23 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <div class="col-3 text-center">
                         <div class="product-box-main">
                             <span>
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
-                                <img class="product-img-3" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg" alt="Ikan Guppy" style="margin-top:37px">
+                                <?php for($e = 0; $e < 4; $e++){
+                                    ?>
+                                    <a href="/product/<?= $bestSellerFish[$e]['Id_Fish'] ?>" class="pic-anchor"><img class="product-img-3" src="<?= base_url($bestSellerFish[$e]['Img_Fish']); ?>" alt="<?= base_url($bestSellerFish[$e]['Alt_Img_Fish']); ?>" style="margin-top:37px"></a>
+                                <?php } ?>
                             </span>
                             <p class="product-text-5" style="margin-top:2px">Lihat koleksi lainnya</p>
                             <p class="product-text-4" style="color:red; margin-top:10px">Koleksi Terbatas!</p>
                             <p class="product-text-3" style="margin-top:50px">500 orang baru saja melihat koleksi ini</p>
                             <a href="/order/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="product-box-2 product-text-6">Beli Sekarang</button></a>
-                            <a href="/myOrder"><button type="button" class="product-box-3 product-text-6" style="margin-top:10px">Tambahkan ke Keranjang</button></a>   
-                            <a href="/wishlist"><button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button></a>
-                            <div style="text-align:left">
+                            <a href="/myOrder/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="product-box-3 product-text-6" style="margin-top:10px">Tambahkan ke Keranjang</button></a>   
+                            <a href="/wishlist/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button></a>
+                            <div style="text-align:left; margin-left:10px">
                                 <p class="product-text-3" style="text-align:left; margin-top:50px;margin-bottom:20px;font-weight:bold;">Share</p>
-                                <img class="product-share-logo" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                                <img class="product-share-logo" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                                <img class="product-share-logo" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                                <img class="product-share-logo" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
-                                <img class="product-share-logo" src="https://asset.kompas.com/crops/MrIH0upKVV6eAB7Ce8CCVDr76Qs=/0x0:1000x667/750x500/data/photo/2020/08/05/5f2a168c96d61.jpg">
+                                <img class="product-share-logo" src="<?= base_url('assets/Logo/facebook.png'); ?>">
+                                <img class="product-share-logo" src="<?= base_url('assets/Logo/twitter.png'); ?>">
+                                <img class="product-share-logo" src="<?= base_url('assets/Logo/google-plus.png'); ?>">
+                                <img class="product-share-logo" src="<?= base_url('assets/Logo/email.png'); ?>">
                             </div>
                         </div>
                     </div>
@@ -139,11 +144,17 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <p class="landing-text-5"><?= $topSearchFish[$i]['Type_Fish']; ?></p>
                                     <p class="landing-text-5"><?= $topSearchFish[$i]['Color_Fish']; ?></p>
                                     <div style="margin-top:-4px;">
-                                        <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
-                                        <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
+                                    <?php
+                                        for ($x = 0; $x < 5;$x++){
+                                            if($x < $topSearchFish[$i]['Rating_Fish']){
+                                                ?>
+                                                    <i class="material-icons landing-card-star-yellow" style="font-size:18px">star_rate</i>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                    <i class="material-icons landing-card-star-white" style="font-size:18px">star_rate</i>
+                                                <?php
+                                        } } ?>
                                     </div>
                                 </div>
                             </div>

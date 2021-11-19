@@ -51,12 +51,40 @@ class FishDataModel extends Model
     return $query;
   }
 
-  public function getFishMyOrder($id)
+  public function getFishCart($id)
   {
     $query = $this->db->table('cart')
     ->join('fish', 'cart.Id_Fish = fish.Id_Fish', 'JOIN')
     ->where(['cart.id' => $id])
     ->get()->getResultArray();
+    return $query;
+  }
+
+  public function saveFishWishlist($data)
+  {
+    $query = $this->db->table('wishlist')
+    ->insert($data);
+    return $query;
+  }
+
+  public function deleteFishWishlist($Id_Wishlist)
+  {
+    $query = $this->db->table('wishlist')
+    ->delete(array('Id_Wishlist' => $Id_Wishlist));
+    return $query;
+  }
+
+  public function saveFishCart($data)
+  {
+    $query = $this->db->table('cart')
+    ->insert($data);
+    return $query;
+  }
+
+  public function deleteFishCart($Id_Cart)
+  {
+    $query = $this->db->table('cart')
+    ->delete(array('Id_Cart' => $Id_Cart));
     return $query;
   }
 }

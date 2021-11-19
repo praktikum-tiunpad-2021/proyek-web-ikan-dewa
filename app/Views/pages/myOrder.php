@@ -105,7 +105,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="row checkout-card margin-center" style="margin-bottom:50px; width:1000px; border-top:0">
                             <div class="col-6 offset-6 text-right">
                                 <a href="/order/<?= $row['Id_Fish'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Beli Sekarang</button></a>
-                                <button type="button" class="keranjang-box-1 keranjang-text-1">Keluarkan dari Keranjang</button>
+                                <a href="/myOrder/delete/<?= $row['Id_Cart'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Keluarkan dari Keranjang</button></a>
                             </div>
                         </div>
                     </a>

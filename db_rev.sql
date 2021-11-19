@@ -116,6 +116,8 @@ create table fish_views (
 
 alter table wishlist modify Id_Wishlist int not null auto_increment, auto_increment=3;
 alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
+alter table wishlist add unique (Id_Fish);
+alter table cart add unique (Id_Fish);
 commit;
 
 -- NOTES

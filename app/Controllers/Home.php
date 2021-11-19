@@ -46,10 +46,12 @@ class Home extends BaseController
     {
         $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
         $Top_Search = $this->FishDataModel->getTopSearchFish();
+        $Best_Seller = $this->FishDataModel->getBestSellerFish();
 
         $data = [
             'fishData' => $Id_Fish,
             'topSearchFish' => $Top_Search,
+            'bestSellerFish' => $Best_Seller,
         ];
         return view('pages/product', $data);
     }
@@ -89,7 +91,7 @@ class Home extends BaseController
 
     public function myOrder()
     {
-        $dataMyOrder = $this->FishDataModel->getFishMyOrder(session()->get('id'));
+        $dataMyOrder = $this->FishDataModel->getFishCart(session()->get('id'));
         $data = [
             'fishDataMyOrder' => $dataMyOrder
         ];
