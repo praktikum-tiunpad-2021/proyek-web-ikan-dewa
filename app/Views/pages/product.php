@@ -32,14 +32,14 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container" style="margin-top:30px; margin-bottom:30px;">
                 <div class="row" style="height:530px">
                     <div class="col-1">
-                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_1']); ?>");'>
-                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_2']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_2']); ?>");'>
-                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_3']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_3']); ?>");'>
-                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_4']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>"  onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_4']); ?>");'>
-                        <img class="product-img-1" src="<?= base_url($fishData[0]['Img_Fish_5']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>"  onclick='changeImage("<?= base_url($fishData[0]['Img_Fish_5']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_1']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_1']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_2']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_2']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_3']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>" onclick='changeImage("<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_3']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_4']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>"  onclick='changeImage("<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_4']); ?>");'>
+                        <img class="product-img-1" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_5']); ?>" alt="<?= $fishData[0]['Alt_Img_Fish']; ?>"  onclick='changeImage("<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_5']); ?>");'>
                     </div>
                     <div class="col-4">
-                        <img id="prod-img-large" class="product-img-2" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="Ikan Guppy" style="margin-left:-15px">
+                        <img id="prod-img-large" class="product-img-2" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_1']); ?>" alt="Ikan Guppy" style="margin-left:-15px">
                     </div>
                     <div class="col-4">
                         <h1 class="product-text-1"><?= $fishData[0]['Name_Fish']; ?></h1>
@@ -105,7 +105,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <span>
                                 <?php for($e = 0; $e < 4; $e++){
                                     ?>
-                                    <a href="/product/<?= $bestSellerFish[$e]['Id_Fish'] ?>" class="pic-anchor"><img class="product-img-3" src="<?= base_url($bestSellerFish[$e]['Img_Fish']); ?>" alt="<?= base_url($bestSellerFish[$e]['Alt_Img_Fish']); ?>" style="margin-top:37px"></a>
+                                    <a href="/product/<?= $bestSellerFish[$e]['Id_Fish'] ?>" class="pic-anchor"><img class="product-img-3" src="<?= base_url('assets/Pics/'.$bestSellerFish[$e]['Img_Fish']); ?>" alt="<?= base_url($bestSellerFish[$e]['Alt_Img_Fish']); ?>" style="margin-top:37px"></a>
                                 <?php } ?>
                             </span>
                             <p class="product-text-5" style="margin-top:2px">Lihat koleksi lainnya</p>
@@ -137,7 +137,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="landing-card">
                             <div class="row">
                                 <div class="col-4">
-                                    <img class="landing-card-img" src="<?= base_url($topSearchFish[$i]['Img_Fish']); ?>" alt="<?= base_url($topSearchFish[$i]['Alt_Img_Fish']); ?>">
+                                    <img class="landing-card-img" src="<?= base_url('assets/Pics/'.$topSearchFish[$i]['Img_Fish']); ?>" alt="<?= base_url($topSearchFish[$i]['Alt_Img_Fish']); ?>">
                                 </div>
                                 <div class="col-8" style="line-height:5px">
                                     <h3 class="landing-text-4"><?= $topSearchFish[$i]['Name_Fish']; ?></h3>

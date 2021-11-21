@@ -107,10 +107,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <p class="checkout-text-2" style="margin-left:40px">Opsi Pengiriman</p>
                                 <select class="checkout-input-1" name="opsi_pengiriman" id="opsi_pengiriman">
                                     <option class="black" value="" disabled selected>Pilih Opsi Pengiriman</option>
-                                    <option class="black" value="gosend">GoSend</option>
-                                    <option class="black" value="jne">JNE Express</option>
-                                    <option class="black" value="jnt">J&T</option>
-                                    <option class="black" value="pos_indo">Pos Indonesia</option>
+                                    <option class="black" value="GoSend">GoSend</option>
+                                    <option class="black" value="JNE Express">JNE Express</option>
+                                    <option class="black" value="J&T">J&T</option>
+                                    <option class="black" value="Pos Indonesia">Pos Indonesia</option>
                                 </select>
                             </div>
                         </div>
@@ -120,18 +120,18 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <div style="text-align:left; margin-left:40px;">
                                     <input type="radio" id="gopay" name="opsi_pembayaran" value="Gopay">
                                     <label class="checkout-text-2" for="gopay">Gopay</label><br>
-                                    <input type="radio" id="ovo" name="opsi_pembayaran" value="ovo">
+                                    <input type="radio" id="ovo" name="opsi_pembayaran" value="OVO">
                                     <label class="checkout-text-2" for="ovo">Ovo</label><br>
-                                    <input type="radio" id="gerai" name="opsi_pembayaran" value="gerai">
+                                    <input type="radio" id="gerai" name="opsi_pembayaran" value="Gerai Minimarket">
                                     <label class="checkout-text-2" for="gerai">Gerai Minimarket</label><br>
-                                    <input type="radio" id="cod" name="opsi_pembayaran" value="cod">
-                                    <label class="checkout-text-2" for="cod">Bayar di Tempat (COD)</label>
+                                    <input type="radio" id="transfer" name="opsi_pembayaran" value="Transfer Bank">
+                                    <label class="checkout-text-2" for="transfer">Transfer Bank</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row checkout-card" style="margin-top:35px">
                             <div class="col-2 my-auto">
-                                <img class="checkout-img" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                                <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
                             </div>
                             <div class="col-5 my-auto">
                                 <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>

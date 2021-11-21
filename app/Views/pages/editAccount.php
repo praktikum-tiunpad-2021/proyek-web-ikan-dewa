@@ -44,23 +44,22 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </form>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:15px;">
-                    <form class="form-edit-account">
-                        <div>
-                            <p class="edit-account-text-1">Alamat Email*</p>
-                            <input class="edit-account-input" id="email" type="text">
-                        </div>
+                    <form class="form-edit-account" action="editAccount/update" method="post">
                         <div style="margin-top:10px">
                             <p class="edit-account-text-1">Kata Sandi*</p>
-                            <input class="edit-account-input" id="password" type="password">
+                            <input class="edit-account-input" id="password" type="password" value="">
                         </div>
                         <div style="margin-top:10px">
                             <p class="edit-account-text-1">Nama Lengkap*</p>
-                            <input class="edit-account-input" id="nama-lengkap" type="text">
+                            <input class="edit-account-input" id="nama-lengkap" type="text" value="">
                         </div>
                         <div style="margin-top:10px">
                             <p class="edit-account-text-1">Tanggal Lahir*</p>
-                            <input class="edit-account-input" id="tanggal-lahir" type="date">
+                            <input class="edit-account-input" id="tanggal-lahir" type="date" value="">
                         </div>
+                        <!-- <div style="margin-top:10px">
+                            <input type="hidden" id="id" value="<?= $users['id']; ?>">
+                        </div> -->
                         <div style="margin-top:15px">
                             <input type="submit" id="edit-account-input-submit" value="Edit Data">
                         </div>

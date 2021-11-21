@@ -86,7 +86,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row checkout-card margin-center" style="margin-top:35px; margin-bottom:30px; width:1000px;">
                     <div class="col-2 my-auto">
-                        <img class="checkout-img" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                        <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
                     </div>
                     <div class="col-5 my-auto">
                         <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>

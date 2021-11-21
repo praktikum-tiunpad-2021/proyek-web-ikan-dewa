@@ -7,15 +7,25 @@ class FishDataModel extends Model
   protected $table = 'fish';
   protected $primaryKey = 'Id_Fish';
 
-  public function getDataAll($id = false)
+  public function getSaltwaterCatalog()
   {
-    if($id === false){
-      return $this->findAll();
-    } else {
-      return $this->getWhere(['Id_Fish' => $id]);
-    }
+    $query = $this->db->table('fish')
+    ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
+    ->where(['fish.Type_Fish' => 'Saltwater Fish'])
+    ->get()->getResultArray();
+    return $query;  
   }
-  public function getFishAll($Id_Fish)
+
+  public function getFreshwaterCatalog()
+  {
+    $query = $this->db->table('fish')
+    ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
+    ->where(['fish.Type_Fish' => 'Freshwater Fish'])
+    ->get()->getResultArray();
+    return $query;  
+  }
+
+  public function getFishData($Id_Fish)
   {
     $query = $this->db->table('fish')
     ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
@@ -29,6 +39,7 @@ class FishDataModel extends Model
   {
     $query = $this->db->table('fish')
     ->where(['Rating_Fish >=' => 3])
+    ->orderBy('Rating_Fish', 'desc')
     ->get()->getResultArray();
     return $query;
   }

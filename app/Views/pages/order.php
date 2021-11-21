@@ -57,7 +57,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <div class="row order-card-2" style="margin-top:20px">
                             <div class="col-2 my-auto">
-                                <img class="order-img-2" src="<?= base_url($fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                                <img class="order-img-2" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
                             </div>
                             <div class="col-5 my-auto">
                                 <h3 class="order-text-4"><?= $fishData[0]['Name_Fish']; ?></h3>

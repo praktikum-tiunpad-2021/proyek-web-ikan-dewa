@@ -8,14 +8,25 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('pages/welcome_message');
+        return view('pages/login');
     }
 
-    public function catalog()
+    public function sw_catalog()
     {
-        $model = new FishDataModel();
-        $data['fish'] = $model->getDataAll();
-        echo view('pages/catalog', $data);
+        $Id_Fish = $this->FishDataModel->getSaltwaterCatalog();
+        $data = [
+            'fishData' => $Id_Fish,
+        ];
+        return view('pages/sw_catalog', $data);
+    }
+
+    public function fw_catalog()
+    {
+        $Id_Fish = $this->FishDataModel->getFreshwaterCatalog();
+        $data = [
+            'fishData' => $Id_Fish,
+        ];
+        return view('pages/fw_catalog', $data);
     }
 
     public function login()
@@ -44,7 +55,7 @@ class Home extends BaseController
     
     public function product($Id_Fish)
     {
-        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+        $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
         $Top_Search = $this->FishDataModel->getTopSearchFish();
         $Best_Seller = $this->FishDataModel->getBestSellerFish();
 
@@ -58,7 +69,7 @@ class Home extends BaseController
 
     public function order($Id_Fish)
     {
-        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+        $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
 
         $data = [
             'fishData' => $Id_Fish,
@@ -69,7 +80,7 @@ class Home extends BaseController
 
     public function checkout($Id_Fish)
     {
-        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+        $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
 
         $data = [
             'fishData' => $Id_Fish,
@@ -80,7 +91,7 @@ class Home extends BaseController
 
     public function checkout2($Id_Fish)
     {
-        $Id_Fish = $this->FishDataModel->getFishAll($Id_Fish);
+        $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
 
         $data = [
             'fishData' => $Id_Fish,
@@ -109,7 +120,7 @@ class Home extends BaseController
 
     public function landing_after_login()
     {
-        $Id_Fish = $this->FishDataModel->getDataAll();
+        $Id_Fish = $this->FishDataModel->getSaltwaterCatalog();
         $Best_Seller = $this->FishDataModel->getBestSellerFish();
         $Top_Search = $this->FishDataModel->getTopSearchFish();
 

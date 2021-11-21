@@ -89,8 +89,8 @@
             <li class="logo"><a href="/landing">AQUA<span style="font-size: 22px;letter-spacing: normal;color:white; margin-left:-5px"> fish</span></a></li>
             
             <div class="items">
-              <li><a href="/catalog">Saltwater Fish</a></li>
-              <li><a href="/catalog">Freshwater Fish</a></li>
+              <li><a href="/fw_catalog">Freshwater Fish</a></li>
+              <li><a href="/sw_catalog">Saltwater Fish</a></li>
             </div>
             <li class="search-icon">
               <input type="search" placeholder="Search">

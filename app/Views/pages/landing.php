@@ -50,7 +50,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 ?>
                     <div class="col-3">
                         <a href="/product/<?= $bestSellerFish[$i]['Id_Fish'] ?>" class="pic-anchor">
-                            <img class="landing-img" src="<?= base_url($bestSellerFish[$i]['Img_Fish']); ?>" alt="<?= base_url($bestSellerFish[$i]['Alt_Img_Fish']); ?>">
+                            <img class="landing-img" src="assets/Pics/<?= $bestSellerFish[$i]['Img_Fish']; ?>" alt="<?= $bestSellerFish[$i]['Alt_Img_Fish']; ?>">
                             <h2 class="landing-text-1"><?= $bestSellerFish[$i]['Name_Fish']; ?></h2>
                         </a>
                     </div>
@@ -68,7 +68,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <div class="landing-card">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="landing-card-img" src="<?= base_url($topSearchFish[$i]['Img_Fish']); ?>" alt="<?= base_url($topSearchFish[$i]['Alt_Img_Fish']); ?>">
+                                        <img class="landing-card-img" src="assets/Pics/<?= $topSearchFish[$i]['Img_Fish']; ?>" alt="<?= $topSearchFish[$i]['Alt_Img_Fish']; ?>">
                                     </div>
                                     <div class="col-8" style="line-height:5px">
                                         <h3 class="landing-text-4"><?= $topSearchFish[$i]['Name_Fish']; ?></h3>

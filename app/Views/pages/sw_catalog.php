@@ -25,10 +25,10 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container">
                 <h1 class="universal-text-1" style="margin-top:30px">Saltwater Fish Catalog</h1>
                 <div class="row" style="margin-top:10px; margin-bottom:30px">
-                    <?php foreach ($fish as $row) : ?>
+                    <?php foreach ($fishData as $row) : ?>
                     <div class="col-3">
                         <a href="/product/<?= $row['Id_Fish'] ?>" class="pic-anchor">
-                            <img class="catalog-img" src="<?= $row['Img_Fish']; ?>" alt="<?= $row['Alt_Img_Fish']; ?>">
+                            <img class="catalog-img" src="assets/Pics/<?= $row['Img_Fish']; ?>" alt="<?= $row['Alt_Img_Fish']; ?>">
                             <h2 class="catalog-text-1"><?= $row['Name_Fish']; ?></h2>
                             <p class="catalog-text-2">Rp. <?= $row['Price_Fish']; ?></p>
                         </a>

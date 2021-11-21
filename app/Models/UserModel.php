@@ -28,4 +28,12 @@ class UserModel extends Model
       return $this->where('Name_User', $Name_User)->first();
     }
   }
+
+  // public function updateProfile($data, $id)
+  // {
+  //   $query = $this->db->table('users')
+  //   ->update($data)
+  //   ->where(array('id' => $id));
+  //   return $query;
+  // }
 }
