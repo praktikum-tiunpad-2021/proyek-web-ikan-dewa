@@ -145,9 +145,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <label class="checkout-text-2" for="gopay">Gopay</label><br>
                                     <input type="radio" id="ovo" name="Payment_Type" value="OVO" required>
                                     <label class="checkout-text-2" for="ovo">Ovo</label><br>
-                                    <input type="radio" id="gerai" name="Payment_Type" value="Gerai Minimarket" required>
+                                    <input type="radio" id="gerai" name="Payment_Type" value="Minimarket" required>
                                     <label class="checkout-text-2" for="gerai">Gerai Minimarket</label><br>
-                                    <input type="radio" id="transfer" name="Payment_Type" value="Transfer Bank" required>
+                                    <input type="radio" id="transfer" name="Payment_Type" value="Transfer" required>
                                     <label class="checkout-text-2" for="transfer">Transfer Bank</label>
                                 </div>
                             </div>

@@ -30,7 +30,7 @@ Tugas : Project Website Praktikum Pemrograman Web
     <body>
         <main>
             <div class="container">
-                <h1 class="universal-text-1" style="margin-top:30px">My Wishlist</h1>
+                <h1 class="universal-text-1" style="margin-top:30px; margin-bottom:30px">My Wishlist</h1>
                 <?php 
                     foreach ($fishDataWishlist as $row) : 
                 ?>

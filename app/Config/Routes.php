@@ -55,6 +55,11 @@ $routes->get('logout','Login::logout');
 $routes->match(['get','post'],'register', 'Login::register');
 $routes->get('/landing','Home::landing_after_login',['filter' => 'auth']);
 
+$routes->get('/admin', 'Admin::admin_home');
+$routes->get('/admin/users', 'Admin::admin_users');
+
+
+
 
 /*
  * --------------------------------------------------------------------

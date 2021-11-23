@@ -76,7 +76,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <p class="checkout-text-7 text-center">12345678910</p>
                     </div>
                     <div class="col col-lg-1 checkout-box-3">
-                        <img class="checkout-logo-2" src="<?= base_url('assets/Logo/gopay.png'); ?>" alt="logo_gopay" style="margin-top:-5px">
+                        <img class="checkout-logo-2" src="<?= base_url('assets/Logo/'.$Data_Transaction['Payment_Type'].'.png'); ?>" alt="logo_gopay" style="margin-top:-5px">
                     </div>
                 </div>
                 <div class="row" style="margin-top:60px; margin-bottom:30px">

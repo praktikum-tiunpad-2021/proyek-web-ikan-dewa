@@ -51,5 +51,6 @@ class BaseController extends Controller
         $this->UserModel = new \App\Models\UserModel();
         $this->FishDataModel = new \App\Models\FishDataModel();
         $this->TransactionModel = new \App\Models\TransactionModel();
+        $this->AdminModel = new \App\Models\AdminModel();
     }
 }

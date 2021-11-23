@@ -32,7 +32,7 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container">
                 <h1 class="universal-text-1" style="margin-top:30px">My Order</h1>
                 <div>
-                    <h2 class="order-text-9" style="margin-top:30px; margin-left:55px; margin-bottom:10px">Pesanan Berhasil</h2>
+                    <h2 class="order-text-9" style="margin-top:30px; margin-left:55px; margin-bottom:30px">Pesanan Berhasil</h2>
                     <?php 
                         foreach ($Data_Transaction as $row) : 
                     ?>
@@ -77,7 +77,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     ?>
                 </div>
                 <div>
-                    <h2 class="order-text-9" style="margin-top:30px; margin-left:55px;margin-bottom:10px">Keranjang</h2>
+                    <h2 class="order-text-9" style="margin-top:30px; margin-left:55px;margin-bottom:30px">Keranjang</h2>
                     <?php 
                         foreach ($fishDataMyOrder as $row2) : 
                     ?>
@@ -116,7 +116,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     ?>
                 </div>
             </div>
-            <a href="/order"><button type="button" class="keranjang-box-2 keranjang-text-1" style="margin-bottom:30px;">Checkout Pesanan</button></a>
+            <!-- <a href="/order"><button type="button" class="keranjang-box-2 keranjang-text-1" style="margin-bottom:50px;">Checkout Pesanan</button></a> -->
         </main>
     </body>
     <?= $this->endSection('content'); ?>
