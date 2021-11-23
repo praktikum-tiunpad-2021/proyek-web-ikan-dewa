@@ -30,6 +30,7 @@ class FishDataModel extends Model
     $query = $this->db->table('fish')
     ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
     ->join('seller', 'fish.Id_Seller = seller.Id_Seller', 'JOIN')
+    ->join('fish_views', 'fish.Id_Fish = fish_views.Id_Fish', 'JOIN')
     ->where(['fish.Id_Fish' => $Id_Fish])
     ->get()->getResultArray();
     return $query;
@@ -96,6 +97,23 @@ class FishDataModel extends Model
   {
     $query = $this->db->table('cart')
     ->delete(array('Id_Cart' => $Id_Cart));
+    return $query;
+  }
+
+  public function getTransaction($id)
+  {
+    $query = $this->db->table('transaction')
+    ->join('fish', 'fish.Id_Fish = transaction.Id_Fish', 'JOIN')
+    ->join('users', 'users.id = transaction.id', 'JOIN')
+    ->where(['transaction.id' => $id])
+    ->get()->getResultArray();
+    return $query;
+  }
+
+  public function deleteTransaction($Id_Transaction)
+  {
+    $query = $this->db->table('transaction')
+    ->delete(array('Id_Transaction' => $Id_Transaction));
     return $query;
   }
 }

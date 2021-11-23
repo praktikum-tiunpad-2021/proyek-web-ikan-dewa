@@ -63,7 +63,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </tr>
                             <tr>
                                 <td><p class="product-text-3">Age</p></td>
-                                <td><p class="product-text-3" style="margin-left:5px">: <?= $fishData[0]['Age_Fish']; ?></p></td>
+                                <td><p class="product-text-3" style="margin-left:5px">: <?= $fishData[0]['Age_Fish']; ?> Month</p></td>
                             </tr>
                             <tr>
                                 <td><p class="product-text-3">Seller</p></td>
@@ -110,7 +110,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </span>
                             <p class="product-text-5" style="margin-top:2px">Lihat koleksi lainnya</p>
                             <p class="product-text-4" style="color:red; margin-top:10px">Koleksi Terbatas!</p>
-                            <p class="product-text-3" style="margin-top:50px">500 orang baru saja melihat koleksi ini</p>
+                            <p class="product-text-3" style="margin-top:50px"><?= $fishData[0]['Total_Views']; ?> orang baru saja melihat koleksi ini</p>
                             <a href="/order/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="product-box-2 product-text-6">Beli Sekarang</button></a>
                             <a href="/myOrder/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="product-box-3 product-text-6" style="margin-top:10px">Tambahkan ke Keranjang</button></a>   
                             <a href="/wishlist/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="product-box-3 product-text-6">Tambahkan ke Wishlist</button></a>

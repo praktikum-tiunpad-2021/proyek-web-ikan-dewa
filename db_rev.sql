@@ -41,7 +41,7 @@ create table shipment(
     Date_Shipment date not null,
     foreign key (Id_Fish) references fish (Id_Fish),
     foreign key (Id_Seller) references seller (Id_Seller)
-);
+); --KAYANYA GAJADI DIPAKE
 
 create table market(
     Month_Market varchar (12) not null,
@@ -52,14 +52,15 @@ create table market(
     foreign key (Id_Seller) references seller (Id_Seller)
 );
 
-create table 'transaction'(
+create table transaction(
     -- Data Pembelian
-    Id_Transaction varchar (15) not null primary key,
-    Date_Transaction date not null,
+    Id_Transaction int not null primary key,
+    Id_Fish varchar (10) not null,
+    -- Date_Transaction date not null,
     -- Data Customer
+    id int(3) not null,
     Buyer_First_Name varchar (50) not null,
     Buyer_Last_Name varchar (50) not null,
-    email varchar(255) not null,
     Buyer_Number int(20) not null,
     Buyer_Address varchar (255) not null,
     Buyer_Province varchar (50) not null,
@@ -71,7 +72,9 @@ create table 'transaction'(
     Delivery_Service varchar(50) not null,
     Payment_Type varchar(50) not null,
     Total_Price int not null,
-    foreign key (email) references users (email)
+    Status_Transaction varchar(15) not null,
+    foreign key (Id_Fish) references fish (Id_Fish),
+    foreign key (id) references users (id)
 );
 
 create table success_transaction (
@@ -114,10 +117,18 @@ create table fish_views (
     foreign key (Id_Fish) references fish (Id_Fish)
 );
 
+create table voucher (
+    Id_Voucher int not null primary key,
+    Code_Voucher varchar(50) not null,
+    Price_Discount int not null,
+);
+
 alter table wishlist modify Id_Wishlist int not null auto_increment, auto_increment=3;
 alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
 alter table wishlist add unique (Id_Fish);
 alter table cart add unique (Id_Fish);
+alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
+alter table transaction modify Id_Transaction int not null auto_increment, auto_increment=1;
 commit;
 
 -- NOTES

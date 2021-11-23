@@ -25,8 +25,29 @@ Tugas : Project Website Praktikum Pemrograman Web
                 color:black;
             }
         </style>
+        <script>
+            function kalkulasiHargaFinal(){
+                var hTotal = document.getElementById("hargaTotal").innerHTML;
+                var hDiskon = document.getElementById("diskon").innerHTML;
+                var hFinal = null;
+
+                hFinal = hTotal - hDiskon;
+
+                document.getElementById("hargaFinal").innerHTML = hFinal;
+
+                return false;
+            }
+
+            function date_now(){
+                var today = new Date();
+                var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+                document.getElementById("dateToday").innerHTML = date;
+
+                return false;
+            }
+        </script>
     </head>
-    <body>
+    <body onload="kalkulasiHargaFinal(); date_now();">
         <main>
             <div class="container">
                 <div class="row" style="margin-top:40px">
@@ -36,76 +57,78 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>                
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:40px;">
-                    <form class="form-checkout">
+                    <form class="form-checkout" action="checkout/save" method="post">
                         <div class="row">
+                            <div>
+                                <input class="checkout-input-2" id="Id_Fish" name="Id_Fish" type="hidden" value="<?= $fishData[0]['Id_Fish'] ?>">
+                            </div>
+                            <div>
+                                <input class="checkout-input-2" id="Id_Fish" name="Id_Transaction" type="hidden" value="<?= $fishData[0]['Id_Fish'] . $users['id'] ?>">
+                            </div>
+                            <!-- <div>
+                                <input class="checkout-input-2" id="dateToday" name="Date_Transaction" type="date" value="dateToday">
+                            </div> -->
+                            <div>
+                                <input class="checkout-input-2" id="id" name="id" type="hidden" value="<?= $users['id'] ?>">
+                            </div>
                             <div class="col-6">
                                 <p class="checkout-text-2">Nama Depan</p>
-                                <input class="checkout-input-2" id="nama_depan" type="text">
+                                <input class="checkout-input-2" id="nama_depan" name="Buyer_First_Name" type="text" required>
                             </div>
                             <div class="col-6">
                                 <p class="checkout-text-2">Nama Belakang</p>
-                                <input class="checkout-input-2" id="nama_belakang" type="text">
+                                <input class="checkout-input-2" id="nama_belakang" name="Buyer_Last_Name" type="text" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
-                            <div class="col-6">
-                                <p class="checkout-text-2">Email</p>
-                                <input class="checkout-input-2" id="email" type="text">
-                            </div>
-                            <div class="col-6">
+                            <!-- <div>
+                                <input class="checkout-input-2" id="email" name="email" type="hidden">
+                            </div> -->
+                            <div class="col-12">
                                 <p class="checkout-text-2">No. Telp</p>
-                                <input class="checkout-input-2" id="no_telp" type="number">
+                                <input class="checkout-input-1" id="no_telp" name="Buyer_Number" type="number" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Alamat</p>
-                                <input class="checkout-input-1" id="alamat" type="text">
+                                <input class="checkout-input-1" id="alamat" name="Buyer_Address" type="text" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Provinsi</p>
-                                <input class="checkout-input-1" id="provinsi" type="text">
+                                <input class="checkout-input-1" id="provinsi" name="Buyer_Province" type="text" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Kota</p>
-                                <input class="checkout-input-1" id="kota" type="text">
+                                <input class="checkout-input-1" id="kota" name="Buyer_City" type="text" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Kecamatan</p>
-                                <input class="checkout-input-1" id="kecamatan" type="text">
+                                <input class="checkout-input-1" id="kecamatan" name="Buyer_District" type="text" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Kelurahan</p>
-                                <input class="checkout-input-1" id="kelurahan" type="text">
+                                <input class="checkout-input-1" id="kelurahan" name="Buyer_Neighborhood" type="text" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Kode Pos</p>
-                                <input class="checkout-input-1" id="kode_pos" type="text">
+                                <input class="checkout-input-1" id="kode_pos" name="Buyer_Post_Code" type="text" required>
                             </div>
                         </div>
-                        <div class="row" style="margin-top:15px">
+                        <div class="row" style="margin-top:10px">
                             <div class="col">
-                                <button id="checkout-input-submit-1" type="submit">Simpan & Lanjutkan</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
-                    <form class="form-checkout">
-                        <div class="row text-center">
-                            <div class="col-6 offset-3">
-                                <p class="checkout-text-2" style="margin-left:40px">Opsi Pengiriman</p>
-                                <select class="checkout-input-1" name="opsi_pengiriman" id="opsi_pengiriman">
+                                <p class="checkout-text-2">Opsi Pengiriman</p>
+                                <select class="checkout-input-1" name="Delivery_Service" id="opsi_pengiriman" required>
                                     <option class="black" value="" disabled selected>Pilih Opsi Pengiriman</option>
                                     <option class="black" value="GoSend">GoSend</option>
                                     <option class="black" value="JNE Express">JNE Express</option>
@@ -114,55 +137,66 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </select>
                             </div>
                         </div>
-                        <div class="row text-center">
-                            <div class="col-6 offset-3" style="margin-top:15px">
-                                <p class="checkout-text-2" style="margin-left:40px">Opsi Pembayaran</p>
-                                <div style="text-align:left; margin-left:40px;">
-                                    <input type="radio" id="gopay" name="opsi_pembayaran" value="Gopay">
+                        <div class="row" style="margin-top:20px">
+                            <div class="col">
+                                <p class="checkout-text-2">Opsi Pembayaran</p>
+                                <div style="text-align:left;">
+                                    <input type="radio" id="gopay" name="Payment_Type" value="Gopay" required>
                                     <label class="checkout-text-2" for="gopay">Gopay</label><br>
-                                    <input type="radio" id="ovo" name="opsi_pembayaran" value="OVO">
+                                    <input type="radio" id="ovo" name="Payment_Type" value="OVO" required>
                                     <label class="checkout-text-2" for="ovo">Ovo</label><br>
-                                    <input type="radio" id="gerai" name="opsi_pembayaran" value="Gerai Minimarket">
+                                    <input type="radio" id="gerai" name="Payment_Type" value="Gerai Minimarket" required>
                                     <label class="checkout-text-2" for="gerai">Gerai Minimarket</label><br>
-                                    <input type="radio" id="transfer" name="opsi_pembayaran" value="Transfer Bank">
+                                    <input type="radio" id="transfer" name="Payment_Type" value="Transfer Bank" required>
                                     <label class="checkout-text-2" for="transfer">Transfer Bank</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="row checkout-card" style="margin-top:35px">
-                            <div class="col-2 my-auto">
-                                <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                        <div class="row" style="margin-top:20px">
+                            <!-- <div>
+                                <input class="checkout-data-box" id="hargaTotal" style="margin-top:-10px; padding-top:10px" type="hidden" value="20000">
+                            </div>    
+                            <div>
+                                <input class="checkout-data-box" id="diskon" style="margin-top:-10px; padding-top:10px" type="hidden" value="20">
+                            </div> -->
+                            <div class="col">
+                                <p class="checkout-text-2">Total Pembayaran</p>
+                                <input class="checkout-data-box" id="hargaFinal" name="Total_Price" style="margin-top:-10px;" value="<?= $fishData[0]['Price_Fish']; ?>">
                             </div>
-                            <div class="col-5 my-auto">
-                                <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>
-                                <table style="width:200px;height:70px; margin-top:5px">
-                                    <tr>
-                                        <td class="checkout-text-4">Jenis</td>
-                                        <td class="checkout-text-4">: <?= $fishData[0]['Type_Fish']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="checkout-text-4">Warna</td>
-                                        <td class="checkout-text-4">: <?= $fishData[0]['Color_Fish']; ?></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-5 my-auto">
-                                <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
-                                <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-6 offset-3" style="margin-top:35px">
-                                <p class="checkout-text-2" style="margin-left:40px">Total Pembayaran</p>
-                                <p class="checkout-data-box" style="margin-top:-10px; margin-left:40px"></p>
+                            <div>
+                                <input class="checkout-data-box" id="status_transaction" name="Status_Transaction" style="margin-top:-10px; padding-top:10px" type="hidden" value="Pending">
                             </div>
                         </div>
                         <div class="row text-center" style="margin-top:15px">
                             <div class="col">
-                                <a href="/checkout2/<?= $fishData[0]['Id_Fish'] ?>"><button id="checkout-input-submit-2" type="button">Pesan</button></a>
+                                <button id="checkout-input-submit-2" type="submit">Pesan</button>
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
+                    <div class="row checkout-card" style="margin-top:35px">
+                        <div class="col-2 my-auto">
+                            <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                        </div>
+                        <div class="col-5 my-auto">
+                            <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>
+                            <table style="width:200px;height:70px; margin-top:5px">
+                                <tr>
+                                    <td class="checkout-text-4">Jenis</td>
+                                    <td class="checkout-text-4">: <?= $fishData[0]['Type_Fish']; ?></td>
+                                </tr>
+                                <tr>
+                                    <td class="checkout-text-4">Warna</td>
+                                    <td class="checkout-text-4">: <?= $fishData[0]['Color_Fish']; ?></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5 my-auto">
+                            <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
+                            <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

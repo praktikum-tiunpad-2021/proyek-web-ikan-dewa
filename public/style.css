@@ -175,7 +175,7 @@ nav ul input{
 }
 .landing-text-4 {
     font-family: Lato-Medium;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     margin-bottom: 12px;
 }
@@ -752,6 +752,7 @@ nav ul input{
     height: 33px;
     box-sizing: border-box;
     border: 1px solid black;
+    color: black;
 }
 #checkout-input-submit-1 {
     padding: 10px;

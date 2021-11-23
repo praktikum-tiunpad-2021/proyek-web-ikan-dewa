@@ -40,15 +40,15 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <table>
                             <tr>
                                 <td class="checkout-text-6">Nomor Pesanan</td>
-                                <td class="checkout-text-6">: 92787480274024</td>
+                                <td class="checkout-text-6">: <?= $Data_Transaction['Id_Transaction']; ?></td>
                             </tr>
                             <tr>
                                 <td class="checkout-text-6">Total Pembayaran</td>
-                                <td class="checkout-text-6">: Rp. <?= $fishData[0]['Price_Fish']; ?></td>
+                                <td class="checkout-text-6">: Rp. <?= $Data_Transaction['Total_Price']; ?></td>
                             </tr>
                             <tr>
                                 <td class="checkout-text-6">Opsi Pembayaran</td>
-                                <td class="checkout-text-6">: Gopay</td>
+                                <td class="checkout-text-6">: <?= $Data_Transaction['Payment_Type']; ?></td>
                             </tr>
                         </table>
                     </div>
@@ -70,7 +70,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:30px; margin-bottom:30px">
                     <div class="col col-lg-1 checkout-box-3">
-                        <p class="checkout-text-7 text-center">Gopay</p>
+                        <p class="checkout-text-7 text-center"><?= $Data_Transaction['Payment_Type']; ?></p>
                     </div>
                     <div class="col col-lg-6 checkout-box-3" style="border-left:5px solid white; border-right:5px solid white;">
                         <p class="checkout-text-7 text-center">12345678910</p>
@@ -102,13 +102,17 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </table>
                     </div>
                     <div class="col-5 my-auto">
-                        <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
+                        <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $Data_Transaction['Total_Price']; ?></p>
                         <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
                     </div>
                 </div>
                 <div class="row" style="margin-top:15px; margin-bottom:100px; text-align:center;">
                     <div class="col">
-                        <button id="checkout-input-submit-1" type="submit">Konfirmasi Pesanan</button>
+                        <form action="checkout2/update" method="post">
+                            <input type="hidden" id="Id_Transaction" name="Id_Transaction" value="<?= $Data_Transaction['Id_Transaction']; ?>">
+                            <input type="hidden" id="Status_Transaction" name="Status_Transaction" value="Success">
+                            <button id="checkout-input-submit-1" type="submit">Konfirmasi Pesanan</button>
+                        </form>
                     </div>
                 </div>
             </div>

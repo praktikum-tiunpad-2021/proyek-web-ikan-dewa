@@ -1,9 +1,9 @@
 INSERT INTO `seller` VALUES
 -- TEMPLATE
 -- ('idseller', 'name');
-('SEL001', 'Supplier1'),
-('SEL002', 'Supplier2'),
-('SEL003', 'Supplier3');
+('SEL001', 'PT. Bukan Maen'),
+('SEL002', 'PT. Samudra Jaya'),
+('SEL003', 'PT. Pete');
 
 INSERT INTO `fish` VALUES
 -- TEMPLATE
@@ -11,28 +11,45 @@ INSERT INTO `fish` VALUES
 -- 'region', 'age', 'price', 'rating');
 ('FI00001', 'SEL001', 'Guppy Blue Orange', 'Freshwater Fish', 'Guppy', 
 'Europe',  'Blue Orange',1 , 5000, 5, 'fish_pic/guppy_1.jpg', 'Ikan Guppy Blue Orange'),
-('FI00002', 'SEL001', 'Molly', 'Freshwater Fish', 'Class_2', 
-'Region_2',  'Yellow',2, 4000, 4, 'fish_pic/molly_1.jpg', 'Ikan Molly'),
+('FI00002', 'SEL001', 'Molly Yellow', 'Freshwater Fish', 'Molly', 
+'Australia',  'Yellow',2, 4000, 4, 'fish_pic/molly_1.jpg', 'Ikan Molly Yellow'),
 ('FI00003', 'SEL002', 'Betta Light Blue', 'Freshwater Fish', 'Betta', 
 'Java',  'Light Blue',3, 2000, 2, 'fish_pic/cupang_1.jpg', 'Ikan Cupang Light Blue'),
-('FI00004', 'SEL003', 'Manfish', 'Freshwater Fish', 'Class_4', 
-'Region_4',  'White Silver',4, 3000, 3, 'fish_pic/manfish_1.jpg', 'Ikan Manfish'),
-('FI00005', 'SEL001', 'Lemon', 'Freshwater Fish', 'Class_5', 
-'Region_5',  'Yellow',6, 1000, 3, 'fish_pic/lemon_1.png', 'Ikan Lemon'),
+('FI00004', 'SEL003', 'Manfish White', 'Freshwater Fish', 'Manfish', 
+'Australia',  'White Silver',4, 3000, 3, 'fish_pic/manfish_1.jpg', 'Ikan Manfish White'),
+('FI00005', 'SEL001', 'Lemon Yellow', 'Freshwater Fish', 'Lemon', 
+'America',  'Yellow',6, 1000, 3, 'fish_pic/lemon_1.png', 'Ikan Lemon Yellow'),
 ('FI00006', 'SEL001', 'Black Ghost', 'Freshwater Fish', 'Ghost', 
 'Africa',  'Black',2, 90000, 1, 'fish_pic/black_ghost_1.jpg', 'Ikan Black Ghost'),
 ('FI00007', 'SEL003', 'Discus Cyan', 'Freshwater Fish', 'Discus', 
 'America',  'Cyan',1, 8000, 3, 'fish_pic/discus_1.jpg', 'Ikan Discus Cyan'),
-('FI00008', 'SEL002', 'Platy', 'Freshwater Fish', 'Class_8', 
-'Region_8',  'Orange',3, 6000, 2, 'fish_pic/platy_1.jpg', 'Ikan Platy'),
-('FI00009', 'SEL003', 'Mas Koki', 'Freshwater Fish', 'Class_9', 
-'Region_9',  'Yellow White',2, 10000, 3, 'fish_pic/mas_koki_1.jpg', 'Ikan Mas Koki'),
+('FI00008', 'SEL002', 'Platy Orange', 'Freshwater Fish', 'Platy', 
+'America',  'Orange',3, 6000, 2, 'fish_pic/platy_1.jpg', 'Ikan Platy Orange'),
+('FI00009', 'SEL003', 'Mas Koki Yellow', 'Freshwater Fish', 'Mas Koki', 
+'Sumatra',  'Yellow White',2, 10000, 3, 'fish_pic/mas_koki_1.jpg', 'Ikan Mas Koki Yellow'),
 ('FI00010', 'SEL001', 'Arwana Super Red', 'Freshwater Fish', 'Arwana', 
 'Borneo', 'Red', 3, 7000, 1, 'fish_pic/arwana_1.png', 'Ikan Arwana Super Red'),
-('FI00011', 'SEL001', 'Koi', 'Freshwater Fish', 'Class_11', 
-'Region_11', 'Red White', 8, 15000, 2, 'fish_pic/koi_1.jpeg', 'Ikan Koi'),
-('FI00012', 'SEL002', 'Louhan', 'Freshwater Fish', 'Class_12', 
-'Region_12', 'White Red', 12, 21000, 3, 'fish_pic/louhan_1.jpg', 'Ikan Louhan');
+('FI00011', 'SEL001', 'Koi Red White', 'Freshwater Fish', 'Koi', 
+'Sumatra', 'Red White', 8, 15000, 2, 'fish_pic/koi_1.jpeg', 'Ikan Koi Red White'),
+('FI00012', 'SEL002', 'Louhan White', 'Freshwater Fish', 'Louhan', 
+'Sulawesi', 'White Red', 12, 21000, 3, 'fish_pic/louhan_1.jpg', 'Ikan Louhan White'),
+('FI00013', 'SEL003', 'Botana Blue', 'Saltwater Fish', 'Botana', 
+'Carribean',  'Blue Black',12 , 50000, 5, 'sw_fish_pic/botana_blue_1.jpg', 'Ikan Botana Blue'),
+('FI00014', 'SEL003', 'Butterfly', 'Saltwater Fish', 'Butterfly', 
+'Carribean',  'Yellow White',9 , 150000, 5, 'sw_fish_pic/butterfly_1.jpg', 'Ikan Butterfly'),
+('FI00015', 'SEL001', 'Angelfish Biru', 'Saltwater Fish', 'Angelfish', 
+'Europe',  'Blue Yellow',6 , 45000, 3, 'sw_fish_pic/angelfish_1.jpg', 'Ikan Angelfish'),
+('FI00016', 'SEL001', 'Nemo', 'Saltwater Fish', 'Clownfish', 
+'Australia',  'Orange',10 , 500000, 4, 'sw_fish_pic/nemo_1.jpg', 'Ikan Nemo'),
+('FI00017', 'SEL002', 'Lionfish Merah', 'Saltwater Fish', 'Lionfish', 
+'Carribean',  'Red',12 , 850000, 5, 'sw_fish_pic/lionfish_1.jpg', 'Ikan Lionfish Merah'),
+('FI00018', 'SEL002', 'Kakatua Biru', 'Saltwater Fish', 'Kakatua', 
+'Karimun Java',  'Cyan',5 , 30000, 3, 'sw_fish_pic/kakatua_1.jpg', 'Ikan Kakatua Biru');
+
+update fish set Name_Fish = 'Louhan White' where Id_Fish = 'FI00012';
+update fish set Class_Fish = 'Louhan' where Id_Fish = 'FI00012';
+update fish set Region_Fish = 'Sulawesi' where Id_Fish = 'FI00012';
+update fish set Alt_Img_Fish = 'Ikan Louhan White' where Id_Fish = 'FI00012';
 
 INSERT INTO `fish_detail` VALUES
 -- TEMPLATE
@@ -103,9 +120,39 @@ INSERT INTO `fish_detail` VALUES
 'desc3_12', 'desc4_12', 'desc5_12',
 'fish_pic/louhan_1.jpg', 'fish_pic/louhan_2.jfif', 
 'fish_pic/louhan_3.jfif', 'fish_pic/louhan_4.jfif', 
-'fish_pic/louhan_5.jpg');
+'fish_pic/louhan_5.jpg'),
+('FI00013', 'desc1_13', 'desc2_13',
+'desc3_13', 'desc4_13', 'desc5_13',
+'sw_fish_pic/botana_blue_1.jpg', 'sw_fish_pic/botana_blue_2.jpg', 
+'sw_fish_pic/botana_blue_3.jfif', 'sw_fish_pic/botana_blue_4.jpg', 
+'sw_fish_pic/botana_blue_5.jfif'),
+('FI00014', 'desc1_14', 'desc2_14',
+'desc3_14', 'desc4_14', 'desc5_14',
+'sw_fish_pic/butterfly_1.jpg', 'sw_fish_pic/butterfly_2.jpg', 
+'sw_fish_pic/butterfly_3.jpg', 'sw_fish_pic/butterfly_4.jfif', 
+'sw_fish_pic/butterfly_5.jpg'),
+('FI00015', 'desc1_15', 'desc2_15',
+'desc3_15', 'desc4_15', 'desc5_15',
+'sw_fish_pic/angelfish_1.jpg', 'sw_fish_pic/angelfish_2.jpg', 
+'sw_fish_pic/angelfish_3.jpg', 'sw_fish_pic/angelfish_4.jfif', 
+'sw_fish_pic/angelfish_5.jpg'),
+('FI00016', 'desc1_16', 'desc2_16',
+'desc3_16', 'desc4_16', 'desc5_16',
+'sw_fish_pic/nemo_1.jpg', 'sw_fish_pic/nemo_2.jpg', 
+'sw_fish_pic/nemo_3.jfif', 'sw_fish_pic/nemo_4.jfif', 
+'sw_fish_pic/nemo_5.jfif'),
+('FI00017', 'desc1_17', 'desc2_17',
+'desc3_17', 'desc4_17', 'desc5_17',
+'sw_fish_pic/lionfish_1.jpg', 'sw_fish_pic/lionfish_2.jpg', 
+'sw_fish_pic/lionfish_3.jfif', 'sw_fish_pic/lionfish_4.jfif', 
+'sw_fish_pic/lionfish_5.jfif'),
+('FI00018', 'desc1_18', 'desc2_18',
+'desc3_18', 'desc4_18', 'desc5_18',
+'sw_fish_pic/kakatua_1.jpg', 'sw_fish_pic/kakatua_2.jpg', 
+'sw_fish_pic/kakatua_3.jfif', 'sw_fish_pic/kakatua_4.jfif', 
+'sw_fish_pic/kakatua_5.jfif');
 
-INSERT INTO `shipment` VALUES
+INSERT INTO `shipment` VALUES --KAYANYA GAJADI DIPAKE
 -- TEMPLATE
 -- ('idshipment', 'idfish', 'idseller', 'date');
 
@@ -153,60 +200,12 @@ INSERT INTO fish_views VALUES
 (11, 'FI00011', 120),
 (12, 'FI00012', 150),
 (13, 'FI00013', 20),
-(14, 'FI00014', 70);
+(14, 'FI00014', 70),
+(15, 'FI00015', 80),
+(16, 'FI00016', 170),
+(17, 'FI00017', 250),
+(18, 'FI00018', 30);
 
--- NEW
-INSERT INTO fish VALUES
--- TEMPLATE
--- ('idfish', 'idseller', 'name', 'class', 
--- 'region', 'age', 'price', 'rating');
-('FI00013', 'SEL003', 'Botana Blue', 'Saltwater Fish', 'Botana', 
-'Carribean',  'Blue Black',12 , 50000, 5, 'sw_fish_pic/botana_blue_1.jpg', 'Ikan Botana Blue'),
-('FI00014', 'SEL003', 'Butterfly', 'Saltwater Fish', 'Butterfly', 
-'Carribean',  'Yellow White',9 , 150000, 5, 'sw_fish_pic/butterfly_1.jpg', 'Ikan Butterfly'),
-('FI00015', 'SEL001', 'Angelfish Biru', 'Saltwater Fish', 'Angelfish', 
-'Europe',  'Blue Yellow',6 , 45000, 3, 'sw_fish_pic/angelfish_1.jpg', 'Ikan Angelfish'),
-('FI00016', 'SEL001', 'Nemo', 'Saltwater Fish', 'Clownfish', 
-'Australia',  'Orange',10 , 500000, 4, 'sw_fish_pic/nemo_1.jpg', 'Ikan Nemo'),
-('FI00017', 'SEL002', 'Lionfish Merah', 'Saltwater Fish', 'Lionfish', 
-'Carribean',  'Red',12 , 850000, 5, 'sw_fish_pic/lionfish_1.jpg', 'Ikan Lionfish Merah'),
-('FI00018', 'SEL002', 'Kakatua Biru', 'Saltwater Fish', 'Kakatua', 
-'Karimun Java',  'Cyan',5 , 30000, 3, 'sw_fish_pic/kakatua_1.jpg', 'Ikan Kakatua Biru'),
-
-INSERT INTO fish_detail VALUES
--- TEMPLATE
--- ('FI00013', 'desc1_1', 'desc2_1',
--- 'desc3_1', 'desc4_1', 'desc5_1',
--- 'sw_fish_pic/guppy_1.jpg', 'sw_fish_pic/guppy_2.jpg', 
--- 'sw_fish_pic/guppy_3.jpg', 'sw_fish_pic/guppy_4.jpg', 
--- 'sw_fish_pic/guppy_5.jfif'),
-('FI00013', 'desc1_13', 'desc2_13',
-'desc3_13', 'desc4_13', 'desc5_13',
-'sw_fish_pic/botana_blue_1.jpg', 'sw_fish_pic/botana_blue_2.jpg', 
-'sw_fish_pic/botana_blue_3.jfif', 'sw_fish_pic/botana_blue_4.jpg', 
-'sw_fish_pic/botana_blue_5.jfif'),
-('FI00014', 'desc1_14', 'desc2_14',
-'desc3_14', 'desc4_14', 'desc5_14',
-'sw_fish_pic/butterfly_1.jpg', 'sw_fish_pic/butterfly_2.jpg', 
-'sw_fish_pic/butterfly_3.jpg', 'sw_fish_pic/butterfly_4.jfif', 
-'sw_fish_pic/butterfly_5.jpg'),
-('FI00015', 'desc1_15', 'desc2_15',
-'desc3_15', 'desc4_15', 'desc5_15',
-'sw_fish_pic/angelfish_1.jpg', 'sw_fish_pic/angelfish_2.jpg', 
-'sw_fish_pic/angelfish_3.jpg', 'sw_fish_pic/angelfish_4.jfif', 
-'sw_fish_pic/angelfish_5.jpg'),
-('FI00016', 'desc1_16', 'desc2_16',
-'desc3_16', 'desc4_16', 'desc5_16',
-'sw_fish_pic/nemo_1.jpg', 'sw_fish_pic/nemo_2.jpg', 
-'sw_fish_pic/nemo_3.jfif', 'sw_fish_pic/nemo_4.jfif', 
-'sw_fish_pic/nemo_5.jfif'),
-('FI00017', 'desc1_17', 'desc2_17',
-'desc3_17', 'desc4_17', 'desc5_17',
-'sw_fish_pic/lionfish_1.jpg', 'sw_fish_pic/lionfish_2.jpg', 
-'sw_fish_pic/lionfish_3.jfif', 'sw_fish_pic/lionfish_4.jfif', 
-'sw_fish_pic/lionfish_5.jfif'),
-('FI00018', 'desc1_18', 'desc2_18',
-'desc3_18', 'desc4_18', 'desc5_18',
-'sw_fish_pic/kakatua_1.jpg', 'sw_fish_pic/kakatua_2.jpg', 
-'sw_fish_pic/kakatua_3.jfif', 'sw_fish_pic/kakatua_4.jfif', 
-'sw_fish_pic/kakatua_5.jfif'),
+INSERT INTO voucher VALUES
+-- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
+(1, 'cekdiskon1', '2500');

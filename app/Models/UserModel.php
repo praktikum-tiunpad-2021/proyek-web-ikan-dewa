@@ -20,20 +20,19 @@ class UserModel extends Model
     return $data;
   }
 
-  public function getNameUser($Name_User,$id = true)
+  public function getNameUser($id, $x = true)
   {
-    if($id === false){
+    if($x === false){
       return $this->findAll();
     } else {
-      return $this->where('Name_User', $Name_User)->first();
+      return $this->where('id', $id)->first();
     }
   }
 
-  // public function updateProfile($data, $id)
-  // {
-  //   $query = $this->db->table('users')
-  //   ->update($data)
-  //   ->where(array('id' => $id));
-  //   return $query;
-  // }
+  public function updateProfile($data, $id)
+  {
+    $query = $this->db->table('users')
+    ->update($data, array('id' => $id));
+    return $query;
+  }
 }

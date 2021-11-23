@@ -46,7 +46,7 @@ class Home extends BaseController
 
     public function editAccount()
     {
-        $userData = $this->UserModel->getNameUser(session()->get('Name_User'));
+        $userData = $this->UserModel->getNameUser(session()->get('id'));
         $data = [
             'users' => $userData,
         ];
@@ -81,30 +81,26 @@ class Home extends BaseController
     public function checkout($Id_Fish)
     {
         $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
-
+        $userData = $this->UserModel->getNameUser(session()->get('id'));
         $data = [
             'fishData' => $Id_Fish,
+            'users' => $userData,
         ];
-
         return view('pages/checkout', $data);
     }
 
-    public function checkout2($Id_Fish)
-    {
-        $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
+    // public function updateCheckout2($Id_Fish, $Id_Transaction)
+    // {
 
-        $data = [
-            'fishData' => $Id_Fish,
-        ];
-
-        return view('pages/checkout2', $data);
-    }
+    // }
 
     public function myOrder()
     {
         $dataMyOrder = $this->FishDataModel->getFishCart(session()->get('id'));
+        $Data_Transaction = $this->FishDataModel->getTransaction(session()->get('id'));
         $data = [
-            'fishDataMyOrder' => $dataMyOrder
+            'fishDataMyOrder' => $dataMyOrder,
+            'Data_Transaction' => $Data_Transaction,
         ];
         return view('pages/myOrder', $data);
     }
