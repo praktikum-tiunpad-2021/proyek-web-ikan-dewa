@@ -46,11 +46,6 @@ INSERT INTO `fish` VALUES
 ('FI00018', 'SEL002', 'Kakatua Biru', 'Saltwater Fish', 'Kakatua', 
 'Karimun Java',  'Cyan',5 , 30000, 3, 'sw_fish_pic/kakatua_1.jpg', 'Ikan Kakatua Biru');
 
-update fish set Name_Fish = 'Louhan White' where Id_Fish = 'FI00012';
-update fish set Class_Fish = 'Louhan' where Id_Fish = 'FI00012';
-update fish set Region_Fish = 'Sulawesi' where Id_Fish = 'FI00012';
-update fish set Alt_Img_Fish = 'Ikan Louhan White' where Id_Fish = 'FI00012';
-
 INSERT INTO `fish_detail` VALUES
 -- TEMPLATE
 -- ('idfish', 'name', 
@@ -152,14 +147,14 @@ INSERT INTO `fish_detail` VALUES
 'sw_fish_pic/kakatua_3.jfif', 'sw_fish_pic/kakatua_4.jfif', 
 'sw_fish_pic/kakatua_5.jfif');
 
-INSERT INTO `shipment` VALUES --KAYANYA GAJADI DIPAKE
--- TEMPLATE
--- ('idshipment', 'idfish', 'idseller', 'date');
+-- INSERT INTO `shipment` VALUES --KAYANYA GAJADI DIPAKE
+-- -- TEMPLATE
+-- -- ('idshipment', 'idfish', 'idseller', 'date');
 
 
-INSERT INTO `market` VALUES
--- TEMPLATE
--- ('month', 'idfish', 'idseller', 'status');
+-- INSERT INTO `market` VALUES
+-- -- TEMPLATE
+-- -- ('month', 'idfish', 'idseller', 'status');
 
 INSERT INTO `transaction` VALUES
 -- TEMPLATE
@@ -206,6 +201,6 @@ INSERT INTO fish_views VALUES
 (17, 'FI00017', 250),
 (18, 'FI00018', 30);
 
-INSERT INTO voucher VALUES
--- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
-(1, 'cekdiskon1', '2500');
+-- INSERT INTO voucher VALUES
+-- -- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
+-- (1, 'cekdiskon1', '2500');

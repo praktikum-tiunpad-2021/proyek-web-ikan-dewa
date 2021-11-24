@@ -34,23 +34,23 @@ create table fish_detail (
     foreign key (Id_Fish) references fish (Id_Fish)
 );
 
-create table shipment(
-    Id_Shipment varchar (15) not null primary key,
-    Id_Fish varchar (10) not null,
-    Id_Seller varchar (10) not null,
-    Date_Shipment date not null,
-    foreign key (Id_Fish) references fish (Id_Fish),
-    foreign key (Id_Seller) references seller (Id_Seller)
-); --KAYANYA GAJADI DIPAKE
+-- create table shipment(
+--     Id_Shipment varchar (15) not null primary key,
+--     Id_Fish varchar (10) not null,
+--     Id_Seller varchar (10) not null,
+--     Date_Shipment date not null,
+--     foreign key (Id_Fish) references fish (Id_Fish),
+--     foreign key (Id_Seller) references seller (Id_Seller)
+-- ); --KAYANYA GAJADI DIPAKE
 
-create table market(
-    Month_Market varchar (12) not null,
-    Id_Fish varchar (10) not null,
-    Id_Seller varchar (10) not null,
-    Status_Fish date not null,
-    foreign key (Id_Fish) references fish (Id_Fish),
-    foreign key (Id_Seller) references seller (Id_Seller)
-);
+-- create table market(
+--     Month_Market varchar (12) not null,
+--     Id_Fish varchar (10) not null,
+--     Id_Seller varchar (10) not null,
+--     Status_Fish date not null,
+--     foreign key (Id_Fish) references fish (Id_Fish),
+--     foreign key (Id_Seller) references seller (Id_Seller)
+-- );
 
 create table transaction(
     -- Data Pembelian
@@ -77,14 +77,14 @@ create table transaction(
     foreign key (id) references users (id)
 );
 
-create table success_transaction (
-    Id_Transaction varchar (15) not null,
-    Id_Fish varchar (10) not null,
-    id int(3) not null,
-    foreign key (id) references users (id),
-    foreign key (Id_Fish) references fish (Id_Fish),
-    foreign key (Id_Transaction) references 'transaction' (Id_Transaction),
-); --ini nanti dlu, bingung coy
+-- create table success_transaction (
+--     Id_Transaction varchar (15) not null,
+--     Id_Fish varchar (10) not null,
+--     id int(3) not null,
+--     foreign key (id) references users (id),
+--     foreign key (Id_Fish) references fish (Id_Fish),
+--     foreign key (Id_Transaction) references 'transaction' (Id_Transaction),
+-- ); --ini nanti dlu, bingung coy
 
 create table cart (
     Id_Cart int not null primary key,
@@ -117,11 +117,11 @@ create table fish_views (
     foreign key (Id_Fish) references fish (Id_Fish)
 );
 
-create table voucher (
-    Id_Voucher int not null primary key,
-    Code_Voucher varchar(50) not null,
-    Price_Discount int not null,
-);
+-- create table voucher (
+--     Id_Voucher int not null primary key,
+--     Code_Voucher varchar(50) not null,
+--     Price_Discount int not null,
+-- );
 
 alter table wishlist modify Id_Wishlist int not null auto_increment, auto_increment=3;
 alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
