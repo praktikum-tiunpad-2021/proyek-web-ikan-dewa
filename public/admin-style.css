@@ -36,93 +36,96 @@ Tugas : Project Website Praktikum Pemrograman Web
 }
 
 /*UNIVERSAL*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle {
+    display: block;
+    margin: 0 auto;
+}
+.border-black {
+    border: 2px solid black;
+}
+.admin-text-1 {
+    font-family: Gotham-Bold;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.admin-text-2 {
+    font-family: Gotham-Thin;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edit-square {
+    background-color: green;
+}
+.delete-square {
+    background-color: red;
 }
 
-/*Admin Login*/
-.login-register-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: max-content;
-    width: 330px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding-bottom: 20px;
-}
-.login-banner {
-    background-image : url("assets/Pics/login-wave.jpg");
-    background-size: cover;
-    padding: 7px;
-    background-position: 0px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.register-banner {
-    background-image : url("assets/Pics/login-wave.jpg");
-    background-size: cover;
-    padding: 7px;
-    background-position: -5px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.login-register-text-1{
-    flex: 1;
+/*VIEW*/
+.view-text-1 {
+    font-size: 14px;
     text-align: center;
-    font-size: 28px;
-    color: white;
-    font-family: Gotham-Medium;
-    letter-spacing: 5px;
-    font-weight: 100;
-}
-.form-login-register {
-    line-height: 10px;
-}
-.login-register-input {
-    margin-top: -20px;
-    width: 260px;
-    border: 1px solid black;
-    height: 25px;
-}
-.login-register-input-text-1 {
-    font-size: 12px;
-    font-family: Lato-Light;
     color: black;
+    font-family: Lato-Medium;
 }
-.login-register-input-text-2 {
-    font-size: 10px;
-    font-family: Lato-Light;
-    text-align: right;
+.view-text-2 {
+    font-size: 14px;
+    text-align: left;
     color: black;
-}
-.login-register-input-logo {
-    width: 15px;
-    height: 15px;
-}
-.login-register-input-submit {
-    padding: 8px;
-    padding-left: 101px;
-    padding-right: 101px;
     font-family: Lato-Light;
-    background-color: #004A4D;
-    color: white;
-    vertical-align: middle;
-    border: none;
 }
-.login-register-bottom-text {
-    color:blue;
+.view-button-1 {
+    color: white;
     text-decoration:none;
 }
-.login-register-bottom-text:hover {
-    color:purple;
+.view-button-1:hover {
+    color: white;
+    text-decoration:underline;
 }
-.login-register-alert {
-    padding:10px;
-    line-height:18px;
-    font-size:14px
+.view-button-2 {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.view-button-2:hover {
+    background-color: lightblue;
+    color: black;
+}
+.table-padding {
+    padding: 5px;
+}
+
+/*ADD DATA*/
+.input-data {
+    width: 200px;
+}
+.input-data-padding {
+    padding-left:10px;
+    padding-right:10px;
+}
+.input-data-button {
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.input-data-button:hover {
+    background-color: lightblue;
+    color: black;
 }

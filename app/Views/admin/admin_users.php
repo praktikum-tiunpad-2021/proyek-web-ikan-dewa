@@ -6,79 +6,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?= base_url('bootstrap-grid.css'); ?>">
-        <style>
-            .center {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .border-black {
-                border: 1px solid black;
-            }
-            h1 {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 36px;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-            }
-            .edit-square {
-                background-color: green;
-            }
-            .delete-square {
-                background-color: red;
-            }
-            .action-button {
-                color: white;
-            }
-            .action-button:hover {
-                color: white;
-            }
-            .second-action-button {
-                background-color: white;
-                color: black;
-                padding: 5px;
-                border: 1px solid black;
-                transition: 0.4s;
-            }
-            .second-action-button:hover {
-                background-color: lightblue;
-                color: black;
-            }
-        </style>
+        <link rel="stylesheet" href="<?= base_url('admin-style.css'); ?>">
     </head>
     <body>
-        <div class="container center">
-            <div class="row center">
-                <div class="center">
-                    <h1>Table Users</h1>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <h1 class="admin-text-1">Table Users</h1>
                 </div>
-                <table class="border-black">
-                    <thead class="border-black">
-                        <tr>
-                            <td class="border-black">id</td>
-                            <td class="border-black">email</td>
-                            <td class="border-black">password</td>
-                            <td class="border-black">Name_User</td>
-                            <td class="border-black">Born_Date</td>
-                            <th class="border-black" colspan="2">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($User_Data as $row) : ?>
-                        <tr>
-                            <td class="border-black"><?= $row['id']; ?></td>
-                            <td class="border-black"><?= $row['email']; ?></td>
-                            <td class="border-black"><?= $row['password']; ?></td>
-                            <td class="border-black"><?= $row['Name_User']; ?></td>
-                            <td class="border-black"><?= $row['Born_Date']; ?></td>
-                            <td class="border-black edit-square"><a class="action-button" href="">Edit</a></td>
-                            <td class="border-black delete-square"><a class="action-button" href="">Delete</a></td>
-                        </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-                <a href="" style="margin-right:10px"><button class="second-action-button">Add Cargo</button></a>
-                <a href="/admin"><button class="second-action-button">Exit to Menu</button></a>
+            </div>
+            <div class="row center" style="margin-top:10px; margin-bottom:30px">  
+                <div class="col">
+                    <table class="center" border="2" style="background-color:black;">
+                        <thead style="background-color:silver;">
+                            <tr>
+                                <th class="view-text-1 table-padding">id</th>
+                                <th class="view-text-1 table-padding">email</th>
+                                <th class="view-text-1 table-padding">password</th>
+                                <th class="view-text-1 table-padding">Name_User</th>
+                                <th class="view-text-1 table-padding">Born_Date</th>
+                                <th class="view-text-1 table-padding" colspan="2">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody style="background-color:white;">
+                            <?php foreach($User_Data as $row) : ?>
+                            <tr>
+                                <td class="view-text-2 table-padding"><?= $row['id']; ?></td>
+                                <td class="view-text-2 table-padding"><?= $row['email']; ?></td>
+                                <td class="view-text-2 table-padding"><?= $row['password']; ?></td>
+                                <td class="view-text-2 table-padding"><?= $row['Name_User']; ?></td>
+                                <td class="view-text-2 table-padding"><?= $row['Born_Date']; ?></td>
+                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="">Edit</a></td>
+                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="">Delete</a></td>
+                            </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-md-center" style="margin-bottom:30px">
+                <div class="col-xs-3">
+                    <a href="/admin/users/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+                    <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
+                </div>
             </div>
         </div>
     </body>

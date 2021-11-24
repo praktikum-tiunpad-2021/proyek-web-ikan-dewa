@@ -57,6 +57,10 @@ $routes->get('/landing','Home::landing_after_login',['filter' => 'auth']);
 
 $routes->get('/admin', 'Admin::admin_home');
 $routes->get('/admin/users', 'Admin::admin_users');
+$routes->get('/admin/users/add', 'Admin::admin_users_add');
+$routes->get('/admin/fish', 'Admin::admin_fish');
+$routes->get('/admin/fishDetail', 'Admin::admin_fishDetail');
+
 
 
 

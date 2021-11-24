@@ -10,8 +10,8 @@
     <body>
         <ul>
             <li><a href="admin/users">Users</a></li>
-            <li>Fish</li>
-            <li>Fish Detail</li>
+            <li><a href="admin/fish">Fish</a></li>
+            <li><a href="admin/fishDetail">Fish Detail</a></li>
             <li>Fish Views</li>
             <li>Transaction</li>
             <li>Seller</li>
