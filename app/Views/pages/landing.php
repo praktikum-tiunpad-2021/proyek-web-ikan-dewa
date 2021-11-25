@@ -50,7 +50,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 ?>
                     <div class="col-3">
                         <a href="/product/<?= $bestSellerFish[$i]['Id_Fish'] ?>" class="pic-anchor">
-                            <img class="landing-img" src="assets/Pics/<?= $bestSellerFish[$i]['Img_Fish']; ?>" alt="<?= $bestSellerFish[$i]['Alt_Img_Fish']; ?>">
+                            <img class="landing-img" src="assets/Pics/<?= $bestSellerFish[$i]['Img_Fish']; ?>" alt="Ikan <?= $bestSellerFish[$i]['Name_Fish']; ?>">
                             <h2 class="landing-text-1"><?= $bestSellerFish[$i]['Name_Fish']; ?></h2>
                         </a>
                     </div>
@@ -68,7 +68,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <div class="landing-card">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="landing-card-img" src="assets/Pics/<?= $topSearchFish[$i]['Img_Fish']; ?>" alt="<?= $topSearchFish[$i]['Alt_Img_Fish']; ?>">
+                                        <img class="landing-card-img" src="assets/Pics/<?= $topSearchFish[$i]['Img_Fish']; ?>" alt="Ikan <?= $topSearchFish[$i]['Name_Fish']; ?>">
                                     </div>
                                     <div class="col-8" style="line-height:5px">
                                         <h3 class="landing-text-4"><?= $topSearchFish[$i]['Name_Fish']; ?></h3>
@@ -98,7 +98,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <h2 class="landing-text-2">AQUA<span style="font-size: 18px;letter-spacing: normal; font-style:italic; color:black;">fish Marketplace</span></h2>
                 </div>
                 <div class="row" style="margin-top:10px; margin-bottom:20px; width:101.5%">
-                    <p class="landing-text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales felis volutpat lectus tempor, eu auctor augue pharetra. Nullam at suscipit nisi. Sed scelerisque, orci at facilisis sollicitudin, velit urna feugiat arcu, non molestie lorem velit faucibus tellus. Sed sit amet varius nulla, a ornare velit. Phasellus varius leo vitae nulla fermentum iaculis. Nunc scelerisque vulputate libero eget aliquam. Nunc vel odio a est dignissim condimentum sed vel leo. In ut facilisis orci. Aenean nibh orci, hendrerit non fringilla a, mattis at nulla. Morbi nisl erat, fermentum dapibus rutrum vitae, volutpat vitae orci. Suspendisse potenti. Aliquam eget ipsum in augue eleifend venenatis. Quisque lectus lacus, mattis sed pellentesque et, tincidunt eget augue. Mauris ac urna at quam egestas pulvinar sit amet et risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut ipsum non metus pellentesque molestie. Vivamus libero ex, elementum nec blandit et, suscipit eget eros. Fusce eu metus diam. Vivamus pellentesque pharetra tempus. Quisque sit amet tincidunt lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam auctor fermentum ante, quis volutpat lectus mollis vel. Vestibulum mollis nisl vitae dui efficitur, vitae ullamcorper magna porttitor.</p>
+                    <p class="landing-text-3">Aquafish Marketplace adalah sebuah pasar online (marketplace) yang bergerak di bidang jual beli ikan hias. Aquafish Marketplace berfungsi sebagai platform serbaguna untuk kegiatan jual beli ikan hias dengan mudah dan simple. Aquafish Marketplace juga berfungsi sebagai media informasi dalam bidang ikan hias. Aquafish Marketplace bertujuan mengakomodir sebuah platform yang mempermudah masyarakat untuk kegiatan jual beli ikan hias dan yang sedang mencari tahu informasi tentang ikan hias. Harapannya, dengan adanya Aquafish Marketplace ini, masyarakat yang berkaitan dapat terbantu dengan adanya website ini dalam kegiatan jual beli ikan hias baik bagi penjual maupun pembeli.</p>
                 </div>
             </div>
         </main>

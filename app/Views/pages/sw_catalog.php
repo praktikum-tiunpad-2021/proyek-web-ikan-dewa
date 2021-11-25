@@ -28,7 +28,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <?php foreach ($fishData as $row) : ?>
                     <div class="col-3">
                         <a href="/product/<?= $row['Id_Fish'] ?>" class="pic-anchor">
-                            <img class="catalog-img" src="assets/Pics/<?= $row['Img_Fish']; ?>" alt="<?= $row['Alt_Img_Fish']; ?>">
+                            <img class="catalog-img" src="assets/Pics/<?= $row['Img_Fish']; ?>" alt="Ikan <?= $row['Name_Fish']; ?>">
                             <h2 class="catalog-text-1"><?= $row['Name_Fish']; ?></h2>
                             <p class="catalog-text-2">Rp. <?= $row['Price_Fish']; ?></p>
                         </a>

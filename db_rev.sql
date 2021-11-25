@@ -15,7 +15,7 @@ create table fish(
     Price_Fish int not null,
     Rating_Fish int(1),
     Img_Fish varchar(255) not null,
-    Alt_Img_Fish varchar(255) not null,
+    Fish_Views int not null,
     foreign key (Id_Seller) references seller (Id_Seller)
 );
 
@@ -77,15 +77,6 @@ create table transaction(
     foreign key (id) references users (id)
 );
 
--- create table success_transaction (
---     Id_Transaction varchar (15) not null,
---     Id_Fish varchar (10) not null,
---     id int(3) not null,
---     foreign key (id) references users (id),
---     foreign key (Id_Fish) references fish (Id_Fish),
---     foreign key (Id_Transaction) references 'transaction' (Id_Transaction),
--- ); --ini nanti dlu, bingung coy
-
 create table cart (
     Id_Cart int not null primary key,
     Id_Fish varchar (10) not null,
@@ -110,18 +101,35 @@ create table users(
     Born_Date date not null
 );
 
-create table fish_views (
-    Id_Page int not null primary key,
-    Id_Fish varchar (10) not null,
-    Total_Views int not null,
-    foreign key (Id_Fish) references fish (Id_Fish)
+create table post_code (
+    Id_Post_Code int not null primary key,
+    Post_Code int(5) not null,
+    Neighborhood varchar(50) not null,
+    District varchar(50) not null,
+    City varchar(50) not null,
+    Province varchar(50) not null
 );
+
+create table payment_db (
+    Id_Payment_Type int not null primary key,
+    Payment_Type varchar(50) not null,
+    Name_Payment varchar(50) not null,
+    Number_Payment int not null,
+    Owner_Payment varchar(255) not null
+);
+
+-- create table fish_views (
+--     Id_Page int not null primary key,
+--     Id_Fish varchar (10) not null,
+--     Total_Views int not null,
+--     foreign key (Id_Fish) references fish (Id_Fish)
+-- ); UDAH ILANG BRO
 
 -- create table voucher (
 --     Id_Voucher int not null primary key,
 --     Code_Voucher varchar(50) not null,
 --     Price_Discount int not null,
--- );
+-- ); INI BELOM BRO
 
 alter table wishlist modify Id_Wishlist int not null auto_increment, auto_increment=3;
 alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
@@ -129,6 +137,7 @@ alter table wishlist add unique (Id_Fish);
 alter table cart add unique (Id_Fish);
 alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
 alter table transaction modify Id_Transaction int not null auto_increment, auto_increment=1;
+alter table post_code modify Id_Post_Code int not null auto_increment, auto_increment=1;
 commit;
 
 -- NOTES

@@ -30,7 +30,6 @@ class FishDataModel extends Model
     $query = $this->db->table('fish')
     ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
     ->join('seller', 'fish.Id_Seller = seller.Id_Seller', 'JOIN')
-    ->join('fish_views', 'fish.Id_Fish = fish_views.Id_Fish', 'JOIN')
     ->where(['fish.Id_Fish' => $Id_Fish])
     ->get()->getResultArray();
     return $query;
@@ -47,9 +46,8 @@ class FishDataModel extends Model
 
   public function getTopSearchFish()
   {
-    $query = $this->db->table('fish_views')
-    ->join('fish', 'fish.Id_Fish = fish_views.Id_Fish', 'JOIN')
-    ->orderBy('Total_Views', 'desc')
+    $query = $this->db->table('fish')
+    ->orderBy('Fish_Views', 'desc')
     ->get()->getResultArray();
     return $query;
   }

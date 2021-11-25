@@ -57,7 +57,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <div class="row order-card-2" style="margin-top:20px">
                             <div class="col-2 my-auto">
-                                <img class="order-img-2" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_1']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                                <img class="order-img-2" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish_1']); ?>" alt="Ikan <?= base_url($fishData[0]['Name_Fish']); ?>">
                             </div>
                             <div class="col-5 my-auto">
                                 <h3 class="order-text-4"><?= $fishData[0]['Name_Fish']; ?></h3>
@@ -79,12 +79,13 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="order-card-1" style="padding-top:20px; padding-bottom:20px">
+                        <div class="order-card-1" style="padding-top:20px; padding-bottom:15px">
                             <h3 class="order-text-6">Masukkan Kode Voucher</h3>
                             <form style="margin-top:15px">
                                 <input type="text" class="order-input" style="margin-left:3px">
                                 <input type="submit" id="order-input-submit" value="Cek">
                             </form>
+                            <p class="order-text-5" style="margin-top:8px; margin-left:5px">Voucher berhasil diaplikasikan!</p>
                         </div>
                         <div class="order-card-1" style="margin-top:20px">
                             <table style="width:210px;height:110px; margin-left:auto; margin-right:auto">
@@ -102,7 +103,18 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </tr>
                             </table>
                             <a href="/checkout/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px;">CHECKOUT</button></a>
-                            <h3 class="order-text-8" style="margin-top:100px; margin-bottom:60px">Metode Pembayaran</h3>
+                            <h3 class="order-text-8" style="margin-top:100px;">Metode Pembayaran</h3>
+                            <div style="margin-left:10px">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Gopay.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/OVO.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Indomaret.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Alfamart.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Bca.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Mandiri.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Bni.png'); ?>">
+                                <img class="order-payment-logo" src="<?= base_url('assets/Logo/Bri.png'); ?>">
+
+                            </div>
                         </div>
                     </div>
                 </div>

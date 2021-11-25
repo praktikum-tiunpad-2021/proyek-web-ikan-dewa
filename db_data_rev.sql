@@ -10,41 +10,41 @@ INSERT INTO `fish` VALUES
 -- ('idfish', 'idseller', 'name', 'class', 
 -- 'region', 'age', 'price', 'rating');
 ('FI00001', 'SEL001', 'Guppy Blue Orange', 'Freshwater Fish', 'Guppy', 
-'Europe',  'Blue Orange',1 , 5000, 5, 'fish_pic/guppy_1.jpg', 'Ikan Guppy Blue Orange'),
+'Europe',  'Blue Orange',1 , 5000, 5, 'fish_pic/guppy_1.jpg', 40),
 ('FI00002', 'SEL001', 'Molly Yellow', 'Freshwater Fish', 'Molly', 
-'Australia',  'Yellow',2, 4000, 4, 'fish_pic/molly_1.jpg', 'Ikan Molly Yellow'),
+'Australia',  'Yellow',2, 4000, 4, 'fish_pic/molly_1.jpg', 30),
 ('FI00003', 'SEL002', 'Betta Light Blue', 'Freshwater Fish', 'Betta', 
-'Java',  'Light Blue',3, 2000, 2, 'fish_pic/cupang_1.jpg', 'Ikan Cupang Light Blue'),
+'Java',  'Light Blue',3, 2000, 2, 'fish_pic/cupang_1.jpg', 50),
 ('FI00004', 'SEL003', 'Manfish White', 'Freshwater Fish', 'Manfish', 
-'Australia',  'White Silver',4, 3000, 3, 'fish_pic/manfish_1.jpg', 'Ikan Manfish White'),
+'Australia',  'White Silver',4, 3000, 3, 'fish_pic/manfish_1.jpg', 80),
 ('FI00005', 'SEL001', 'Lemon Yellow', 'Freshwater Fish', 'Lemon', 
-'America',  'Yellow',6, 1000, 3, 'fish_pic/lemon_1.png', 'Ikan Lemon Yellow'),
+'America',  'Yellow',6, 1000, 3, 'fish_pic/lemon_1.png', 90),
 ('FI00006', 'SEL001', 'Black Ghost', 'Freshwater Fish', 'Ghost', 
-'Africa',  'Black',2, 90000, 1, 'fish_pic/black_ghost_1.jpg', 'Ikan Black Ghost'),
+'Africa',  'Black',2, 90000, 1, 'fish_pic/black_ghost_1.jpg', 100),
 ('FI00007', 'SEL003', 'Discus Cyan', 'Freshwater Fish', 'Discus', 
-'America',  'Cyan',1, 8000, 3, 'fish_pic/discus_1.jpg', 'Ikan Discus Cyan'),
+'America',  'Cyan',1, 8000, 3, 'fish_pic/discus_1.jpg', 20),
 ('FI00008', 'SEL002', 'Platy Orange', 'Freshwater Fish', 'Platy', 
-'America',  'Orange',3, 6000, 2, 'fish_pic/platy_1.jpg', 'Ikan Platy Orange'),
+'America',  'Orange',3, 6000, 2, 'fish_pic/platy_1.jpg', 25),
 ('FI00009', 'SEL003', 'Mas Koki Yellow', 'Freshwater Fish', 'Mas Koki', 
-'Sumatra',  'Yellow White',2, 10000, 3, 'fish_pic/mas_koki_1.jpg', 'Ikan Mas Koki Yellow'),
+'Sumatra',  'Yellow White',2, 10000, 3, 'fish_pic/mas_koki_1.jpg', 70),
 ('FI00010', 'SEL001', 'Arwana Super Red', 'Freshwater Fish', 'Arwana', 
-'Borneo', 'Red', 3, 7000, 1, 'fish_pic/arwana_1.png', 'Ikan Arwana Super Red'),
+'Borneo', 'Red', 3, 7000, 1, 'fish_pic/arwana_1.png', 55),
 ('FI00011', 'SEL001', 'Koi Red White', 'Freshwater Fish', 'Koi', 
-'Sumatra', 'Red White', 8, 15000, 2, 'fish_pic/koi_1.jpeg', 'Ikan Koi Red White'),
+'Sumatra', 'Red White', 8, 15000, 2, 'fish_pic/koi_1.jpeg', 120),
 ('FI00012', 'SEL002', 'Louhan White', 'Freshwater Fish', 'Louhan', 
-'Sulawesi', 'White Red', 12, 21000, 3, 'fish_pic/louhan_1.jpg', 'Ikan Louhan White'),
+'Sulawesi', 'White Red', 12, 21000, 3, 'fish_pic/louhan_1.jpg', 150),
 ('FI00013', 'SEL003', 'Botana Blue', 'Saltwater Fish', 'Botana', 
-'Carribean',  'Blue Black',12 , 50000, 5, 'sw_fish_pic/botana_blue_1.jpg', 'Ikan Botana Blue'),
+'Carribean',  'Blue Black',12 , 50000, 5, 'sw_fish_pic/botana_blue_1.jpg', 20),
 ('FI00014', 'SEL003', 'Butterfly', 'Saltwater Fish', 'Butterfly', 
-'Carribean',  'Yellow White',9 , 150000, 5, 'sw_fish_pic/butterfly_1.jpg', 'Ikan Butterfly'),
+'Carribean',  'Yellow White',9 , 150000, 5, 'sw_fish_pic/butterfly_1.jpg', 70),
 ('FI00015', 'SEL001', 'Angelfish Biru', 'Saltwater Fish', 'Angelfish', 
-'Europe',  'Blue Yellow',6 , 45000, 3, 'sw_fish_pic/angelfish_1.jpg', 'Ikan Angelfish'),
+'Europe',  'Blue Yellow',6 , 45000, 3, 'sw_fish_pic/angelfish_1.jpg', 80),
 ('FI00016', 'SEL001', 'Nemo', 'Saltwater Fish', 'Clownfish', 
-'Australia',  'Orange',10 , 500000, 4, 'sw_fish_pic/nemo_1.jpg', 'Ikan Nemo'),
+'Australia',  'Orange',10 , 500000, 4, 'sw_fish_pic/nemo_1.jpg', 170),
 ('FI00017', 'SEL002', 'Lionfish Merah', 'Saltwater Fish', 'Lionfish', 
-'Carribean',  'Red',12 , 850000, 5, 'sw_fish_pic/lionfish_1.jpg', 'Ikan Lionfish Merah'),
+'Carribean',  'Red',12 , 850000, 5, 'sw_fish_pic/lionfish_1.jpg', 250),
 ('FI00018', 'SEL002', 'Kakatua Biru', 'Saltwater Fish', 'Kakatua', 
-'Karimun Java',  'Cyan',5 , 30000, 3, 'sw_fish_pic/kakatua_1.jpg', 'Ikan Kakatua Biru');
+'Karimun Java',  'Cyan',5 , 30000, 3, 'sw_fish_pic/kakatua_1.jpg', 30);
 
 INSERT INTO `fish_detail` VALUES
 -- TEMPLATE
@@ -179,28 +179,17 @@ INSERT INTO wishlist VALUES
 (1, 'FI00005', 2),
 (2, 'FI00010', 2);
 
-INSERT INTO fish_views VALUES
--- TEMPLATE
--- ('Id_Page', 'Id_Fish', 'Total_Views')
-(1, 'FI00001', 40),
-(2, 'FI00002', 30),
-(3, 'FI00003', 50),
-(4, 'FI00004', 80),
-(5, 'FI00005', 90),
-(6, 'FI00006', 100),
-(7, 'FI00007', 20),
-(8, 'FI00008', 25),
-(9, 'FI00009', 70),
-(10, 'FI00010', 55),
-(11, 'FI00011', 120),
-(12, 'FI00012', 150),
-(13, 'FI00013', 20),
-(14, 'FI00014', 70),
-(15, 'FI00015', 80),
-(16, 'FI00016', 170),
-(17, 'FI00017', 250),
-(18, 'FI00018', 30);
 
 -- INSERT INTO voucher VALUES
 -- -- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
 -- (1, 'cekdiskon1', '2500');
+
+INSERT INTO payment_db VALUES   
+('Virtual Account', 'Gopay' , '082198674562', 'Aquafish Marketplace'),
+('Virtual Account', 'Ovo' , '082198674562', 'Aquafish Marketplace'),
+('Gerai Minimarket', 'Indomaret' , '9077082198674562', 'Aquafish Marketplace'),
+('Gerai Minimarket', 'Alfamart' , '9078082198674562', 'Aquafish Marketplace'),
+('Transfer Bank', 'Bank Mandiri' , '7228921875', 'Aquafish Marketplace'),
+('Transfer Bank', 'Bank BCA' , '8561756283', 'Aquafish Marketplace'),
+('Transfer Bank', 'Bank BNI' , '3452059836', 'Aquafish Marketplace'),
+('Transfer Bank', 'Bank BRI' , '5567201784', 'Aquafish Marketplace');

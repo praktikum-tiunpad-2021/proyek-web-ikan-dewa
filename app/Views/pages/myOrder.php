@@ -38,7 +38,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     ?>
                     <div class="row checkout-card margin-center" style="width:1000px;">
                         <div class="col-2 my-auto">
-                            <img class="checkout-img" src="<?= base_url('assets/Pics/'.$row['Img_Fish']); ?>" alt="<?= base_url($row['Alt_Img_Fish']); ?>">
+                            <img class="checkout-img" src="<?= base_url('assets/Pics/'.$row['Img_Fish']); ?>" alt="Ikan <?= base_url($row['Name_Fish']); ?>">
                         </div>
                         <div class="col-5 my-auto">
                             <h3 class="checkout-text-3"><?= $row['Name_Fish']; ?></h3>
@@ -84,7 +84,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <a href="/product/<?= $row2['Id_Fish'] ?>" style="text-decoration:none;">
                         <div class="row checkout-card margin-center keranjang-box-3" style=" width:1000px;">
                             <div class="col-2 my-auto">
-                                <img class="checkout-img" src="<?= base_url('assets/Pics/'.$row2['Img_Fish']); ?>" alt="<?= base_url($row2['Alt_Img_Fish']); ?>">
+                                <img class="checkout-img" src="<?= base_url('assets/Pics/'.$row2['Img_Fish']); ?>" alt="Ikan <?= base_url($row2['Name_Fish']); ?>">
                             </div>
                             <div class="col-5 my-auto">
                                 <h3 class="checkout-text-3"><?= $row2['Name_Fish']; ?></h3>

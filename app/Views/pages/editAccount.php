@@ -49,15 +49,15 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <input type="hidden" id="id" name="id" value="<?= $users['id']; ?>">
                         </div>
                         <div style="margin-top:10px">
-                            <p class="edit-account-text-1">Kata Sandi*</p>
+                            <p class="edit-account-text-1">Ganti Kata Sandi*</p>
                             <input class="edit-account-input" id="password" name="password" type="password" value="">
                         </div>
                         <div style="margin-top:10px">
-                            <p class="edit-account-text-1">Nama Lengkap*</p>
+                            <p class="edit-account-text-1">Ganti Nama Lengkap*</p>
                             <input class="edit-account-input" id="nama-lengkap" name="Name_User" type="text" value="">
                         </div>
                         <div style="margin-top:10px">
-                            <p class="edit-account-text-1">Tanggal Lahir*</p>
+                            <p class="edit-account-text-1">Ganti Tanggal Lahir*</p>
                             <input class="edit-account-input" id="tanggal-lahir" name="Born_Date" type="date" value="">
                         </div>
                         <div style="margin-top:15px">

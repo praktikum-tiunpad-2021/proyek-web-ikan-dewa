@@ -658,6 +658,12 @@ nav ul input{
     background-color: #004A4D;
     text-decoration: none;
 }
+.order-payment-logo {
+    height: 20px;
+    max-width: 55px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
 /*Checkout*/
 .checkout-logo-1 {

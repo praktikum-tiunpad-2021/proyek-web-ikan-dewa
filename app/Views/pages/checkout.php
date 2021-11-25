@@ -52,7 +52,7 @@ Tugas : Project Website Praktikum Pemrograman Web
             <div class="container">
                 <div class="row" style="margin-top:40px">
                     <div class="col text-center">
-                        <img class="checkout-logo-1" src="<?php echo base_url('assets/Logo/800ppi/logo1.png'); ?>" alt="logo">
+                        <img class="checkout-logo-1" src="<?php echo base_url('assets/Logo/800ppi/logo1.png'); ?>" alt="logo AM">
                         <span class="checkout-text-1" style="margin-left:10px">AQUA<span style="font-size: 22px;letter-spacing: normal;color:black;"> fish Marketplace</span></span>
                     </div>                
                 </div>
@@ -122,7 +122,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="row" style="margin-top:10px">
                             <div class="col">
                                 <p class="checkout-text-2">Kode Pos</p>
-                                <input class="checkout-input-1" id="kode_pos" name="Buyer_Post_Code" type="text" required>
+                                <input class="checkout-input-1" id="kode_pos" name="Buyer_Post_Code" type="number" required>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px">
@@ -141,14 +141,12 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <div class="col">
                                 <p class="checkout-text-2">Opsi Pembayaran</p>
                                 <div style="text-align:left;">
-                                    <input type="radio" id="gopay" name="Payment_Type" value="Gopay" required>
-                                    <label class="checkout-text-2" for="gopay">Gopay</label><br>
-                                    <input type="radio" id="ovo" name="Payment_Type" value="OVO" required>
-                                    <label class="checkout-text-2" for="ovo">Ovo</label><br>
-                                    <input type="radio" id="gerai" name="Payment_Type" value="Minimarket" required>
-                                    <label class="checkout-text-2" for="gerai">Gerai Minimarket</label><br>
-                                    <input type="radio" id="transfer" name="Payment_Type" value="Transfer" required>
-                                    <label class="checkout-text-2" for="transfer">Transfer Bank</label>
+                                    <input type="radio" id="VirtualAccount" name="Payment_Type" value="Virtual Account" required>
+                                    <label class="checkout-text-2" for="VirtualAccount">Virtual Account (Ovo, Gopay)</label><br>
+                                    <input type="radio" id="GeraiMinimarket" name="Payment_Type" value="Gerai Minimarket" required>
+                                    <label class="checkout-text-2" for="GeraiMinimarket">Gerai Minimarket</label><br>
+                                    <input type="radio" id="TransferBank" name="Payment_Type" value="Transfer Bank" required>
+                                    <label class="checkout-text-2" for="TransferBank">Transfer Bank</label>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +175,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 <div class="row justify-content-md-center" style="margin-top:15px; margin-bottom:40px;">
                     <div class="row checkout-card" style="margin-top:35px">
                         <div class="col-2 my-auto">
-                            <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                            <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="Ikan <?= base_url($fishData[0]['Name_Fish']); ?>">
                         </div>
                         <div class="col-5 my-auto">
                             <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>

@@ -68,17 +68,51 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <p class="checkout-text-6">Lakukan pembayaran  sesuai dengan jumlah pembayaran di atas melalui metode pembayaran di bawah ini: </p>
                     </div>
                 </div>
-                <div class="row justify-content-md-center" style="margin-top:30px; margin-bottom:30px">
-                    <div class="col col-lg-1 checkout-box-3">
-                        <p class="checkout-text-7 text-center"><?= $Data_Transaction['Payment_Type']; ?></p>
-                    </div>
-                    <div class="col col-lg-6 checkout-box-3" style="border-left:5px solid white; border-right:5px solid white;">
-                        <p class="checkout-text-7 text-center">12345678910</p>
-                    </div>
-                    <div class="col col-lg-1 checkout-box-3">
-                        <img class="checkout-logo-2" src="<?= base_url('assets/Logo/'.$Data_Transaction['Payment_Type'].'.png'); ?>" alt="logo_gopay" style="margin-top:-5px">
-                    </div>
-                </div>
+                <?php
+                    if ($Data_Transaction['Payment_Type'] === 'Virtual Account'){
+                        foreach ($PaymentDataVA as $row) :
+                        ?>
+                            <div class="row justify-content-md-center" style="margin-top:5px;">
+                                <div class="col col-lg-2 checkout-box-3">
+                                    <p class="checkout-text-7 text-center"><?= $row['Name_Payment']; ?></p>
+                                </div>
+                                <div class="col col-lg-6 checkout-box-3" style="border-left:5px solid white; border-right:5px solid white;">
+                                    <p class="checkout-text-7 text-center"><?= $row['Number_Payment']; ?> a.n. <?= $row['Owner_Payment']; ?></p>
+                                </div>
+                            </div>
+                        <?php
+                    endforeach; } 
+                ?>
+                <?php
+                    if ($Data_Transaction['Payment_Type'] === 'Gerai Minimarket'){
+                        foreach ($PaymentDataGM as $row) :
+                        ?>
+                            <div class="row justify-content-md-center" style="margin-top:5px;">
+                                <div class="col col-lg-2 checkout-box-3">
+                                    <p class="checkout-text-7 text-center"><?= $row['Name_Payment']; ?></p>
+                                </div>
+                                <div class="col col-lg-6 checkout-box-3" style="border-left:5px solid white; border-right:5px solid white;">
+                                    <p class="checkout-text-7 text-center"><?= $row['Number_Payment']; ?> a.n. <?= $row['Owner_Payment']; ?></p>
+                                </div>
+                            </div>
+                        <?php
+                    endforeach; } 
+                ?>
+                <?php
+                    if ($Data_Transaction['Payment_Type'] === 'Transfer Bank'){
+                        foreach ($PaymentDataTF as $row) :
+                        ?>
+                            <div class="row justify-content-md-center" style="margin-top:5px;">
+                                <div class="col col-lg-2 checkout-box-3">
+                                    <p class="checkout-text-7 text-center"><?= $row['Name_Payment']; ?></p>
+                                </div>
+                                <div class="col col-lg-6 checkout-box-3" style="border-left:5px solid white; border-right:5px solid white;">
+                                    <p class="checkout-text-7 text-center"><?= $row['Number_Payment']; ?> a.n. <?= $row['Owner_Payment']; ?></p>
+                                </div>
+                            </div>
+                        <?php
+                    endforeach; } 
+                ?>
                 <div class="row" style="margin-top:60px; margin-bottom:30px">
                     <div class="col checkout-box-1">
                         <h1 class="text-center checkout-text-5" style="">Konfirmasi Pesanan</h1>
@@ -86,7 +120,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row checkout-card margin-center" style="margin-top:35px; margin-bottom:30px; width:1000px;">
                     <div class="col-2 my-auto">
-                        <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="<?= base_url($fishData[0]['Alt_Img_Fish']); ?>">
+                        <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="Ikan <?= base_url($fishData[0]['Name_Fish']); ?>">
                     </div>
                     <div class="col-5 my-auto">
                         <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>
