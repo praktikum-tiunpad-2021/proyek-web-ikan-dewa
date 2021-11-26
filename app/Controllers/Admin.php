@@ -22,6 +22,14 @@ class Admin extends BaseController
         return view('admin/admin_users_add');
     }
 
+    public function admin_users_edit($id){
+        $User_Data = $this->AdminModel->getDataUser($id);
+        $data = [
+            'User_Data' => $User_Data,
+        ];
+        return view('admin/admin_users_edit', $data);
+    }
+
     public function admin_fish(){
         $Fish_Data = $this->AdminModel->getTableFish();
         $data = [

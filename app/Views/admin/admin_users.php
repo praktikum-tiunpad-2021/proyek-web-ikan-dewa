@@ -36,8 +36,8 @@
                                 <td class="view-text-2 table-padding"><?= $row['password']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Name_User']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Born_Date']; ?></td>
-                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="">Edit</a></td>
-                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="/adminUsers/delete/<?= $row['id']; ?>">Delete</a></td>
+                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="admin/users/edit/<?= $row['id']; ?>">Edit</a></td>
+                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="admin/users/delete/<?= $row['id']; ?>">Delete</a></td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>

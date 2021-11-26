@@ -67,8 +67,11 @@ $routes->get('/admin/transaction', 'Admin::admin_transaction');
 $routes->get('/admin/seller', 'Admin::admin_seller');
 $routes->get('/admin/postCode', 'Admin::admin_postCode');
 
-$routes->get('/admin/adminUser/save', 'adminUser::admin_users');
-$routes->get('/admin/adminUser/update', 'adminUser::admin_users_edit');
+$routes->get('admin/admin/users/edit/(:num)', 'Admin::admin_users_edit/$1');
+$routes->post('/admin/users/update', 'adminUser::update');
+$routes->get('admin/admin/users/delete/(:num)', 'adminUser::delete/$1');
+
+
 
 
 

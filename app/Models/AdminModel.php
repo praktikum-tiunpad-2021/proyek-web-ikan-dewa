@@ -11,6 +11,14 @@ class AdminModel extends Model
         return $query;
     }
 
+    public function getDataUser($id)
+    {
+        $query = $this->db->table('users')
+        ->where(['id' => $id])
+        ->get()->getResultArray();
+        return $query;
+    }
+
     public function getTableFish()
     {
         $query = $this->db->table('fish')

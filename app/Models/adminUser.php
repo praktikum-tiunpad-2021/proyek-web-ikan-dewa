@@ -5,6 +5,10 @@ use CodeIgniter\Model;
 class adminUser extends Model
 {
     protected $table = 'users';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['email', 'password', 'Name_User', 'Born_Date'];
+    protected $setAutoIncrement = true;
+
   public function getUsers($id = false)
   {
     if($id === false){

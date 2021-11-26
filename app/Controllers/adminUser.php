@@ -4,7 +4,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\adminUser as user;
 
-class adminUser extends Controller{
+class adminUser extends BaseController{
   public function save()
   {
     $model = new user();
@@ -13,10 +13,10 @@ class adminUser extends Controller{
       'email' => $this->request->getPost('email'),
       'password' => $passwordHash,
       'Name_User' => $this->request->getPost('Name_User'),
-      'Born_date' => $this->request->getPost('Born_date'),
+      'Born_Date' => $this->request->getPost('Born_Date'),
     );
     $model->saveUsers($data);
-    return redirect()->to('/adminUser');
+    return redirect()->to('/admin/users');
   }
 
   public function edit($id)
@@ -35,16 +35,16 @@ class adminUser extends Controller{
       'email' => $this->request->getPost('email'),
       'password' => $passwordHash,
       'Name_User' => $this->request->getPost('Name_User'),
-      'Born_date' => $this->request->getPost('Born_date'),
+      'Born_Date' => $this->request->getPost('Born_Date'),
     );
     $model->updateUsers($data, $id);
-    return redirect()->to('/adminUser');
+    return redirect()->to('/admin/users');
   }
 
   public function delete($id)
   {
     $model = new user();
     $model->deleteUsers($id);
-    return redirect()->to('/adminUser');
+    return redirect()->to('/admin/users');
   }
 }

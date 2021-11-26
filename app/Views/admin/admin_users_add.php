@@ -22,19 +22,19 @@
                         <tbody>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Email</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="email" id="email" name="email"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="email" id="input-email" name="email" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Password</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="password" id="password" name="password"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="password" id="input-password" name="password" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Pengguna</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="Name_User" name="Name_User"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Name_User" name="Name_User" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Tanggal Lahir</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="date" id="Born_Date" name="Born_Date"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="date" id="input-Born_Date" name="Born_Date" value=""></td>
                             </tr>
                             <tr>
                                 <td colspan="2">

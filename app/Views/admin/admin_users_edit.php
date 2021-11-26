@@ -13,37 +13,39 @@
             <div class="row justify-content-md-center">
                 <div class="col">
                     <h1 class="admin-text-1">Table Update</h1>
-                    <h2 class="admin-text-2">Add Data</h2>
+                    <h2 class="admin-text-2">Edit Data</h2>
                 </div>
             </div>
             <div class="row justify-content-md-center" style="margin-top:10px; margin-bottom:30px">  
-                <form action="/adminUsers/update" method="post">
+                <form action="/admin/users/update" method="post">
                     <table>
                         <tbody>
                             <tr>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="hidden" id="id" name="id" value="<?= $User_Data[0]['id']; ?>"></td>
+                            </tr>
+                            <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Email</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="email" id="email" name="email" value="<?= $users->email; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="email" id="email" name="email" value="<?= $User_Data[0]['email']; ?>"></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Password</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="password" id="password" name="password" value="<?= $users->password; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="password" id="password" name="password" value="<?= $User_Data[0]['password']; ?>"></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Pengguna</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="Name_User" name="Name_User" value="<?= $users->Name_User; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="Name_User" name="Name_User" value="<?= $User_Data[0]['Name_User']; ?>"></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Tanggal Lahir</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="date" id="Born_Date" name="Born_Date" value="<?= $users->Born_Date; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="date" id="Born_Date" name="Born_Date" value="<?= $User_Data[0]['Born_Date']; ?>"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="row justify-content-md-center">
-                                        <a class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit" href="<?= base_url("users/update/$users->id"); ?>">Edit Data</a>
+                                        <input class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit" value="Edit Data">
                                         <a href="/admin/users" style="text-decoration:none"><button class="input-data-button" style="margin-top:20px" type="button">Back to View</button></a>
                                     </div>
                                 </td>
-                                <input type="hidden" name="id" value="<?= $users->id; ?>">
                             </tr>
                         </tbody>
                     </table>
