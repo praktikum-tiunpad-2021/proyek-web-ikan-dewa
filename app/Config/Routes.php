@@ -60,6 +60,16 @@ $routes->get('/admin/users', 'Admin::admin_users');
 $routes->get('/admin/users/add', 'Admin::admin_users_add');
 $routes->get('/admin/fish', 'Admin::admin_fish');
 $routes->get('/admin/fishDetail', 'Admin::admin_fishDetail');
+$routes->get('/admin/cart', 'Admin::admin_cart');
+$routes->get('/admin/wishlist', 'Admin::admin_wishlist');
+$routes->get('/admin/paymentDb', 'Admin::admin_paymentDb');
+$routes->get('/admin/transaction', 'Admin::admin_transaction');
+$routes->get('/admin/seller', 'Admin::admin_seller');
+$routes->get('/admin/postCode', 'Admin::admin_postCode');
+
+$routes->get('/admin/adminUser/save', 'adminUser::admin_users');
+$routes->get('/admin/adminUser/update', 'adminUser::admin_users_edit');
+
 
 
 

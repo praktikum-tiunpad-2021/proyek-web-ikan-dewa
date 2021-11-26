@@ -24,4 +24,47 @@ class AdminModel extends Model
         ->get()->getResultArray();
         return $query;
     }
+
+    public function getTableCart()
+    {
+        $query = $this->db->table('cart')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getTableWishlist()
+    {
+        $query = $this->db->table('wishlist')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getTablePayment()
+    {
+        $query = $this->db->table('payment_db')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getTableTransaction()
+    {
+        $query = $this->db->table('transaction')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getTableSeller()
+    {
+        $query = $this->db->table('seller')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getTablePostCode()
+    {
+        $query = $this->db->table('post_code')
+        ->get()->getResultArray();
+        return $query;
+    }
+
 }

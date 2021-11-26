@@ -37,4 +37,52 @@ class Admin extends BaseController
         ];
         return view('admin/admin_fishDetail', $data);
     }
+
+    public function admin_cart(){
+        $Fish_Data = $this->AdminModel->getTableCart();
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_cart', $data);
+    }
+
+    public function admin_wishlist(){
+        $Fish_Data = $this->AdminModel->getTableWishlist();
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_wishlist', $data);
+    }
+
+    public function admin_paymentDb(){
+        $Fish_Data = $this->AdminModel->getTablePayment();
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_paymentDb', $data);
+    }
+
+    public function admin_transaction(){
+        $Fish_Data = $this->AdminModel->getTableTransaction();
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_transaction', $data);
+    }
+
+    public function admin_seller(){
+        $Fish_Data = $this->AdminModel->getTableSeller();
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_seller', $data);
+    }
+
+    public function admin_postCode(){
+        $Fish_Data = $this->AdminModel->getTablePostCode();
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_postCode', $data);
+    }
 }

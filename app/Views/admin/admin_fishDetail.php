@@ -15,9 +15,9 @@
                     <h1 class="admin-text-1">Table Fish  Detail</h1>
                 </div>
             </div>
-            <div class="row center" style="margin-top:10px; margin-bottom:30px">  
+            <div class="row" style="margin-top:10px; margin-bottom:30px">  
                 <div class="col">
-                    <table class="center" border="2" style="background-color:black;">
+                    <table class="" border="2" style="background-color:black;">
                         <thead style="background-color:silver;">
                             <tr>
                                 <th class="view-text-1 table-padding">Id_Fish</th>
