@@ -2,10 +2,10 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\adminUser as user;
+use App\Models\AdminUserModel as user;
 
 class adminUser extends BaseController{
-  public function save()
+  public function Users_save()
   {
     $model = new user();
     $passwordHash = password_hash($this->request->getPost('password'), PASSWORD_DEFAULT);
@@ -19,14 +19,14 @@ class adminUser extends BaseController{
     return redirect()->to('/admin/users');
   }
 
-  public function edit($id)
+  public function Users_edit($id)
   {
     $model = new user();
     $data['Users'] = $model->getUsers($id)->getRow();
     echo view('admin_users_edit', $data);
   }
 
-  public function update()
+  public function Users_update()
   {
     $model = new user();
     $id = $this->request->getPost('id');
@@ -41,7 +41,7 @@ class adminUser extends BaseController{
     return redirect()->to('/admin/users');
   }
 
-  public function delete($id)
+  public function Users_delete($id)
   {
     $model = new user();
     $model->deleteUsers($id);

@@ -1,3 +1,6 @@
+create database aquafish_marketplace;
+use aquafish_marketplace;
+
 create table users(
     id int(3) not null primary key,
     email varchar(255) not null,
@@ -44,29 +47,10 @@ create table fish_detail (
     foreign key (Id_Fish) references fish (Id_Fish)
 );
 
--- create table shipment(
---     Id_Shipment varchar (15) not null primary key,
---     Id_Fish varchar (10) not null,
---     Id_Seller varchar (10) not null,
---     Date_Shipment date not null,
---     foreign key (Id_Fish) references fish (Id_Fish),
---     foreign key (Id_Seller) references seller (Id_Seller)
--- ); --KAYANYA GAJADI DIPAKE
-
--- create table market(
---     Month_Market varchar (12) not null,
---     Id_Fish varchar (10) not null,
---     Id_Seller varchar (10) not null,
---     Status_Fish date not null,
---     foreign key (Id_Fish) references fish (Id_Fish),
---     foreign key (Id_Seller) references seller (Id_Seller)
--- );
-
 create table transaction(
     -- Data Pembelian
     Id_Transaction int not null primary key,
     Id_Fish varchar (10) not null,
-    -- Date_Transaction date not null,
     -- Data Customer
     id int(3) not null,
     Buyer_First_Name varchar (50) not null,
@@ -114,13 +98,6 @@ create table payment_db (
     Number_Payment varchar(50) not null,
     Owner_Payment varchar(255) not null
 );
-
--- create table fish_views (
---     Id_Page int not null primary key,
---     Id_Fish varchar (10) not null,
---     Total_Views int not null,
---     foreign key (Id_Fish) references fish (Id_Fish)
--- ); UDAH ILANG BRO
 
 -- create table voucher (
 --     Id_Voucher int not null primary key,

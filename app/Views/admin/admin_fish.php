@@ -60,7 +60,7 @@
             </div>
             <div class="row justify-content-md-center" style="margin-bottom:30px">
                 <div class="col-xs-3">
-                    <a href="/admin/users/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+                    <a href="/admin/fish/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
                     <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
                 </div>
             </div>

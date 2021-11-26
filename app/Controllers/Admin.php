@@ -38,6 +38,10 @@ class Admin extends BaseController
         return view('admin/admin_fish', $data);
     }
 
+    public function admin_fish_add(){
+        return view('admin/admin_fish_add');
+    }
+
     public function admin_fishDetail(){
         $Fish_Data = $this->AdminModel->getTableFishDetail();
         $data = [

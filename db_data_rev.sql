@@ -1,14 +1,9 @@
 INSERT INTO `seller` VALUES
--- TEMPLATE
--- ('idseller', 'name');
 ('SEL001', 'PT. Bukan Maen'),
 ('SEL002', 'PT. Samudra Jaya'),
 ('SEL003', 'PT. Pete');
 
 INSERT INTO `fish` VALUES
--- TEMPLATE
--- ('idfish', 'idseller', 'name', 'class', 
--- 'region', 'age', 'price', 'rating');
 ('FI00001', 'SEL001', 'Guppy Blue Orange', 'Freshwater Fish', 'Guppy', 
 'Europe',  'Blue Orange',1 , 5000, 5, 'fish_pic/guppy_1.jpg', 40),
 ('FI00002', 'SEL001', 'Molly Yellow', 'Freshwater Fish', 'Molly', 
@@ -47,13 +42,6 @@ INSERT INTO `fish` VALUES
 'Karimun Java',  'Cyan',5 , 30000, 3, 'sw_fish_pic/kakatua_1.jpg', 30);
 
 INSERT INTO `fish_detail` VALUES
--- TEMPLATE
--- ('idfish', 'name', 
--- 'desc1',
--- 'desc2',
--- 'desc3',
--- 'desc4',
--- 'desc5');
 ('FI00001', 'desc1_1', 'desc2_1',
 'desc3_1', 'desc4_1', 'desc5_1',
 'fish_pic/guppy_1.jpg', 'fish_pic/guppy_2.jpg', 
@@ -74,7 +62,6 @@ INSERT INTO `fish_detail` VALUES
 'fish_pic/manfish_1.jpg', 'fish_pic/manfish_2.jpg', 
 'fish_pic/manfish_3.jfif', 'fish_pic/manfish_4.jpg', 
 'fish_pic/manfish_5.jpg'),
-
 ('FI00005', 'desc1_5', 'desc2_5',
 'desc3_5', 'desc4_5', 'desc5_5',
 'fish_pic/lemon_1.png', 'fish_pic/lemon_2.png', 
@@ -95,7 +82,6 @@ INSERT INTO `fish_detail` VALUES
 'fish_pic/platy_1.jpg', 'fish_pic/platy_2.jfif', 
 'fish_pic/platy_3.jpg', 'fish_pic/platy_4.jpg', 
 'fish_pic/platy_5.jfif'),
-
 ('FI00009', 'desc1_9', 'desc2_9',
 'desc3_9', 'desc4_9', 'desc5_9',
 'fish_pic/mas_koki_1.jpg', 'fish_pic/mas_koki_2.jfif', 
@@ -146,39 +132,6 @@ INSERT INTO `fish_detail` VALUES
 'sw_fish_pic/kakatua_1.jpg', 'sw_fish_pic/kakatua_2.jpg', 
 'sw_fish_pic/kakatua_3.jfif', 'sw_fish_pic/kakatua_4.jfif', 
 'sw_fish_pic/kakatua_5.jfif');
-
--- INSERT INTO `shipment` VALUES --KAYANYA GAJADI DIPAKE
--- -- TEMPLATE
--- -- ('idshipment', 'idfish', 'idseller', 'date');
-
-
--- INSERT INTO `market` VALUES
--- -- TEMPLATE
--- -- ('month', 'idfish', 'idseller', 'status');
-
--- INSERT INTO `transaction` VALUES
--- TEMPLATE
--- Data Pembelian
--- ('idtrans', 'date');
--- Data Customer
--- ('firstname', 'lastname', 
--- 'email', 'number', 'address', 
--- 'province', 'city', 'district', 'neighborhoods', 'kodepos');
--- Data Transaksi
--- ('delivery', 'payment', 'price);
-
--- INSERT INTO cart VALUES
--- -- TEMPLATE
--- -- ('Id_Fish');
--- (1, 'FI00001', 2),
--- (2, 'FI00011', 2);
-
--- INSERT INTO wishlist VALUES
--- -- TEMPLATE
--- -- ('Id_Fish');
--- (1, 'FI00005', 2),
--- (2, 'FI00010', 2);
-
 
 -- INSERT INTO voucher VALUES
 -- -- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
