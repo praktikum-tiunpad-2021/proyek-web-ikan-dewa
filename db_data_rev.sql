@@ -156,7 +156,7 @@ INSERT INTO `fish_detail` VALUES
 -- -- TEMPLATE
 -- -- ('month', 'idfish', 'idseller', 'status');
 
-INSERT INTO `transaction` VALUES
+-- INSERT INTO `transaction` VALUES
 -- TEMPLATE
 -- Data Pembelian
 -- ('idtrans', 'date');
@@ -167,17 +167,17 @@ INSERT INTO `transaction` VALUES
 -- Data Transaksi
 -- ('delivery', 'payment', 'price);
 
-INSERT INTO cart VALUES
--- TEMPLATE
--- ('Id_Fish');
-(1, 'FI00001', 2),
-(2, 'FI00011', 2);
+-- INSERT INTO cart VALUES
+-- -- TEMPLATE
+-- -- ('Id_Fish');
+-- (1, 'FI00001', 2),
+-- (2, 'FI00011', 2);
 
-INSERT INTO wishlist VALUES
--- TEMPLATE
--- ('Id_Fish');
-(1, 'FI00005', 2),
-(2, 'FI00010', 2);
+-- INSERT INTO wishlist VALUES
+-- -- TEMPLATE
+-- -- ('Id_Fish');
+-- (1, 'FI00005', 2),
+-- (2, 'FI00010', 2);
 
 
 -- INSERT INTO voucher VALUES

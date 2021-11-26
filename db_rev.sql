@@ -1,3 +1,11 @@
+create table users(
+    id int(3) not null primary key,
+    email varchar(255) not null,
+    password varchar(255) not null,
+    Name_User varchar(100) not null,
+    Born_Date date not null
+);
+
 create table seller(
     Id_Seller varchar (10) not null primary key,
     Name_Seller varchar (50) not null
@@ -63,10 +71,6 @@ create table transaction(
     Buyer_Last_Name varchar (50) not null,
     Buyer_Number int(20) not null,
     Buyer_Address varchar (255) not null,
-    Buyer_Province varchar (50) not null,
-    Buyer_City varchar (50) not null,
-    Buyer_District varchar (50) not null,
-    Buyer_Neighborhood varchar (50) not null,
     Buyer_Post_Code int (5) not null,
     -- Data Transaksi
     Delivery_Service varchar(50) not null,
@@ -93,14 +97,6 @@ create table wishlist (
     foreign key (Id_Fish) references fish (Id_Fish)
 );
 
-create table users(
-    id int(3) not null primary key,
-    email varchar(255) not null,
-    password varchar(255) not null,
-    Name_User varchar(100) not null,
-    Born_Date date not null
-);
-
 create table post_code (
     Id_Post_Code int not null primary key,
     Post_Code int(5) not null,
@@ -111,10 +107,9 @@ create table post_code (
 );
 
 create table payment_db (
-    Id_Payment_Type int not null primary key,
     Payment_Type varchar(50) not null,
     Name_Payment varchar(50) not null,
-    Number_Payment int not null,
+    Number_Payment varchar(50) not null,
     Owner_Payment varchar(255) not null
 );
 
@@ -135,7 +130,7 @@ alter table wishlist modify Id_Wishlist int not null auto_increment, auto_increm
 alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
 alter table wishlist add unique (Id_Fish);
 alter table cart add unique (Id_Fish);
-alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
+-- alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
 alter table transaction modify Id_Transaction int not null auto_increment, auto_increment=1;
 alter table post_code modify Id_Post_Code int not null auto_increment, auto_increment=1;
 commit;
