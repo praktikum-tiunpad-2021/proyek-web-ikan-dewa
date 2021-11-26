@@ -6,6 +6,8 @@ create table users(
     Born_Date date not null
 );
 
+alter table users modify id int(3) not null auto_increment, auto_increment=1;
+
 create table seller(
     Id_Seller varchar (10) not null primary key,
     Name_Seller varchar (50) not null

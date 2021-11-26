@@ -56,6 +56,3 @@ use aquafish_marketplace;
 INSERT INTO `users` VALUES
 (1, 'admin@gmail.com', '$2y$10$H8XMclojGCPfyf2iCdex3uSJkVTgkW4fBtdD0zdnX1QjzZWns87wK', "Admin1", "2002-03-20");
 (2, 'rhezapandyaa@gmail.com', '$2y$10$FJ/JInnAhzvGN8TkkxpBN..o..DotOK.xP3gbKB2T5.fG.cXWYcdy', "Rheza Pandya Andhikaputra", "2002-03-20");
-
-alter table users modify id int(3) not null auto_increment, auto_increment=2;
-commit;
