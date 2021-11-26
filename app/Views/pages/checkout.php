@@ -144,9 +144,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                     <input type="radio" id="VirtualAccount" name="Payment_Type" value="Virtual Account" required>
                                     <label class="checkout-text-2" for="VirtualAccount">Virtual Account (Ovo, Gopay)</label><br>
                                     <input type="radio" id="GeraiMinimarket" name="Payment_Type" value="Gerai Minimarket" required>
-                                    <label class="checkout-text-2" for="GeraiMinimarket">Gerai Minimarket</label><br>
+                                    <label class="checkout-text-2" for="GeraiMinimarket">Gerai Minimarket (Indomaret, Alfamart)</label><br>
                                     <input type="radio" id="TransferBank" name="Payment_Type" value="Transfer Bank" required>
-                                    <label class="checkout-text-2" for="TransferBank">Transfer Bank</label>
+                                    <label class="checkout-text-2" for="TransferBank">Transfer Bank (Mandiri, BCA, BNI, BRI)</label>
                                 </div>
                             </div>
                         </div>

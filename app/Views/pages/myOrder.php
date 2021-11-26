@@ -68,7 +68,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </table>
                         </div>
                         <div class="col-6 my-auto text-right">
-                            <button type="button" class="keranjang-box-1 keranjang-text-1">Lacak Pesanan</button>
+                            <button type="button" class="keranjang-box-1 keranjang-text-1">Detail Pesanan</button>
                             <a href="/myOrder/deleteTransaction/<?= $row['Id_Transaction'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Batalkan Pesanan</button></a>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
                             </div>
                         </div>
-                        <div class="row checkout-card margin-center" style="margin-bottom:50px; width:1000px; border-top:0">
+                        <div class="row checkout-card margin-center" style="margin-bottom:30px; width:1000px; border-top:0">
                             <div class="col-6 offset-6 text-right">
                                 <a href="/order/<?= $row2['Id_Fish'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Beli Sekarang</button></a>
                                 <a href="/myOrder/deleteCart/<?= $row2['Id_Cart'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Keluarkan dari Keranjang</button></a>

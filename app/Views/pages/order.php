@@ -61,7 +61,11 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </div>
                             <div class="col-5 my-auto">
                                 <h3 class="order-text-4"><?= $fishData[0]['Name_Fish']; ?></h3>
-                                <table style="width:200px; height:70px">
+                                <table style="width:200px;">
+                                    <tr>
+                                        <td><p class="order-text-5">Class</p></td>
+                                        <td><p class="order-text-5">: <?= $fishData[0]['Class_Fish']; ?></p></td>
+                                    </tr>
                                     <tr>
                                         <td><p class="order-text-5">Jenis</p></td>
                                         <td><p class="order-text-5">: <?= $fishData[0]['Type_Fish']; ?></p></td>
@@ -70,10 +74,22 @@ Tugas : Project Website Praktikum Pemrograman Web
                                         <td><p class="order-text-5">Warna</p></td>
                                         <td><p class="order-text-5">: <?= $fishData[0]['Color_Fish']; ?></p></td>
                                     </tr>
+                                    <tr>
+                                        <td><p class="order-text-5">Region</p></td>
+                                        <td><p class="order-text-5">: <?= $fishData[0]['Region_Fish']; ?></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="order-text-5">Age</p></td>
+                                        <td><p class="order-text-5">: <?= $fishData[0]['Age_Fish']; ?></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="order-text-5">Seller</p></td>
+                                        <td><p class="order-text-5">: <?= $fishData[0]['Name_Seller']; ?></p></td>
+                                    </tr>
                                 </table>
                             </div>
-                            <div class="col-5 my-auto">
-                                <p class="order-text-5" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
+                            <div class="col-5">
+                                <p class="order-text-5" style="font-size:18px; margin-top:20px; text-align:right">Rp. <?= $fishData[0]['Price_Fish']; ?></p>
                                 <p class="order-text-5" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar<br>kota Bandung 3-5 hari</p>
                             </div>
                         </div>
@@ -85,7 +101,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <input type="text" class="order-input" style="margin-left:3px">
                                 <input type="submit" id="order-input-submit" value="Cek">
                             </form>
-                            <p class="order-text-5" style="margin-top:8px; margin-left:5px">Voucher berhasil diaplikasikan!</p>
+                            <!-- <p class="order-text-5" style="margin-top:8px; margin-left:5px">Voucher berhasil diaplikasikan!</p> -->
                         </div>
                         <div class="order-card-1" style="margin-top:20px">
                             <table style="width:210px;height:110px; margin-left:auto; margin-right:auto">
@@ -103,8 +119,8 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </tr>
                             </table>
                             <a href="/checkout/<?= $fishData[0]['Id_Fish'] ?>"><button type="button" class="order-box-1 order-text-7" style="margin-top:10px;">CHECKOUT</button></a>
-                            <h3 class="order-text-8" style="margin-top:100px;">Metode Pembayaran</h3>
-                            <div style="margin-left:10px">
+                            <h3 class="order-text-6" style="margin-top:70px; margin-bottom:10px">Metode Pembayaran</h3>
+                            <div class="text-center" style="margin-left:10px;">
                                 <img class="order-payment-logo" src="<?= base_url('assets/Logo/Gopay.png'); ?>">
                                 <img class="order-payment-logo" src="<?= base_url('assets/Logo/OVO.png'); ?>">
                                 <img class="order-payment-logo" src="<?= base_url('assets/Logo/Indomaret.png'); ?>">

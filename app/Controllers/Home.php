@@ -89,11 +89,6 @@ class Home extends BaseController
         return view('pages/checkout', $data);
     }
 
-    // public function updateCheckout2($Id_Fish, $Id_Transaction)
-    // {
-
-    // }
-
     public function myOrder()
     {
         $dataMyOrder = $this->FishDataModel->getFishCart(session()->get('id'));
