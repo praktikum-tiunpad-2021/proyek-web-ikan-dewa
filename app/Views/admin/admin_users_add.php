@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="row justify-content-md-center" style="margin-top:10px; margin-bottom:30px">  
-                <form action="/adminUser/save" method="post">
+                <form action="/adminUser/Users_save" method="post">
                     <table>
                         <tbody>
                             <tr>

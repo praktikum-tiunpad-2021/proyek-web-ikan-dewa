@@ -29,7 +29,7 @@
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Password</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="password" id="password" name="password" value="<?= $User_Data[0]['password']; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="password" id="password" name="password" value="" required></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Pengguna</p></td>
