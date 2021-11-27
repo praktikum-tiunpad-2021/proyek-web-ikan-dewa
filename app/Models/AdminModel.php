@@ -26,9 +26,25 @@ class AdminModel extends Model
         return $query;
     }
 
+    public function getDataFish($Id_Fish)
+    {
+        $query = $this->db->table('fish')
+        ->where(['Id_Fish' => $Id_Fish])
+        ->get()->getResultArray();
+        return $query;
+    }
+
     public function getTableFishDetail()
     {
         $query = $this->db->table('fish_detail')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getDataFishDetail($Id_Fish)
+    {
+        $query = $this->db->table('fish_detail')
+        ->where(['Id_Fish' => $Id_Fish])
         ->get()->getResultArray();
         return $query;
     }

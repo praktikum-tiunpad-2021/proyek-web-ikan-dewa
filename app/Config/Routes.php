@@ -62,13 +62,21 @@ $routes->get('/admin', 'Admin::admin_home');
 $routes->get('/admin/users', 'Admin::admin_users');
 $routes->get('/admin/users/add', 'Admin::admin_users_add');
 $routes->get('admin/admin/users/edit/(:num)', 'Admin::admin_users_edit/$1');
-$routes->post('/admin/users/update', 'adminUser::Users_update');
-$routes->get('admin/admin/users/delete/(:num)', 'adminUser::Users_delete/$1');
+$routes->post('/admin/users/update', 'AdminCRUD::Users_update');
+$routes->get('admin/admin/users/delete/(:num)', 'AdminCRUD::Users_delete/$1');
 
 $routes->get('/admin/fish', 'Admin::admin_fish');
 $routes->get('/admin/fish/add', 'Admin::admin_fish_add');
+$routes->get('/admin/fish/edit/(:segment)', 'Admin::admin_fish_edit/$1');
+$routes->post('/admin/fish/update', 'AdminCRUD::Fish_update');
+$routes->get('/admin/fish/delete/(:segment)', 'AdminCRUD::Fish_delete/$1');
 
 $routes->get('/admin/fishDetail', 'Admin::admin_fishDetail');
+$routes->get('/admin/fishDetail/add', 'Admin::admin_fishDetail_add');
+$routes->get('/admin/fishDetail/edit/(:segment)', 'Admin::admin_fishDetail_edit/$1');
+$routes->post('/admin/fishDetail/update', 'AdminCRUD::FishDetail_update');
+$routes->get('/admin/fishDetail/delete/(:segment)', 'AdminCRUD::FishDetail_delete/$1');
+
 $routes->get('/admin/cart', 'Admin::admin_cart');
 $routes->get('/admin/wishlist', 'Admin::admin_wishlist');
 $routes->get('/admin/paymentDb', 'Admin::admin_paymentDb');

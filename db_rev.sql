@@ -116,3 +116,36 @@ commit;
 
 -- NOTES
 -- 1. belom bisa 1 transaksi > 1 ikan
+
+-- adding views
+create view v_getswcatalog as select
+fi.Id_Fish, fi.Id_Seller, fi.Name_Fish, fi.Type_Fish,
+fi.Class_Fish, fi.Region_Fish, fi.Color_Fish, fi.Age_Fish,
+fi.Price_Fish, fi.Rating_Fish, fi.Img_Fish, fi.Fish_Views,
+fd.Desc_Fish_1, fd.Desc_Fish_2, fd.Desc_Fish_3, fd.Desc_Fish_4, 
+fd.Desc_Fish_5, fd.Img_Fish_1, fd.Img_Fish_2, fd.Img_Fish_3,
+fd.Img_Fish_4, fd.Img_Fish_5
+from fish fi join fish_detail fd
+on fi.Id_Fish = fd.Id_Fish where fi.Type_Fish = 'Saltwater Fish';
+
+create view v_getfwcatalog as select
+fi.Id_Fish, fi.Id_Seller, fi.Name_Fish, fi.Type_Fish,
+fi.Class_Fish, fi.Region_Fish, fi.Color_Fish, fi.Age_Fish,
+fi.Price_Fish, fi.Rating_Fish, fi.Img_Fish, fi.Fish_Views,
+fd.Desc_Fish_1, fd.Desc_Fish_2, fd.Desc_Fish_3, fd.Desc_Fish_4, 
+fd.Desc_Fish_5, fd.Img_Fish_1, fd.Img_Fish_2, fd.Img_Fish_3,
+fd.Img_Fish_4, fd.Img_Fish_5
+from fish fi join fish_detail fd
+on fi.Id_Fish = fd.Id_Fish where fi.Type_Fish = 'Freshwater Fish';
+
+create view v_getbestsellerfish as select
+Id_Fish, Id_Seller, Name_Fish, Type_Fish,
+Class_Fish, Region_Fish, Color_Fish, Age_Fish,
+Price_Fish, Rating_Fish, Img_Fish, Fish_Views
+from fish fi where Rating_Fish >= 3 order by Rating_Fish desc;
+
+create view v_gettopsearchfish as select
+Id_Fish, Id_Seller, Name_Fish, Type_Fish,
+Class_Fish, Region_Fish, Color_Fish, Age_Fish,
+Price_Fish, Rating_Fish, Img_Fish, Fish_Views
+from fish fi order by Fish_Views desc;

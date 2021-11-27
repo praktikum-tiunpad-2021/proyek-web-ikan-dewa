@@ -41,14 +41,14 @@
                     <td class="view-text-2 table-padding"><?= $row['Img_Fish_3']; ?></td>
                     <td class="view-text-2 table-padding"><?= $row['Img_Fish_4']; ?></td>
                     <td class="view-text-2 table-padding"><?= $row['Img_Fish_5']; ?></td>
-                    <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="">Edit</a></td>
-                    <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="">Delete</a></td>
+                    <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="/admin/fishDetail/edit/<?= $row['Id_Fish']; ?>">Edit</a></td>
+                    <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="/admin/fishDetail/delete/<?= $row['Id_Fish']; ?>">Delete</a></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
         <div>
-            <a href="/admin/fishDetail/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+            <a href="" style="margin-right:10px"><button class="view-button-2">Add New Data (BELOM BISA)</button></a>
             <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
         </div>
     </body>

@@ -9,18 +9,20 @@ class FishDataModel extends Model
 
   public function getSaltwaterCatalog()
   {
-    $query = $this->db->table('fish')
-    ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
-    ->where(['fish.Type_Fish' => 'Saltwater Fish'])
+    $query = $this->db->table('v_getswcatalog')
+    // ISI VIEWS
+    // ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
+    // ->where(['fish.Type_Fish' => 'Saltwater Fish'])
     ->get()->getResultArray();
     return $query;  
   }
 
   public function getFreshwaterCatalog()
   {
-    $query = $this->db->table('fish')
-    ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
-    ->where(['fish.Type_Fish' => 'Freshwater Fish'])
+    $query = $this->db->table('v_getfwcatalog')
+    // ISI VIEWS
+    // ->join('fish_detail', 'fish.Id_Fish = fish_detail.Id_Fish', 'JOIN')
+    // ->where(['fish.Type_Fish' => 'Freshwater Fish'])
     ->get()->getResultArray();
     return $query;  
   }
@@ -37,17 +39,19 @@ class FishDataModel extends Model
 
   public function getBestSellerFish()
   {
-    $query = $this->db->table('fish')
-    ->where(['Rating_Fish >=' => 3])
-    ->orderBy('Rating_Fish', 'desc')
+    $query = $this->db->table('v_getbestsellerfish')
+    // ISI VIEWS
+    // ->where(['Rating_Fish >=' => 3])
+    // ->orderBy('Rating_Fish', 'desc')
     ->get()->getResultArray();
     return $query;
   }
 
   public function getTopSearchFish()
   {
-    $query = $this->db->table('fish')
-    ->orderBy('Fish_Views', 'desc')
+    $query = $this->db->table('v_gettopsearchfish')
+    // ISI VIEWS
+    // ->orderBy('Fish_Views', 'desc')
     ->get()->getResultArray();
     return $query;
   }

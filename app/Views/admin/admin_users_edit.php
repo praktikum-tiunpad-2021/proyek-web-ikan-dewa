@@ -25,7 +25,7 @@
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Email</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="email" id="email" name="email" value="<?= $User_Data[0]['email']; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="email" id="email" name="email" value="<?= $User_Data[0]['email']; ?>" required></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Password</p></td>
@@ -33,11 +33,11 @@
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Nama Pengguna</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="Name_User" name="Name_User" value="<?= $User_Data[0]['Name_User']; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="Name_User" name="Name_User" value="<?= $User_Data[0]['Name_User']; ?>" required></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Tanggal Lahir</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="date" id="Born_Date" name="Born_Date" value="<?= $User_Data[0]['Born_Date']; ?>"></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="date" id="Born_Date" name="Born_Date" value="<?= $User_Data[0]['Born_Date']; ?>" required></td>
                             </tr>
                             <tr>
                                 <td colspan="2">

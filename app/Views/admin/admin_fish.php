@@ -50,8 +50,8 @@
                                 <td class="view-text-2 table-padding"><?= $row['Rating_Fish']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Img_Fish']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Fish_Views']; ?></td>
-                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="">Edit</a></td>
-                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="">Delete</a></td>
+                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="/admin/fish/edit/<?= $row['Id_Fish']; ?>">Edit</a></td>
+                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="/admin/fish/delete/<?= $row['Id_Fish']; ?>">Delete</a></td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -60,7 +60,7 @@
             </div>
             <div class="row justify-content-md-center" style="margin-bottom:30px">
                 <div class="col-xs-3">
-                    <a href="/admin/fish/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+                    <a href="" style="margin-right:10px"><button class="view-button-2">Add New Data (BELOM BISA)</button></a>
                     <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
                 </div>
             </div>

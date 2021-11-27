@@ -53,7 +53,7 @@ class BaseController extends Controller
         $this->TransactionModel = new \App\Models\TransactionModel();
         $this->AdminModel = new \App\Models\AdminModel();
         $this->PostCodeModel = new \App\Models\PostCodeModel();
-        $this->AdminUserModel = new \App\Models\AdminUserModel();
+        $this->AdminCRUDModel = new \App\Models\AdminCRUDModel();
         
     }
 }
