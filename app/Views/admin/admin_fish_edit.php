@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Admin AM - Add Fish</title>
+        <title>Admin AM - Update Fish</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,16 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col">
-                    <h1 class="admin-text-1">Table Fish</h1>
-                    <h2 class="admin-text-2">Add Data</h2>
+                    <h1 class="admin-text-1">Table Update</h1>
+                    <h2 class="admin-text-2">Edit Data</h2>
                 </div>
             </div>
             <div class="row justify-content-md-center" style="margin-top:10px; margin-bottom:30px">  
-                <form action="/adminFish/save" method="post">
+                <form action="/admin/fish/update" method="post">
                     <table>
                         <tbody>
                             <tr>
-                                <td class="align-middle input-data-padding"><p>Id_Fish</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Id_Fish" name="Id_Fish" value=""></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="hidden" id="id_fish" name="id_fish" value="<?= $Fish_Data['id_fish']; ?>"></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Id_Seller</p></td>
@@ -71,7 +70,7 @@
                             <tr>
                                 <td colspan="2">
                                     <div class="row justify-content-md-center">
-                                        <button class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit">Add Data</button>
+                                        <input class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit" value="Edit Data">
                                         <a href="/admin/fish" style="text-decoration:none"><button class="input-data-button" style="margin-top:20px" type="button">Back to View</button></a>
                                     </div>
                                 </td>

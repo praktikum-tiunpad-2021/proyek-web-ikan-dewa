@@ -48,7 +48,7 @@
             </tbody>
         </table>
         <div>
-            <a href="/admin/users/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+            <a href="/admin/fishDetail/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
             <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
         </div>
     </body>
