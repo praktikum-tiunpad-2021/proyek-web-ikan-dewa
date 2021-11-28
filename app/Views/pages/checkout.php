@@ -57,7 +57,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                     </div>                
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:40px;">
-                    <form class="form-checkout" action="checkout/save" method="post">
+                    <form class="form-checkout" action="/checkout/save" method="post">
                         <div class="row">
                             <div>
                                 <input class="checkout-input-2" id="Id_Fish" name="Id_Fish" type="hidden" value="<?= $fishData[0]['Id_Fish'] ?>">

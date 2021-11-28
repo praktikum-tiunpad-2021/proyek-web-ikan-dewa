@@ -41,8 +41,9 @@ $routes->get('/editAccount/update', 'EditAccount::update',['filter' => 'auth']);
 $routes->get('/product/(:segment)', 'Home::product/$1',['filter' => 'auth']);
 $routes->get('/order/(:segment)', 'Home::order/$1',['filter' => 'auth']);
 $routes->get('/checkout/(:segment)', 'Home::checkout/$1',['filter' => 'auth']);
-$routes->post('/checkout/checkout/save', 'FishData::saveTransaction',['filter' => 'auth']);
-$routes->post('/checkout/checkout/checkout2/update', 'FishData::updateTransaction',['filter' => 'auth']);
+$routes->post('/checkout/save', 'FishData::saveTransaction',['filter' => 'auth']);
+$routes->post('/checkout/pendingTransaction/(:num)', 'FishData::savePendingTransaction/$1',['filter' => 'auth']);
+$routes->post('/checkout/checkout2/update', 'FishData::updateTransaction',['filter' => 'auth']);
 $routes->get('/wishlist', 'Home::wishlist',['filter' => 'auth']);
 $routes->get('/wishlist/(:segment)', 'FishData::saveWishlist/$1',['filter' => 'auth']);
 $routes->get('/wishlist/delete/(:segment)', 'FishData::deleteWishlist/$1',['filter' => 'auth']);
@@ -77,11 +78,21 @@ $routes->get('/admin/fishDetail/edit/(:segment)', 'Admin::admin_fishDetail_edit/
 $routes->post('/admin/fishDetail/update', 'AdminCRUD::FishDetail_update');
 $routes->get('/admin/fishDetail/delete/(:segment)', 'AdminCRUD::FishDetail_delete/$1');
 
+$routes->get('/admin/paymentDb', 'Admin::admin_paymentDb');
+$routes->get('/admin/paymentDb/add', 'Admin::admin_paymentDb_add');
+$routes->get('/admin/paymentDb/edit/(:num)', 'Admin::admin_paymentDb_edit/$1');
+$routes->post('/admin/paymentDb/update', 'AdminCRUD::PaymentDb_update');
+$routes->get('/admin/paymentDb/delete/(:num)', 'AdminCRUD::PaymentDb_delete/$1');
+
+$routes->get('/admin/seller', 'Admin::admin_seller');
+$routes->get('/admin/seller/add', 'Admin::admin_seller_add');
+$routes->get('/admin/seller/edit/(:segment)', 'Admin::admin_seller_edit/$1');
+$routes->post('/admin/seller/update', 'AdminCRUD::Seller_update');
+$routes->get('/admin/seller/delete/(:segment)', 'AdminCRUD::Seller_delete/$1');
+
 $routes->get('/admin/cart', 'Admin::admin_cart');
 $routes->get('/admin/wishlist', 'Admin::admin_wishlist');
-$routes->get('/admin/paymentDb', 'Admin::admin_paymentDb');
 $routes->get('/admin/transaction', 'Admin::admin_transaction');
-$routes->get('/admin/seller', 'Admin::admin_seller');
 $routes->get('/admin/postCode', 'Admin::admin_postCode');
 
 

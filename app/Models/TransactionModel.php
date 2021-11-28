@@ -18,6 +18,14 @@ class TransactionModel extends Model
         return $query[0];
     }
 
+    public function getDataTransaction($Id_Transaction){
+      $query = $this->db->table('transaction')
+        ->join('fish', 'fish.Id_Fish = transaction.Id_Fish', 'JOIN')
+        ->where(['Id_Transaction' => $Id_Transaction])
+        ->get()->getResultArray();
+        return $query[0];
+    }
+
     public function updateStatusTransaction($data, $Id_Transaction)
     {
       $query = $this->db->table('transaction')

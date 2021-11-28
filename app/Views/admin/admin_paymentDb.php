@@ -20,6 +20,7 @@
                     <table class="center" border="2" style="background-color:black;">
                         <thead style="background-color:silver;">
                             <tr>
+                                <th class="view-text-1 table-padding">Id Payment Db</th>
                                 <th class="view-text-1 table-padding">Payment Type</th>
                                 <th class="view-text-1 table-padding">Name Payment</th>
                                 <th class="view-text-1 table-padding">Number Payment</th>
@@ -28,14 +29,15 @@
                             </tr>
                         </thead>
                         <tbody style="background-color:white;">
-                            <?php foreach($Fish_Data as $row) : ?>
+                            <?php foreach($Payment_Db as $row) : ?>
                             <tr>
+                                <td class="view-text-2 table-padding"><?= $row['Id_Payment_Db']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Payment_Type']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Name_Payment']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Number_Payment']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Owner_Payment']; ?></td>
-                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="">Edit</a></td>
-                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="">Delete</a></td>
+                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="/admin/paymentDb/edit/<?= $row['Id_Payment_Db']; ?>">Edit</a></td>
+                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="/admin/paymentDb/delete/<?= $row['Id_Payment_Db']; ?>">Delete</a></td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -44,7 +46,7 @@
             </div>
             <div class="row justify-content-md-center" style="margin-bottom:30px">
                 <div class="col-xs-3">
-                    <a href="/admin/users/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+                    <a href="/admin/paymentDb/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
                     <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
                 </div>
             </div>

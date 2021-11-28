@@ -92,10 +92,12 @@ class Home extends BaseController
     public function myOrder()
     {
         $dataMyOrder = $this->FishDataModel->getFishCart(session()->get('id'));
-        $Data_Transaction = $this->FishDataModel->getTransaction(session()->get('id'));
+        $Data_Transaction_Success = $this->FishDataModel->getTransactionSuccess(session()->get('id'));
+        $Data_Transaction_Pending = $this->FishDataModel->getTransactionPending(session()->get('id'));
         $data = [
             'fishDataMyOrder' => $dataMyOrder,
-            'Data_Transaction' => $Data_Transaction,
+            'Data_Transaction_Success' => $Data_Transaction_Success,
+            'Data_Transaction_Pending' => $Data_Transaction_Pending,
         ];
         return view('pages/myOrder', $data);
     }

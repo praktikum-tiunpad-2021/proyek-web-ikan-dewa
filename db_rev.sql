@@ -93,11 +93,14 @@ create table post_code (
 );
 
 create table payment_db (
+    Id_Payment_Db int not null primary key,
     Payment_Type varchar(50) not null,
     Name_Payment varchar(50) not null,
     Number_Payment varchar(50) not null,
     Owner_Payment varchar(255) not null
 );
+
+alter table payment_db modify Id_Payment_Db int not null auto_increment, auto_increment=9;
 
 -- create table voucher (
 --     Id_Voucher int not null primary key,

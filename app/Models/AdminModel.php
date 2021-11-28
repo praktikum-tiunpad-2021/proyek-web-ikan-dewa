@@ -70,6 +70,14 @@ class AdminModel extends Model
         return $query;
     }
 
+    public function getDataPayment($Id_Payment_Db)
+    {
+        $query = $this->db->table('payment_db')
+        ->where(['Id_Payment_Db' => $Id_Payment_Db])
+        ->get()->getResultArray();
+        return $query;
+    }
+
     public function getTableTransaction()
     {
         $query = $this->db->table('transaction')
@@ -80,6 +88,14 @@ class AdminModel extends Model
     public function getTableSeller()
     {
         $query = $this->db->table('seller')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getDataSeller($Id_Seller)
+    {
+        $query = $this->db->table('seller')
+        ->where(['Id_Seller' => $Id_Seller])
         ->get()->getResultArray();
         return $query;
     }

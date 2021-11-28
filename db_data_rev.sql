@@ -138,11 +138,11 @@ INSERT INTO `fish_detail` VALUES
 -- (1, 'cekdiskon1', '2500');
 
 INSERT INTO payment_db VALUES   
-('Virtual Account', 'Gopay' , '082198674562', 'Aquafish Marketplace'),
-('Virtual Account', 'Ovo' , '082198674562', 'Aquafish Marketplace'),
-('Gerai Minimarket', 'Indomaret' , '9077082198674562', 'Aquafish Marketplace'),
-('Gerai Minimarket', 'Alfamart' , '9078082198674562', 'Aquafish Marketplace'),
-('Transfer Bank', 'Bank Mandiri' , '7228921875', 'Aquafish Marketplace'),
-('Transfer Bank', 'Bank BCA' , '8561756283', 'Aquafish Marketplace'),
-('Transfer Bank', 'Bank BNI' , '3452059836', 'Aquafish Marketplace'),
-('Transfer Bank', 'Bank BRI' , '5567201784', 'Aquafish Marketplace');
+(1, 'Virtual Account', 'Gopay' , '082198674562', 'Aquafish Marketplace'),
+(2, 'Virtual Account', 'Ovo' , '082198674562', 'Aquafish Marketplace'),
+(3, 'Gerai Minimarket', 'Indomaret' , '9077082198674562', 'Aquafish Marketplace'),
+(4, 'Gerai Minimarket', 'Alfamart' , '9078082198674562', 'Aquafish Marketplace'),
+(5, 'Transfer Bank', 'Bank Mandiri' , '7228921875', 'Aquafish Marketplace'),
+(6, 'Transfer Bank', 'Bank BCA' , '8561756283', 'Aquafish Marketplace'),
+(7, 'Transfer Bank', 'Bank BNI' , '3452059836', 'Aquafish Marketplace'),
+(8, 'Transfer Bank', 'Bank BRI' , '5567201784', 'Aquafish Marketplace');

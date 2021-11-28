@@ -102,12 +102,22 @@ class FishDataModel extends Model
     return $query;
   }
 
-  public function getTransaction($id)
+  public function getTransactionSuccess($id)
   {
     $query = $this->db->table('transaction')
     ->join('fish', 'fish.Id_Fish = transaction.Id_Fish', 'JOIN')
     ->join('users', 'users.id = transaction.id', 'JOIN')
     ->where(array('transaction.id' => $id, 'transaction.Status_Transaction' => 'Success'))
+    ->get()->getResultArray();
+    return $query;
+  }
+
+  public function getTransactionPending($id)
+  {
+    $query = $this->db->table('transaction')
+    ->join('fish', 'fish.Id_Fish = transaction.Id_Fish', 'JOIN')
+    ->join('users', 'users.id = transaction.id', 'JOIN')
+    ->where(array('transaction.id' => $id, 'transaction.Status_Transaction' => 'Pending'))
     ->get()->getResultArray();
     return $query;
   }

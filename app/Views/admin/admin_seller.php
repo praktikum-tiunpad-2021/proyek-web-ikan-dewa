@@ -20,18 +20,18 @@
                     <table class="center" border="2" style="background-color:black;">
                         <thead style="background-color:silver;">
                             <tr>
-                                <th class="view-text-1 table-padding">Name Seller</th>
                                 <th class="view-text-1 table-padding">Id Seller</th>
+                                <th class="view-text-1 table-padding">Name Seller</th>
                                 <th class="view-text-1 table-padding" colspan="2">Action</th>
                             </tr>
                         </thead>
                         <tbody style="background-color:white;">
-                            <?php foreach($Fish_Data as $row) : ?>
+                            <?php foreach($Seller as $row) : ?>
                             <tr>
-                                <td class="view-text-2 table-padding"><?= $row['Name_Seller']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Id_Seller']; ?></td>
-                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="">Edit</a></td>
-                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="">Delete</a></td>
+                                <td class="view-text-2 table-padding"><?= $row['Name_Seller']; ?></td>
+                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="/admin/seller/edit/<?= $row['Id_Seller']; ?>">Edit</a></td>
+                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="/admin/seller/delete/<?= $row['Id_Seller']; ?>">Delete</a></td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -40,7 +40,7 @@
             </div>
             <div class="row justify-content-md-center" style="margin-bottom:30px">
                 <div class="col-xs-3">
-                    <a href="/admin/users/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+                    <a href="/admin/seller/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
                     <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
                 </div>
             </div>

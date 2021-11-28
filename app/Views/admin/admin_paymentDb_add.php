@@ -17,12 +17,19 @@
                 </div>
             </div>
             <div class="row justify-content-md-center" style="margin-top:10px; margin-bottom:30px">  
-                <form action=" " method="post">
+                <form action="/AdminCRUD/PaymentDb_save" method="post">
                     <table>
                         <tbody>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Payment_Type</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Payment_Type" name="Payment_Type" value=""></td>
+                                <td class="align-middle input-data-padding">
+                                    <select class="input-data" id="input-Payment_Type" name="Payment_Type" required>
+                                        <option value="" disabled selected>Pilih Tipe Payment</option>
+                                        <option value="Virtual Account">Virtual Account</option>
+                                        <option value="Gerai Minimarket">Gerai Minimarket</option>
+                                        <option value="Transfer Bank">Transfer Bank</option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Name_Payment</p></td>

@@ -34,7 +34,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 <div>
                     <h2 class="order-text-9" style="margin-top:30px; margin-left:55px; margin-bottom:30px">Pesanan Berhasil</h2>
                     <?php 
-                        foreach ($Data_Transaction as $row) : 
+                        foreach ($Data_Transaction_Success as $row) : 
                     ?>
                     <div class="row checkout-card margin-center" style="width:1000px;">
                         <div class="col-2 my-auto">
@@ -50,6 +50,10 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 <tr>
                                     <td class="checkout-text-4">Payment Type</td>
                                     <td class="checkout-text-4">: <?= $row['Payment_Type']; ?></td>
+                                </tr>
+                                <tr>
+                                    <td class="checkout-text-4">Status Transaction</td>
+                                    <td class="checkout-text-4">: <?= $row['Status_Transaction']; ?></td>
                                 </tr>
                             </table>
                         </div>
@@ -70,6 +74,55 @@ Tugas : Project Website Praktikum Pemrograman Web
                         <div class="col-6 my-auto text-right">
                             <button type="button" class="keranjang-box-1 keranjang-text-1">Detail Pesanan</button>
                             <a href="/myOrder/deleteTransaction/<?= $row['Id_Transaction'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Batalkan Pesanan</button></a>
+                        </div>
+                    </div>
+                    <?php 
+                        endforeach; 
+                    ?>
+                </div>
+                <div>
+                    <h2 class="order-text-9" style="margin-top:30px; margin-left:55px; margin-bottom:30px">Pesanan Pending</h2>
+                    <?php 
+                        foreach ($Data_Transaction_Pending as $row3) : 
+                    ?>
+                    <div class="row checkout-card margin-center" style="width:1000px;">
+                        <div class="col-2 my-auto">
+                            <img class="checkout-img" src="<?= base_url('assets/Pics/'.$row3['Img_Fish']); ?>" alt="Ikan <?= base_url($row3['Name_Fish']); ?>">
+                        </div>
+                        <div class="col-5 my-auto">
+                            <h3 class="checkout-text-3"><?= $row3['Name_Fish']; ?></h3>
+                            <table style="width:200px;height:70px; margin-top:5px">
+                                <tr>
+                                    <td class="checkout-text-4">Delivery Service</td>
+                                    <td class="checkout-text-4">: <?= $row3['Delivery_Service']; ?></td>
+                                </tr>
+                                <tr>
+                                    <td class="checkout-text-4">Payment Type</td>
+                                    <td class="checkout-text-4">: <?= $row3['Payment_Type']; ?></td>
+                                </tr>
+                                <tr>
+                                    <td class="checkout-text-4">Status Transaction</td>
+                                    <td class="checkout-text-4">: <?= $row3['Status_Transaction']; ?></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5 my-auto">
+                            <p class="checkout-text-4" style="font-size:18px; margin-top:2px; text-align:right">Rp. <?= $row3['Total_Price']; ?></p>
+                            <p class="checkout-text-4" style="margin-top:30px; text-align:right">Kota Bandung dan sekitarnya 1-2 hari, luar kota Bandung 3-5 hari</p>
+                        </div>
+                    </div>
+                    <div class="row checkout-card margin-center" style="margin-bottom:30px; width:1000px; border-top:0">
+                        <div class="col-6 my-auto">
+                            <table style="width:200px;">
+                                <tr>
+                                    <td class="checkout-text-4">Nomor Pesanan</td>
+                                    <td class="checkout-text-3" style="margin-top:2px"><?= $row3['Id_Transaction']; ?></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-6 my-auto text-right">
+                            <a href="/checkout/pendingTransaction/<?= $row3['Id_Transaction']; ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Bayar Pesanan</button></a>
+                            <a href="/myOrder/deleteTransaction/<?= $row3['Id_Transaction'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Batalkan Pesanan</button></a>
                         </div>
                     </div>
                     <?php 

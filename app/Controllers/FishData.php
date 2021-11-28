@@ -85,6 +85,24 @@ class FishData extends Controller{
     return view('pages/checkout2', $data);
   }
 
+  public function savePendingTransaction($Id_Transaction){
+    $model = new TransactionModel();
+    $model2 = new FishDataModel();
+    $Id_Transaction = $model->getIdTransaction();
+    $FishData = $model2->getDataTransaction($Id_Transaction);
+    $PaymentDataVA = $model->getPaymentDataVA();
+    $PaymentDataGM = $model->getPaymentDataGM();
+    $PaymentDataTF = $model->getPaymentDataTF();
+    $data = [
+      'fishData' => $FishData,
+      'Data_Transaction' => $Id_Transaction,
+      'PaymentDataVA' => $PaymentDataVA,
+      'PaymentDataGM' => $PaymentDataGM,
+      'PaymentDataTF' => $PaymentDataTF,
+    ];
+    return view('pages/checkout2', $data);
+  }
+
   public function deleteTransaction($Id_Transaction)
   {
     $model = new FishDataModel();

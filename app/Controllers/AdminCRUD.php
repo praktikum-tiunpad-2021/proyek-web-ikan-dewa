@@ -129,4 +129,65 @@ class AdminCRUD extends BaseController{
     $model->deleteFishDetail($Id_Fish);
     return redirect()->to('/admin/fishDetail');
   }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function PaymentDb_save()
+  {
+    $model = new AdminCRUDModel();
+    $data = array(
+      'Payment_Type' => $this->request->getPost('Payment_Type'),
+      'Name_Payment' => $this->request->getPost('Name_Payment'),
+      'Number_Payment' => $this->request->getPost('Number_Payment'),
+      'Owner_Payment' => $this->request->getPost('Owner_Payment'),
+    );
+    $model->savePaymentDb($data);
+    return redirect()->to('/admin/paymentDb');
+  }
+  public function PaymentDb_update()
+  {
+    $model = new AdminCRUDModel();
+    $Id_Payment_Db = $this->request->getPost('Id_Payment_Db');
+    $data = array(
+      'Payment_Type' => $this->request->getPost('Payment_Type'),
+      'Name_Payment' => $this->request->getPost('Name_Payment'),
+      'Number_Payment' => $this->request->getPost('Number_Payment'),
+      'Owner_Payment' => $this->request->getPost('Owner_Payment'),
+    );
+    $model->updatePaymentDb($data, $Id_Payment_Db);
+    return redirect()->to('/admin/paymentDb');
+  }
+  public function PaymentDb_delete($Id_Payment_Db)
+  {
+    $model = new AdminCRUDModel();
+    $model->deletePaymentDb($Id_Payment_Db);
+    return redirect()->to('/admin/paymentDb');
+  }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function Seller_save()
+  {
+    $model = new AdminCRUDModel();
+    $data = array(
+      'Id_Seller' => $this->request->getPost('Id_Seller'),
+      'Name_Seller' => $this->request->getPost('Name_Seller'),
+    );
+    $model->saveSeller($data);
+    return redirect()->to('/admin/seller');
+  }
+  public function Seller_update()
+  {
+    $model = new AdminCRUDModel();
+    $Id_Seller = $this->request->getPost('Id_Seller');
+    $data = array(
+      'Name_Seller' => $this->request->getPost('Name_Seller'),
+    );
+    $model->updateSeller($data, $Id_Seller);
+    return redirect()->to('/admin/seller');
+  }
+  public function Seller_delete($Id_Seller)
+  {
+    $model = new AdminCRUDModel();
+    $model->deleteSeller($Id_Seller);
+    return redirect()->to('/admin/seller');
+  }
 }

@@ -87,11 +87,21 @@ class Admin extends BaseController
 
     /* ------------------------ BATAS TABLE ------------------------ */
     public function admin_paymentDb(){
-        $Fish_Data = $this->AdminModel->getTablePayment();
+        $Payment_Db = $this->AdminModel->getTablePayment();
         $data = [
-            'Fish_Data' => $Fish_Data,
+            'Payment_Db' => $Payment_Db,
         ];
         return view('admin/admin_paymentDb', $data);
+    }
+    public function admin_paymentDb_add(){
+        return view('admin/admin_paymentDb_add');
+    }
+    public function admin_paymentDb_edit($Id_Payment_Db){
+        $Payment_Db = $this->AdminModel->getDataPayment($Id_Payment_Db);
+        $data = [
+            'Payment_Db' => $Payment_Db,
+        ];
+        return view('admin/admin_paymentDb_edit', $data);
     }
 
     /* ------------------------ BATAS TABLE ------------------------ */
@@ -105,11 +115,21 @@ class Admin extends BaseController
 
     /* ------------------------ BATAS TABLE ------------------------ */
     public function admin_seller(){
-        $Fish_Data = $this->AdminModel->getTableSeller();
+        $Seller = $this->AdminModel->getTableSeller();
         $data = [
-            'Fish_Data' => $Fish_Data,
+            'Seller' => $Seller,
         ];
         return view('admin/admin_seller', $data);
+    }
+    public function admin_seller_add(){
+        return view('admin/admin_seller_add');
+    }
+    public function admin_seller_edit($Id_Seller){
+        $Seller = $this->AdminModel->getDataSeller($Id_Seller);
+        $data = [
+            'Seller' => $Seller,
+        ];
+        return view('admin/admin_seller_edit', $data);
     }
 
     /* ------------------------ BATAS TABLE ------------------------ */

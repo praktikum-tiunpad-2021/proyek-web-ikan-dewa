@@ -54,4 +54,38 @@ class AdminCRUDModel extends Model
     $query = $this->db->table('fish_detail')->delete(array('Id_Fish' => $Id_Fish));
     return $query;
   }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function savePaymentDb($data)
+  {
+    $query = $this->db->table('payment_db')->insert($data);
+    return $query;
+  }
+  public function updatePaymentDb($data, $Id_Payment_Db)
+  {
+    $query = $this->db->table('payment_db')->update($data, array('Id_Payment_Db' => $Id_Payment_Db));
+    return $query;
+  }
+  public function deletePaymentDb($Id_Payment_Db)
+  {
+    $query = $this->db->table('payment_db')->delete(array('Id_Payment_Db' => $Id_Payment_Db));
+    return $query;
+  }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function saveSeller($data)
+  {
+    $query = $this->db->table('seller')->insert($data);
+    return $query;
+  }
+  public function updateSeller($data, $Id_Seller)
+  {
+    $query = $this->db->table('seller')->update($data, array('Id_Seller' => $Id_Seller));
+    return $query;
+  }
+  public function deleteSeller($Id_Seller)
+  {
+    $query = $this->db->table('seller')->delete(array('Id_Seller' => $Id_Seller));
+    return $query;
+  }
 }
