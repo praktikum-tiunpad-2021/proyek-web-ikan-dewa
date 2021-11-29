@@ -105,12 +105,25 @@ class Admin extends BaseController
     }
 
     /* ------------------------ BATAS TABLE ------------------------ */
-    public function admin_transaction(){
-        $Fish_Data = $this->AdminModel->getTableTransaction();
-        $data = [
-            'Fish_Data' => $Fish_Data,
+    public function get_to_admin_transaction(){
+        $model = new AdminModel();
+        $data = array(
+            'email' => $this->request->getPost('email'),
+        );
+        $Data_Transaction = $this->AdminModel->getTableTransaction($data);
+        $data2 = [
+            'Data_Transaction' => $Data_Transaction,
         ];
-        return view('admin/admin_transaction', $data);
+        return view('admin/admin_transaction', $data2);
+    }
+
+    /* ------------------------ BATAS TABLE ------------------------ */
+    public function admin_select_user(){
+        $Data_Email = $this->AdminModel->getDataEmail();
+        $data = [
+            'Data_Email' => $Data_Email,
+        ];
+        return view('admin/admin_select_user', $data);
     }
 
     /* ------------------------ BATAS TABLE ------------------------ */

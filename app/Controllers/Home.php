@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\FishDataModel;
 use App\Models\UserModel;
+use App\Models\TransactionModel;
 
 class Home extends BaseController
 {
@@ -78,6 +79,16 @@ class Home extends BaseController
         return view('pages/order', $data);
     }
 
+    public function detail_order($Id_Transaction){
+        $Data_Transaction = $this->TransactionModel->getDetailOrder($Id_Transaction);
+        $Data_Transaction_Post_Code = $this->TransactionModel->getDetailOrderPostCode($Id_Transaction);
+        $data = [
+            'Data_Transaction' => $Data_Transaction,
+            'Data_Transaction_Post_Code' => $Data_Transaction_Post_Code,
+        ];
+        return view('pages/detail_order', $data);
+    }
+
     public function checkout($Id_Fish)
     {
         $Id_Fish = $this->FishDataModel->getFishData($Id_Fish);
@@ -92,8 +103,8 @@ class Home extends BaseController
     public function myOrder()
     {
         $dataMyOrder = $this->FishDataModel->getFishCart(session()->get('id'));
-        $Data_Transaction_Success = $this->FishDataModel->getTransactionSuccess(session()->get('id'));
-        $Data_Transaction_Pending = $this->FishDataModel->getTransactionPending(session()->get('id'));
+        $Data_Transaction_Success = $this->TransactionModel->getTransactionSuccess(session()->get('id'));
+        $Data_Transaction_Pending = $this->TransactionModel->getTransactionPending(session()->get('id'));
         $data = [
             'fishDataMyOrder' => $dataMyOrder,
             'Data_Transaction_Success' => $Data_Transaction_Success,

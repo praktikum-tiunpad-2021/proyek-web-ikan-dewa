@@ -72,7 +72,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                             </table>
                         </div>
                         <div class="col-6 my-auto text-right">
-                            <button type="button" class="keranjang-box-1 keranjang-text-1">Detail Pesanan</button>
+                            <a href="/detail_order/<?= $row['Id_Transaction'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Detail Pesanan</button></a>
                             <a href="/myOrder/deleteTransaction/<?= $row['Id_Transaction'] ?>"><button type="button" class="keranjang-box-1 keranjang-text-1">Batalkan Pesanan</button></a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                         </div>
                         <div class="col-5 my-auto">
                             <h3 class="checkout-text-3"><?= $row3['Name_Fish']; ?></h3>
-                            <table style="width:200px;height:70px; margin-top:5px">
+                            <table style="width:250px;height:70px; margin-top:5px">
                                 <tr>
                                     <td class="checkout-text-4">Delivery Service</td>
                                     <td class="checkout-text-4">: <?= $row3['Delivery_Service']; ?></td>

@@ -78,9 +78,11 @@ class AdminModel extends Model
         return $query;
     }
 
-    public function getTableTransaction()
+    public function getTableTransaction($email)
     {
         $query = $this->db->table('transaction')
+        ->join('users', 'users.id = transaction.id', 'JOIN')
+        ->where(['users.email' => $email])
         ->get()->getResultArray();
         return $query;
     }
@@ -96,6 +98,13 @@ class AdminModel extends Model
     {
         $query = $this->db->table('seller')
         ->where(['Id_Seller' => $Id_Seller])
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getDataEmail()
+    {
+        $query = $this->db->table('users')
         ->get()->getResultArray();
         return $query;
     }

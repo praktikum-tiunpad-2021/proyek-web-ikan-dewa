@@ -43,11 +43,8 @@ Tugas : Project Website Praktikum Pemrograman Web
                             <div class="col-2 my-auto">
                                 <img class="order-img-1" src="<?= base_url('assets/Pics/delivery.png') ?>" alt="delivery">
                             </div>
-                            <div class="col-8 my-auto">
+                            <div class="col-10 my-auto">
                                 <h2 class="order-text-1">Nikmati pengiriman secara ekslusif untuk ikan hias anda</h2>
-                            </div>
-                            <div class="col-2 my-auto">
-                                <p class="order-text-2">Selengkapnya</p>
                             </div>
                         </div>
                         <div class="row order-card-3">

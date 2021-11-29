@@ -13,11 +13,11 @@
             <li><a href="admin/fish">Fish</a></li>
             <li><a href="admin/fishDetail">Fish Detail</a></li>
             <li><a href="admin/paymentDb">Payment</a></li>
-            <li><a href="admin/transaction">Transaction</a></li>
             <li><a href="admin/seller">Seller</a></li>
             <li><a href="admin/cart">Cart</li>
             <li><a href="admin/wishlist">Wishlist</li>
             <li><a href="admin/postCode">Post Code</li>
+            <li><a href="admin/selectUser">Select User</li>
         </ul>
     </body>
 </html>

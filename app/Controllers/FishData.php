@@ -48,7 +48,6 @@ class FishData extends Controller{
     $model = new TransactionModel();
     $model2 = new FishDataModel();
     $model3 = new PostCodeModel();
-    $Id_Fish = $this->request->getVar('Id_Fish');
     $model->save([
     'Id_Fish' => $this->request->getVar('Id_Fish'),
     'id' => $this->request->getVar('id'),
@@ -70,14 +69,12 @@ class FishData extends Controller{
       'Province' => $this->request->getVar('Buyer_Province'),
     ];
     $model3->insert($data_post);
-    $Id_Transaction = $model->getIdTransaction();
-    $FishData = $model2->getFishData($Id_Fish);
+    $Data_Transaction = $model->getDataTransaction();
     $PaymentDataVA = $model->getPaymentDataVA();
     $PaymentDataGM = $model->getPaymentDataGM();
     $PaymentDataTF = $model->getPaymentDataTF();
     $data = [
-      'fishData' => $FishData,
-      'Data_Transaction' => $Id_Transaction,
+      'Data_Transaction' => $Data_Transaction,
       'PaymentDataVA' => $PaymentDataVA,
       'PaymentDataGM' => $PaymentDataGM,
       'PaymentDataTF' => $PaymentDataTF,
@@ -85,17 +82,14 @@ class FishData extends Controller{
     return view('pages/checkout2', $data);
   }
 
-  public function savePendingTransaction($Id_Transaction){
+  public function pendingTransaction($Id_Transaction){
     $model = new TransactionModel();
-    $model2 = new FishDataModel();
-    $Id_Transaction = $model->getIdTransaction();
-    $FishData = $model2->getDataTransaction($Id_Transaction);
+    $Data_Transaction = $model->getDataTransactionById($Id_Transaction);
     $PaymentDataVA = $model->getPaymentDataVA();
     $PaymentDataGM = $model->getPaymentDataGM();
     $PaymentDataTF = $model->getPaymentDataTF();
     $data = [
-      'fishData' => $FishData,
-      'Data_Transaction' => $Id_Transaction,
+      'Data_Transaction' => $Data_Transaction,
       'PaymentDataVA' => $PaymentDataVA,
       'PaymentDataGM' => $PaymentDataGM,
       'PaymentDataTF' => $PaymentDataTF,
@@ -105,7 +99,7 @@ class FishData extends Controller{
 
   public function deleteTransaction($Id_Transaction)
   {
-    $model = new FishDataModel();
+    $model = new TransactionModel();
     $model->deleteTransaction($Id_Transaction);
     return redirect()->to('/myOrder');
   }

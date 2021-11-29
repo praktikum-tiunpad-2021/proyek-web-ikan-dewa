@@ -443,6 +443,13 @@ nav ul input{
     display: block;
     margin: 0 auto;
 }
+.product-text-10 {
+    font-family: Lato-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 8px;
+    color: black;
+}
 .product-desc-list {
     line-height: 2px;
     margin-left: 30px;

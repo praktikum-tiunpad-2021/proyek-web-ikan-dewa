@@ -42,8 +42,8 @@ $routes->get('/product/(:segment)', 'Home::product/$1',['filter' => 'auth']);
 $routes->get('/order/(:segment)', 'Home::order/$1',['filter' => 'auth']);
 $routes->get('/checkout/(:segment)', 'Home::checkout/$1',['filter' => 'auth']);
 $routes->post('/checkout/save', 'FishData::saveTransaction',['filter' => 'auth']);
-$routes->post('/checkout/pendingTransaction/(:num)', 'FishData::savePendingTransaction/$1',['filter' => 'auth']);
-$routes->post('/checkout/checkout2/update', 'FishData::updateTransaction',['filter' => 'auth']);
+$routes->get('/checkout/pendingTransaction/(:num)', 'FishData::pendingTransaction/$1',['filter' => 'auth']);
+$routes->post('/checkout/update', 'FishData::updateTransaction',['filter' => 'auth']);
 $routes->get('/wishlist', 'Home::wishlist',['filter' => 'auth']);
 $routes->get('/wishlist/(:segment)', 'FishData::saveWishlist/$1',['filter' => 'auth']);
 $routes->get('/wishlist/delete/(:segment)', 'FishData::deleteWishlist/$1',['filter' => 'auth']);
@@ -51,6 +51,7 @@ $routes->get('/myOrder', 'Home::myOrder',['filter' => 'auth']);
 $routes->get('/myOrder/deleteTransaction/(:num)', 'FishData::deleteTransaction/$1',['filter' => 'auth']);
 $routes->get('/myOrder/(:segment)', 'FishData::saveCart/$1',['filter' => 'auth']);
 $routes->get('/myOrder/deleteCart/(:segment)', 'FishData::deleteCart/$1',['filter' => 'auth']);
+$routes->get('/detail_order/(:num)', 'Home::detail_order/$1', ['filter' => 'auth']);
 $routes->get('/base_landing', 'Home::base_landing');
 $routes->get('/login', 'Login::index');
 $routes->get('logout','Login::logout');
@@ -59,6 +60,7 @@ $routes->get('/landing','Home::landing_after_login',['filter' => 'auth']);
 
 // ROUTES ADMIN MODE
 $routes->get('/admin', 'Admin::admin_home');
+$routes->get('/admin/selectUser', 'Admin::admin_select_user');
 
 $routes->get('/admin/users', 'Admin::admin_users');
 $routes->get('/admin/users/add', 'Admin::admin_users_add');
@@ -92,7 +94,7 @@ $routes->get('/admin/seller/delete/(:segment)', 'AdminCRUD::Seller_delete/$1');
 
 $routes->get('/admin/cart', 'Admin::admin_cart');
 $routes->get('/admin/wishlist', 'Admin::admin_wishlist');
-$routes->get('/admin/transaction', 'Admin::admin_transaction');
+$routes->get('/admin/transaction/(:num)', 'Admin::admin_transaction/$1');
 $routes->get('/admin/postCode', 'Admin::admin_postCode');
 
 

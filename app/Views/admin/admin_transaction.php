@@ -36,7 +36,7 @@
                             </tr>
                         </thead>
                         <tbody style="background-color:white;">
-                            <?php foreach($Fish_Data as $row) : ?>
+                            <?php foreach($Data_Transaction as $row) : ?>
                             <tr>
                                 <td class="view-text-2 table-padding"><?= $row['Id_Transaction']; ?></td>
                                 <td class="view-text-2 table-padding"><?= $row['Id_Fish']; ?></td>
@@ -59,7 +59,6 @@
             </div>
             <div class="row justify-content-md-center" style="margin-bottom:30px">
                 <div class="col-xs-3">
-                    <a href="/admin/users/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
                     <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
                 </div>
             </div>

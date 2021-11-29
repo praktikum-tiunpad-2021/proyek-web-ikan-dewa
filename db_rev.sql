@@ -67,6 +67,8 @@ create table transaction(
     foreign key (id) references users (id)
 );
 
+alter table transaction modify Id_Transaction int not null auto_increment, auto_increment=1;
+
 create table cart (
     Id_Cart int not null primary key,
     Id_Fish varchar (10) not null,
@@ -92,6 +94,8 @@ create table post_code (
     Province varchar(50) not null
 );
 
+alter table post_code modify Id_Post_Code int not null auto_increment, auto_increment=1;
+
 create table payment_db (
     Id_Payment_Db int not null primary key,
     Payment_Type varchar(50) not null,
@@ -113,8 +117,6 @@ alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
 alter table wishlist add unique (Id_Fish);
 alter table cart add unique (Id_Fish);
 -- alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
-alter table transaction modify Id_Transaction int not null auto_increment, auto_increment=1;
-alter table post_code modify Id_Post_Code int not null auto_increment, auto_increment=1;
 commit;
 
 -- NOTES

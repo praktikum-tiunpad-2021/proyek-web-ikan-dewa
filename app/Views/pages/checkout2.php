@@ -120,18 +120,18 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row checkout-card margin-center" style="margin-top:35px; margin-bottom:30px; width:1000px;">
                     <div class="col-2 my-auto">
-                        <img class="checkout-img" src="<?= base_url('assets/Pics/'.$fishData[0]['Img_Fish']); ?>" alt="Ikan <?= base_url($fishData[0]['Name_Fish']); ?>">
+                        <img class="checkout-img" src="<?= base_url('assets/Pics/'.$Data_Transaction['Img_Fish']); ?>" alt="Ikan <?= base_url($Data_Transaction['Name_Fish']); ?>">
                     </div>
                     <div class="col-5 my-auto">
-                        <h3 class="checkout-text-3"><?= $fishData[0]['Name_Fish']; ?></h3>
+                        <h3 class="checkout-text-3"><?= $Data_Transaction['Name_Fish']; ?></h3>
                         <table style="width:200px;height:70px; margin-top:5px">
                             <tr>
                                 <td class="checkout-text-4">Jenis</td>
-                                <td class="checkout-text-4">: <?= $fishData[0]['Type_Fish']; ?></td>
+                                <td class="checkout-text-4">: <?= $Data_Transaction['Type_Fish']; ?></td>
                             </tr>
                             <tr>
                                 <td class="checkout-text-4">Warna</td>
-                                <td class="checkout-text-4">: <?= $fishData[0]['Color_Fish']; ?></td>
+                                <td class="checkout-text-4">: <?= $Data_Transaction['Color_Fish']; ?></td>
                             </tr>
                         </table>
                     </div>
@@ -142,7 +142,7 @@ Tugas : Project Website Praktikum Pemrograman Web
                 </div>
                 <div class="row" style="margin-top:15px; margin-bottom:100px; text-align:center;">
                     <div class="col">
-                        <form action="checkout2/update" method="post">
+                        <form action="/checkout/update" method="post">
                             <input type="hidden" id="Id_Transaction" name="Id_Transaction" value="<?= $Data_Transaction['Id_Transaction']; ?>">
                             <input type="hidden" id="Status_Transaction" name="Status_Transaction" value="Success">
                             <button id="checkout-input-submit-1" type="submit">Konfirmasi Pesanan</button>
