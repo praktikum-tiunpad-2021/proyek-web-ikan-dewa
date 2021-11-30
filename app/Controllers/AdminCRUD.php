@@ -190,4 +190,39 @@ class AdminCRUD extends BaseController{
     $model->deleteSeller($Id_Seller);
     return redirect()->to('/admin/seller');
   }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function Transaction_update()
+  {
+    $model = new AdminCRUDModel();
+    $Id_Transaction = $this->request->getPost('Id_Transaction');
+    $data = array(
+      'Buyer_First_Name' => $this->request->getPost('Buyer_First_Name'),
+      'Buyer_Last_Name' => $this->request->getPost('Buyer_Last_Name'),
+      'Buyer_Number' => $this->request->getPost('Buyer_Number'),
+      'Buyer_Address' => $this->request->getPost('Buyer_Address'),
+      'Buyer_Post_Code' => $this->request->getPost('Buyer_Post_Code'),
+
+    );
+    $model->updateTransaction($data, $Id_Transaction);
+    return redirect()->to('/admin/selectUser');
+  }
+  public function Transaction_delete($Id_Transaction)
+  {
+    $model = new AdminCRUDModel();
+    $model->deleteTransaction($Id_Transaction);
+    return redirect()->to('/admin/selectUser');
+  }
+  public function Cart_delete($Id_Cart)
+  {
+    $model = new AdminCRUDModel();
+    $model->deleteCart($Id_Cart);
+    return redirect()->to('/admin/selectUser');
+  }
+  public function Wishlist_delete($Id_Wishlist)
+  {
+    $model = new AdminCRUDModel();
+    $model->deleteWishlist($Id_Wishlist);
+    return redirect()->to('/admin/selectUser');
+  }
 }

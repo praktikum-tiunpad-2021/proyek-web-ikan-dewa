@@ -69,6 +69,13 @@ Tugas : Project Website Praktikum Pemrograman Web
 .delete-square {
     background-color: red;
 }
+.detail-square {
+    background-color: blue;
+}
+.admin-fish-pic {
+    height: 100px;
+    width: 100px;
+}
 
 /*VIEW*/
 .view-text-1 {
@@ -102,6 +109,27 @@ Tugas : Project Website Praktikum Pemrograman Web
 .view-button-2:hover {
     background-color: lightblue;
     color: black;
+}
+.view-button-3 {
+    background-color: white;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.view-button-3:hover {
+    background-color: lightblue;
+    color: black;
+}
+.view-button-edit:hover {
+    color: white;
+    background-color: green;
+}
+.view-button-delete:hover {
+    color: white;
+    background-color: red;
 }
 .table-padding {
     padding: 5px;

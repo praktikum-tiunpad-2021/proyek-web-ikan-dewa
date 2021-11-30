@@ -11,13 +11,9 @@
         <ul>
             <li><a href="admin/users">Users</a></li>
             <li><a href="admin/fish">Fish</a></li>
-            <li><a href="admin/fishDetail">Fish Detail</a></li>
             <li><a href="admin/paymentDb">Payment</a></li>
             <li><a href="admin/seller">Seller</a></li>
-            <li><a href="admin/cart">Cart</li>
-            <li><a href="admin/wishlist">Wishlist</li>
-            <li><a href="admin/postCode">Post Code</li>
-            <li><a href="admin/selectUser">Select User</li>
+            <li><a href="admin/selectUser">User Data (Transaction, Cart, Wishlist)</li>
         </ul>
     </body>
 </html>

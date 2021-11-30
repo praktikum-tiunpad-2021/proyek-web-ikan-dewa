@@ -88,4 +88,26 @@ class AdminCRUDModel extends Model
     $query = $this->db->table('seller')->delete(array('Id_Seller' => $Id_Seller));
     return $query;
   }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function updateTransaction($data, $Id_Transaction)
+  {
+    $query = $this->db->table('transaction')->update($data, array('Id_Transaction' => $Id_Transaction));
+    return $query;
+  }
+  public function deleteTransaction($Id_Transaction)
+  {
+    $query = $this->db->table('transaction')->delete(array('Id_Transaction' => $Id_Transaction));
+    return $query;
+  }
+  public function deleteCart($Id_Cart)
+  {
+    $query = $this->db->table('cart')->delete(array('Id_Cart' => $Id_Cart));
+    return $query;
+  }
+  public function deleteWishlist($Id_Wishlist)
+  {
+    $query = $this->db->table('wishlist')->delete(array('Id_Wishlist' => $Id_Wishlist));
+    return $query;
+  }
 }

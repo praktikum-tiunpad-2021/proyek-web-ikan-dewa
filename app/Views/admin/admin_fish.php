@@ -10,58 +10,57 @@
     </head>
     <body>
         <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col">
-                    <h1 class="admin-text-1">Table Fish</h1>
+            <div>
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <h1 class="admin-text-1">Table Fish</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row center" style="margin-top:10px; margin-bottom:30px">  
-                <div class="col">
-                    <table class="center" border="2" style="background-color:black;">
-                        <thead style="background-color:silver;">
-                            <tr>
-                                <th class="view-text-1 table-padding">Id_Fish</th>
-                                <th class="view-text-1 table-padding">Id_Seller</th>
-                                <th class="view-text-1 table-padding">Name_Fish</th>
-                                <th class="view-text-1 table-padding">Type_Fish</th>
-                                <th class="view-text-1 table-padding">Class_Fish</th>
-                                <th class="view-text-1 table-padding">Region_Fish</th>
-                                <th class="view-text-1 table-padding">Color_Fish</th>
-                                <th class="view-text-1 table-padding">Age_Fish</th>
-                                <th class="view-text-1 table-padding">Price_Fish</th>
-                                <th class="view-text-1 table-padding">Rating_Fish</th>
-                                <th class="view-text-1 table-padding">Img_Fish</th>
-                                <th class="view-text-1 table-padding">Alt_Img_Fish</th>
-                                <th class="view-text-1 table-padding" colspan="2">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody style="background-color:white;">
-                            <?php foreach($Fish_Data as $row) : ?>
-                            <tr>
-                                <td class="view-text-2 table-padding"><?= $row['Id_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Id_Seller']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Name_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Type_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Class_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Region_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Color_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Age_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Price_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Rating_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Img_Fish']; ?></td>
-                                <td class="view-text-2 table-padding"><?= $row['Fish_Views']; ?></td>
-                                <td class="view-text-2 table-padding edit-square"><a class="view-button-1" href="/admin/fish/edit/<?= $row['Id_Fish']; ?>">Edit</a></td>
-                                <td class="view-text-2 table-padding delete-square"><a class="view-button-1" href="/admin/fish/delete/<?= $row['Id_Fish']; ?>">Delete</a></td>
-                            </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+                <div class="row center" style="margin-top:10px; margin-bottom:30px">  
+                    <div class="col">
+                        <table class="center" border="2" style="background-color:black;">
+                            <thead style="background-color:silver;">
+                                <tr>
+                                    <th class="view-text-1 table-padding">Id_Fish</th>
+                                    <th class="view-text-1 table-padding">Id_Seller</th>
+                                    <th class="view-text-1 table-padding">Name_Fish</th>
+                                    <th class="view-text-1 table-padding">Type_Fish</th>
+                                    <th class="view-text-1 table-padding">Class_Fish</th>
+                                    <th class="view-text-1 table-padding">Region_Fish</th>
+                                    <th class="view-text-1 table-padding">Color_Fish</th>
+                                    <th class="view-text-1 table-padding">Age_Fish</th>
+                                    <th class="view-text-1 table-padding">Price_Fish</th>
+                                    <th class="view-text-1 table-padding">Rating_Fish</th>
+                                    <th class="view-text-1 table-padding">Fish_Views</th>
+                                    <th class="view-text-1 table-padding">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody style="background-color:white;">
+                                <?php foreach($Fish_Data as $row) : ?>
+                                <tr>
+                                    <td class="view-text-2 table-padding"><?= $row['Id_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Id_Seller']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Name_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Type_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Class_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Region_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Color_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Age_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Price_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Rating_Fish']; ?></td>
+                                    <td class="view-text-2 table-padding"><?= $row['Fish_Views']; ?></td>
+                                    <td class="view-text-2 table-padding detail-square"><a class="view-button-1" href="/admin/fish/<?= $row['Id_Fish']; ?>">Detail</a></td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-md-center" style="margin-bottom:30px">
-                <div class="col-xs-3">
-                    <a href="" style="margin-right:10px"><button class="view-button-2">Add New Data (BELOM BISA)</button></a>
-                    <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
+                <div class="row justify-content-md-center" style="margin-bottom:30px">
+                    <div class="col-xs-3">
+                        <a href="/admin/fish/add" style="margin-right:10px"><button class="view-button-2">Add New Data</button></a>
+                        <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
+                    </div>
                 </div>
             </div>
         </div>

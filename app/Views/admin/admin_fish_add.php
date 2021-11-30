@@ -69,16 +69,52 @@
                                 <td class="align-middle input-data-padding"><input class="input-data" type="number" id="input-Fish_Views" name="Fish_Views" value=""></td>
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                    <div class="row justify-content-md-center">
-                                        <button class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit">Add Data</button>
-                                        <a href="/admin/fish" style="text-decoration:none"><button class="input-data-button" style="margin-top:20px" type="button">Back to View</button></a>
-                                    </div>
-                                </td>
+                                <td class="align-middle input-data-padding"><p>Desc_Fish_1</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Desc_Fish_1" name="Desc_Fish_1" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Desc_Fish_2</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Desc_Fish_2" name="Desc_Fish_2" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Desc_Fish_3</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Desc_Fish_3" name="Desc_Fish_3" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Desc_Fish_4</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Desc_Fish_4" name="Desc_Fish_4" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Desc_Fish_5</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="text" id="input-Desc_Fish_5" name="Desc_Fish_5" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Img_Fish_1</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_1" name="Img_Fish_1" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Img_Fish_2</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_2" name="Img_Fish_2" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Img_Fish_3</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_3" name="Img_Fish_3" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Img_Fish_4</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_4" name="Img_Fish_4" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle input-data-padding"><p>Img_Fish_5</p></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_5" name="Img_Fish_5" value=""></td>
                             </tr>
                         </tbody>
                     </table>
                 </form>
+            </div>
+            <div class="row justify-content-md-center">
+                <button class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit">Add Data</button>
+                <a href="/admin/fish" style="text-decoration:none"><button class="input-data-button" style="margin-top:20px" type="button">Back to View</button></a>
             </div>
         </div>
     </body>

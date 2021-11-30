@@ -15,9 +15,9 @@
                     <h1 class="admin-text-1">Select User</h1>
                 </div>
             </div>
-            <div class="row center">
-                <div class="col">
-                    <form action="/Admin/get_to_admin_transaction" method="post">
+            <form action="/Admin/admin_user_data" method="post">
+                <div class="row center">
+                    <div class="col">
                         <table class="center">
                             <tr>
                                 <td>Pilih Email User</td>
@@ -30,16 +30,30 @@
                                     </select>
                                 </td>
                             </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center" style="margin-top:20px">
+                    <div class="col">
+                        <table class="center">
                             <tr>
-                                <td colspan="2"><input type="submit" value="Masuk Detail User"></td>
+                                <td colspan="2">                        
+                                    <input class="view-button-2" type="submit" value="Masuk Detail User">
+                                </td>
                             </tr>
                         </table>
-                    </form>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-md-center" style="margin-bottom:30px">
-                <div class="col-xs-3">
-                    <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>
+            </form>
+            <div class="row justify-content-md-center" style="margin-top:5px">
+                <div class="col">
+                    <table class="center">
+                        <tr>
+                            <td colspan="2">                        
+                                <a href="/admin"><button class="view-button-2">Exit to Menu</button></a>     
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

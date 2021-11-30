@@ -31,11 +31,18 @@ class Admin extends BaseController
 
     /* ------------------------ BATAS TABLE ------------------------ */
     public function admin_fish(){
-        $Fish_Data = $this->AdminModel->getTableFish();
+        $Fish_Data = $this->AdminModel->getTableFishAndFishDetail();
         $data = [
             'Fish_Data' => $Fish_Data,
         ];
         return view('admin/admin_fish', $data);
+    }
+    public function admin_fish_detail($Id_Fish){
+        $Fish_Data = $this->AdminModel->getDataFishAndFishDetail($Id_Fish);
+        $data = [
+            'Fish_Data' => $Fish_Data,
+        ];
+        return view('admin/admin_fishDetail', $data);
     }
     public function admin_fish_add(){
         return view('admin/admin_fish_add');
@@ -55,9 +62,6 @@ class Admin extends BaseController
             'Fish_Data' => $Fish_Data,
         ];
         return view('admin/admin_fishDetail', $data);
-    }
-    public function admin_fishDetail_add(){
-        return view('admin/admin_fishDetail_add');
     }
     public function admin_fishDetail_edit($Id_Fish){
         $Fish_Data = $this->AdminModel->getDataFishDetail($Id_Fish);
@@ -105,25 +109,44 @@ class Admin extends BaseController
     }
 
     /* ------------------------ BATAS TABLE ------------------------ */
-    public function get_to_admin_transaction(){
-        $model = new AdminModel();
-        $data = array(
-            'email' => $this->request->getPost('email'),
-        );
-        $Data_Transaction = $this->AdminModel->getTableTransaction($data);
-        $data2 = [
-            'Data_Transaction' => $Data_Transaction,
-        ];
-        return view('admin/admin_transaction', $data2);
-    }
-
-    /* ------------------------ BATAS TABLE ------------------------ */
     public function admin_select_user(){
         $Data_Email = $this->AdminModel->getDataEmail();
         $data = [
             'Data_Email' => $Data_Email,
         ];
         return view('admin/admin_select_user', $data);
+    }
+
+    /* ------------------------ BATAS TABLE ------------------------ */
+    public function admin_user_data()
+    {
+        $model = new AdminModel();
+        $data = array(
+            'email' => $this->request->getPost('email'),
+        );
+        $Data_Transaction = $this->AdminModel->getTableTransaction($data);
+        $Data_Cart = $this->AdminModel->getTableCart($data);
+        $Data_Wishlist = $this->AdminModel->getTableWishlist($data);
+        // $Id_Transaction = $this->AdminModel->getIdPostCode();
+        $Data_Post_Code = $this->AdminModel->getTablePostCode($Data_Transaction);
+        $data2 = [
+            'Data_Transaction' => $Data_Transaction,
+            'Data_Post_Code' => $Data_Post_Code,
+            'Data_Cart' => $Data_Cart,
+            'Data_Wishlist' => $Data_Wishlist,
+        ];
+        // dd($Id_Transaction);
+        // dd($data2);
+        return view('admin/admin_user_data', $data2);
+    }
+
+    public function admin_transaction_edit($Id_Transaction)
+    {
+        $Data_Transaction = $this->AdminModel->getTableTransactionById($Id_Transaction);
+        $data = [
+            'Data_Transaction' => $Data_Transaction,
+        ];
+        return view('admin/admin_transaction_edit', $data);
     }
 
     /* ------------------------ BATAS TABLE ------------------------ */
