@@ -127,14 +127,15 @@ class Home extends BaseController
         $Id_Fish = $this->FishDataModel->getSaltwaterCatalog();
         $Best_Seller = $this->FishDataModel->getBestSellerFish();
         $Top_Search = $this->FishDataModel->getTopSearchFish();
+        $Region_Fish_Group = $this->FishDataModel->getRegionFishGroup();
 
         $data = [
             'activePage' => 'home',
             'fishData' => $Id_Fish,
             'bestSellerFish' => $Best_Seller,
             'topSearchFish' => $Top_Search,
+            'Region_Fish_Group' => $Region_Fish_Group,
         ];
-        
         return view('pages/landing',$data);
     }
 }

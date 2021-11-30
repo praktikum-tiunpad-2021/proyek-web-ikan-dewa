@@ -56,6 +56,13 @@ class FishDataModel extends Model
     return $query;
   }
 
+  public function getRegionFishGroup(){
+    $query = $this->db->table('fish')
+    ->groupBy('Region_Fish')
+    ->get()->getResultArray();
+    return $query;
+  }
+
   public function getFishWishlist($id)
   {
     $query = $this->db->table('wishlist')

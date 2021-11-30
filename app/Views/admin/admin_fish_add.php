@@ -16,7 +16,7 @@
                     <h2 class="admin-text-2">Add Data</h2>
                 </div>
             </div>
-            <div class="row justify-content-md-center" style="margin-top:10px; margin-bottom:30px">  
+            <div class="row justify-content-md-center" style="margin-top:10px; margin-bottom:20px">  
                 <form action="/adminFish/save" method="post">
                     <table>
                         <tbody>
@@ -90,31 +90,31 @@
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Img_Fish_1</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_1" name="Img_Fish_1" value=""></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" accept="image/jpeg, image/jpg, image/png, 'image/jfif" id="input-Img_Fish_1" name="Img_Fish_1" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Img_Fish_2</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_2" name="Img_Fish_2" value=""></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" accept="image/jpeg, image/jpg, image/png, 'image/jfif" id="input-Img_Fish_2" name="Img_Fish_2" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Img_Fish_3</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_3" name="Img_Fish_3" value=""></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" accept="image/jpeg, image/jpg, image/png, 'image/jfif" id="input-Img_Fish_3" name="Img_Fish_3" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Img_Fish_4</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_4" name="Img_Fish_4" value=""></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" accept="image/jpeg, image/jpg, image/png, 'image/jfif" id="input-Img_Fish_4" name="Img_Fish_4" value=""></td>
                             </tr>
                             <tr>
                                 <td class="align-middle input-data-padding"><p>Img_Fish_5</p></td>
-                                <td class="align-middle input-data-padding"><input class="input-data" type="file" id="input-Img_Fish_5" name="Img_Fish_5" value=""></td>
+                                <td class="align-middle input-data-padding"><input class="input-data" type="file" accept="image/jpeg, image/jpg, image/png, 'image/jfif" id="input-Img_Fish_5" name="Img_Fish_5" value=""></td>
                             </tr>
                         </tbody>
                     </table>
                 </form>
             </div>
-            <div class="row justify-content-md-center">
-                <button class="input-data-button" style="margin-left:30px;margin-top:20px; margin-right:10px" type="submit">Add Data</button>
-                <a href="/admin/fish" style="text-decoration:none"><button class="input-data-button" style="margin-top:20px" type="button">Back to View</button></a>
+            <div class="row justify-content-md-center" style="margin-top:20px; margin-bottom:20px">
+                <button class="input-data-button" style="margin-left:30px; margin-right:10px" type="submit">Add Data</button>
+                <a href="/admin/fish" style="text-decoration:none"><button class="input-data-button" type="button">Back to View</button></a>
             </div>
         </div>
     </body>
