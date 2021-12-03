@@ -13,6 +13,7 @@
             <li><a href="admin/fish">Fish</a></li>
             <li><a href="admin/paymentDb">Payment</a></li>
             <li><a href="admin/seller">Seller</a></li>
+            <li><a href="admin/voucher">Voucher</a></li>
             <li><a href="admin/selectUser">User Data (Transaction, Cart, Wishlist)</li>
         </ul>
     </body>

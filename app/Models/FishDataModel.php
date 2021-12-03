@@ -108,4 +108,11 @@ class FishDataModel extends Model
     ->delete(array('Id_Cart' => $Id_Cart));
     return $query;
   }
+
+  public function getTableVoucher()
+  {
+      $query = $this->db->table('voucher')
+      ->get()->getResultArray();
+      return $query;
+  }
 }

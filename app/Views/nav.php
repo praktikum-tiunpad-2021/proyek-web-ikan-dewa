@@ -120,10 +120,10 @@
             <div class="account">
               <li><a href="/myOrder"><img src="<?php echo base_url('assets/Pics/keranjang.png') ?>" alt="keranjang" style="width: 25px; padding: 15px 3px;"></a></li>
               <li><a class="sub-menu"href="#"><img src="<?php echo base_url('assets/Pics/account.png') ?>" alt="acc" style="width: 27px; padding: 15px 3px;"></a>
-              <ul>
-                <li><a href="/editAccount">Account</a></li>
-                <li><a href="/logout">Logout</a></li>
-              </ul>
+                <ul>
+                  <li><a href="/editAccount">Account</a></li>
+                  <li><a href="/logout">Logout</a></li>
+                </ul>
               </li>
               <li><a href="/wishlist"><img src="<?php echo base_url('assets/Pics/wishlist.png') ?>" alt="wishlist" style="width: 25px; padding: 15px 3px;"></a></li>
             </div>

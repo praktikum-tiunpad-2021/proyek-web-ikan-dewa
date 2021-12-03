@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\FishDataModel;
 use App\Models\UserModel;
 use App\Models\TransactionModel;
+use App\Models\VoucherModel;
 
 class Home extends BaseController
 {
@@ -75,9 +76,39 @@ class Home extends BaseController
         $data = [
             'fishData' => $Id_Fish,
         ];
-
+        
         return view('pages/order', $data);
     }
+
+    // public function checkVoucher($Id_Fish){
+    //     if ($this->request->getMethod() == 'post') {
+    //         // validation
+    //         $rules = [
+    //           'Code_Voucher' => 'validateVoucher[Code_Voucher]',
+    //         ];
+    //         $errors = [
+    //           'Code_Voucher' => [
+    //             'validateVoucher' => 'Kode Voucher Salah!'
+    //           ]
+    //         ];
+    //         if (!$this->validate($rules, $errors)) {
+    //           $data['validation'] = $this->validator;
+    //         } else {
+    //           $model = new VoucherModel();
+      
+    //           $user = $model->where('Code_Voucher', $this->request->getPost('Code_Voucher'))->first();
+
+    //             $data = [
+    //                 'Code_Voucher' => $this->request->getPost('Code_Voucher'),
+    //                 'Price_Discount' => $user['Price_Discount'],
+    //             ];
+
+    //             session()->set($data);
+
+    //           return redirect()->to('order/'.$Id_Fish);
+    //         }
+    //       }
+    // }
 
     public function detail_order($Id_Transaction){
         $Data_Transaction = $this->TransactionModel->getDetailOrder($Id_Transaction);

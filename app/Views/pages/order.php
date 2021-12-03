@@ -94,11 +94,17 @@ Tugas : Project Website Praktikum Pemrograman Web
                     <div class="col-3">
                         <div class="order-card-1" style="padding-top:20px; padding-bottom:15px">
                             <h3 class="order-text-6">Masukkan Kode Voucher</h3>
-                            <form style="margin-top:15px">
-                                <input type="text" class="order-input" style="margin-left:3px">
+                            <form style="margin-top:15px" method="post" action="/Home/checkVoucher/<?= $fishData[0]['Id_Fish'] ?>">
+                                <input type="text" class="order-input" name="Code_Voucher" style="margin-left:3px; color:black;" value="Dont Touch, Rusak!">
                                 <input type="submit" id="order-input-submit" value="Cek">
+                                <!-- <?php if (isset($validation)) : ?>
+                                    <div class="col" style="text-align:left; margin-left:7px">
+                                        <div class="voucher-alert" role="alert">
+                                        <?= $validation->listErrors() ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?> -->
                             </form>
-                            <!-- <p class="order-text-5" style="margin-top:8px; margin-left:5px">Voucher berhasil diaplikasikan!</p> -->
                         </div>
                         <div class="order-card-1" style="margin-top:20px">
                             <table style="width:210px;height:110px; margin-left:auto; margin-right:auto">
@@ -108,7 +114,9 @@ Tugas : Project Website Praktikum Pemrograman Web
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Potongan Harga</p></td>
-                                    <td><p id="diskon" class="order-text-5" style="text-align:right">0</p></td>
+                                    <td>
+                                        <p id="diskon" class="order-text-5" style="text-align:right">0</p>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><p class="order-text-5">Jumlah Total</p></td>

@@ -176,4 +176,23 @@ class Admin extends BaseController
         ];
         return view('admin/admin_postCode', $data);
     }
+
+    /* ------------------------ BATAS TABLE ------------------------ */
+    public function admin_voucher(){
+        $DataVoucher = $this->AdminModel->getTableVoucher();
+        $data = [
+            'DataVoucher' => $DataVoucher,
+        ];
+        return view('admin/admin_voucher', $data);
+    }
+    public function admin_voucher_add(){
+        return view('admin/admin_voucher_add');
+    }
+    public function admin_voucher_edit($Id_Voucher){
+        $DataVoucher = $this->AdminModel->getDataVoucher($Id_Voucher);
+        $data = [
+            'DataVoucher' => $DataVoucher,
+        ];
+        return view('admin/admin_voucher_edit', $data);
+    }
 }

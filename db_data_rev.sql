@@ -133,10 +133,6 @@ INSERT INTO `fish_detail` VALUES
 'sw_fish_pic/kakatua_3.jfif', 'sw_fish_pic/kakatua_4.jfif', 
 'sw_fish_pic/kakatua_5.jfif');
 
--- INSERT INTO voucher VALUES
--- -- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
--- (1, 'cekdiskon1', '2500');
-
 INSERT INTO payment_db VALUES   
 (1, 'Virtual Account', 'Gopay' , '082198674562', 'Aquafish Marketplace'),
 (2, 'Virtual Account', 'Ovo' , '082198674562', 'Aquafish Marketplace'),
@@ -146,3 +142,8 @@ INSERT INTO payment_db VALUES
 (6, 'Transfer Bank', 'Bank BCA' , '8561756283', 'Aquafish Marketplace'),
 (7, 'Transfer Bank', 'Bank BNI' , '3452059836', 'Aquafish Marketplace'),
 (8, 'Transfer Bank', 'Bank BRI' , '5567201784', 'Aquafish Marketplace');
+
+INSERT INTO voucher VALUES
+-- ('Id_Voucher', 'Code_Voucher', 'Price Discount'),
+(1, 'cekdiskon1', 2500),
+(2, 'cekdiskon2', 5000);

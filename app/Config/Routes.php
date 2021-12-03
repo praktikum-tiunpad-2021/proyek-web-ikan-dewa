@@ -93,7 +93,11 @@ $routes->get('/admin/wishlist', 'Admin::admin_wishlist');
 $routes->get('/admin/transaction/(:num)', 'Admin::admin_transaction/$1');
 $routes->get('/admin/postCode', 'Admin::admin_postCode');
 
-
+$routes->get('/admin/voucher', 'Admin::admin_voucher');
+$routes->get('/admin/voucher/add', 'Admin::admin_voucher_add');
+$routes->get('/admin/voucher/edit/(:num)', 'Admin::admin_voucher_edit/$1');
+$routes->post('/admin/voucher/update', 'AdminCRUD::Voucher_update');
+$routes->get('/admin/voucher/delete/(:num)', 'AdminCRUD::Voucher_delete/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

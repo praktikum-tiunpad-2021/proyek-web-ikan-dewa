@@ -150,4 +150,18 @@ class AdminModel extends Model
         return $query;
     }
 
+    public function getTableVoucher()
+    {
+        $query = $this->db->table('voucher')
+        ->get()->getResultArray();
+        return $query;
+    }
+
+    public function getDataVoucher($Id_Voucher)
+    {
+        $query = $this->db->table('voucher')
+        ->where(['Id_Voucher' => $Id_Voucher])
+        ->get()->getResultArray();
+        return $query;
+    }
 }

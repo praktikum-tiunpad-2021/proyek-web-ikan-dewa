@@ -110,4 +110,21 @@ class AdminCRUDModel extends Model
     $query = $this->db->table('wishlist')->delete(array('Id_Wishlist' => $Id_Wishlist));
     return $query;
   }
+
+  /* ------------------------ BATAS TABLE ------------------------ */
+  public function saveVoucher($data)
+  {
+    $query = $this->db->table('voucher')->insert($data);
+    return $query;
+  }
+  public function updateVoucher($data, $Id_Voucher)
+  {
+    $query = $this->db->table('voucher')->update($data, array('Id_Voucher' => $Id_Voucher));
+    return $query;
+  }
+  public function deleteVoucher($Id_Voucher)
+  {
+    $query = $this->db->table('voucher')->delete(array('Id_Voucher' => $Id_Voucher));
+    return $query;
+  }
 }

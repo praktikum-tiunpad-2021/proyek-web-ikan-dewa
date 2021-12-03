@@ -225,4 +225,34 @@ class AdminCRUD extends BaseController{
     $model->deleteWishlist($Id_Wishlist);
     return redirect()->to('/admin/selectUser');
   }
+
+    /* ------------------------ BATAS TABLE ------------------------ */
+    public function Voucher_save()
+    {
+      $model = new AdminCRUDModel();
+      $data = array(
+        'Id_Voucher' => $this->request->getPost('Id_Voucher'),
+        'Code_Voucher' => $this->request->getPost('Code_Voucher'),
+        'Price_Discount' => $this->request->getPost('Price_Discount'),
+      );
+      $model->saveVoucher($data);
+      return redirect()->to('/admin/voucher');
+    }
+    public function Voucher_update()
+    {
+      $model = new AdminCRUDModel();
+      $Id_Voucher = $this->request->getPost('Id_Voucher');
+      $data = array(
+        'Code_Voucher' => $this->request->getPost('Code_Voucher'),
+        'Price_Discount' => $this->request->getPost('Price_Discount'),
+      );
+      $model->updateVoucher($data, $Id_Voucher);
+      return redirect()->to('/admin/voucher');
+    }
+    public function Voucher_delete($Id_Voucher)
+    {
+      $model = new AdminCRUDModel();
+      $model->deleteVoucher($Id_Voucher);
+      return redirect()->to('/admin/voucher');
+    }
 }

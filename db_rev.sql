@@ -106,17 +106,18 @@ create table payment_db (
 
 alter table payment_db modify Id_Payment_Db int not null auto_increment, auto_increment=9;
 
--- create table voucher (
---     Id_Voucher int not null primary key,
---     Code_Voucher varchar(50) not null,
---     Price_Discount int not null,
--- ); INI BELOM BRO
+create table voucher (
+    Id_Voucher int not null primary key,
+    Code_Voucher varchar(50) not null,
+    Price_Discount int not null
+);
+
+alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
 
 alter table wishlist modify Id_Wishlist int not null auto_increment, auto_increment=3;
 alter table cart modify Id_Cart int not null auto_increment, auto_increment=3;
 alter table wishlist add unique (Id_Fish);
 alter table cart add unique (Id_Fish);
--- alter table voucher modify Id_Voucher int not null auto_increment, auto_increment=3;
 commit;
 
 -- NOTES
@@ -154,3 +155,12 @@ Id_Fish, Id_Seller, Name_Fish, Type_Fish,
 Class_Fish, Region_Fish, Color_Fish, Age_Fish,
 Price_Fish, Rating_Fish, Img_Fish, Fish_Views
 from fish fi order by Fish_Views desc;
+
+select * from fish where Id_Seller = 'SEL001';
+create index fi_seller on fish(Id_Seller);
+
+select * from fish where Region_Fish = 'America';
+create index fi_region on fish(Region_Fish);
+
+select * from transaction where Payment_Type = 'Virtual Account';
+create index tr_payment on transaction(Payment_Type);
