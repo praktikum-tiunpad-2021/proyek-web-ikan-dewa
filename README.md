@@ -2,13 +2,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://via.placeholder.com/80/FFFFFF/808080?text=Logo" alt="Logo" width="80" height="80">
+    <img src="public/assets/Logo/800ppi/logo1.png" alt="Logo" width="250" height="250">
   </a>
 
-  <h3 align="center">Judul Proyek</h3>
+  <h3 align="center">Aquafish Marketplace</h3>
 
   <p align="center">
-    Deskripsi Proyek
+    Aquafish Marketplace adalah sebuah pasar online atau <i>marketplace</i> yang bergerak di bidang jual beli ikan hias
   </p>
 </p>
 
@@ -29,33 +29,39 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Janie Doe   |
+| 140810200003  | Affan Rifqy Kurniadi    |
+| 140810200023  | Rheza Pandya Andhikaputra    |
+| 140810200061  | Andyka Baswara Putra   |
 
 <!-- Fungsi -->
 ## Fungsi
 
-TO;DO
+Adapun fungsi pengguna dari website ini, yaitu :
+1. Sebagai platform untuk jual beli ikan hias dengan mudah.
+2. Sebagai media informasi mengenai ikan hias.
 
 <!-- Tujuan -->
 ## Tujuan
 
-TO;DO
+Adapun tujuan pengguna dari website ini, yaitu :
+1. Mengakomodir sebuah platform untuk mempermudah orang yang ingin menjual dan membeli ikan hias.
+2. Mengakomodir sebuah platform untuk mempermudah orang yang ingin mencari tahu informasi tentang ikan hias.
 
 <!-- Target Pengguna -->
 ## Target Pengguna
 
-TO;DO
+Adapun target pengguna dari website ini, yaitu :
+1. Orang yang ingin membeli ikan hias.
+2. Orang yang ingin menjual ikan hias.
+3. Orang yang ingin mencari tahu tentang ikan hias.
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
-
-TO;DO
-
-Gambar mockup di sini atau [link figma](https://figma.com/).
+Figma :
+https://www.figma.com/file/obyh4T3e91S0MCShxmrTF3/Project-Pemrogaman-Web?node-id=0%3A1
 
 <!-- Skema Database -->
 ## Skema Database
 
-TO;DO
+<p>Skema Database Sementara</p>
+<img src="ERD/ERD sementara.png" alt="erd" width="650">

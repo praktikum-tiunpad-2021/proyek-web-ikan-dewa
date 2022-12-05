@@ -1,0 +1,159 @@
+/*
+Nama Website : Aquafish Marketplace
+Nama Kelompok : Ikan Dewa
+Nama & NPM : 
+    1. Affan Rifqy Kurniadi         - 140810200003
+    2. Rheza Pandya Andhikaputra    - 140810200023
+    3. Andyka Baswara Putra         - 140810200061
+Kelas : A
+Tugas : Project Website Praktikum Pemrograman Web
+*/
+
+/*FONT FAMILY*/
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(assets/Fonts/Gotham-Font/GothamBold.ttf);
+}
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(assets/Fonts/Gotham-Font/GothamMedium.ttf);
+}
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(assets/Fonts/Gotham-Font/Gotham-Thin.otf);
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url(assets/Fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato-Medium;
+    src: url(assets/Fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url(assets/Fonts/Lato/Lato-Light.ttf);
+}
+
+/*UNIVERSAL*/
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle {
+    display: block;
+    margin: 0 auto;
+}
+.border-black {
+    border: 2px solid black;
+}
+.admin-text-1 {
+    font-family: Gotham-Bold;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.admin-text-2 {
+    font-family: Gotham-Thin;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edit-square {
+    background-color: green;
+}
+.delete-square {
+    background-color: red;
+}
+.detail-square {
+    background-color: blue;
+}
+.admin-fish-pic {
+    height: 100px;
+    width: 100px;
+}
+
+/*VIEW*/
+.view-text-1 {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    font-family: Lato-Medium;
+}
+.view-text-2 {
+    font-size: 14px;
+    text-align: left;
+    color: black;
+    font-family: Lato-Light;
+}
+.view-button-1 {
+    color: white;
+    text-decoration:none;
+}
+.view-button-1:hover {
+    color: white;
+    text-decoration:underline;
+}
+.view-button-2 {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.view-button-2:hover {
+    background-color: lightblue;
+    color: black;
+}
+.view-button-3 {
+    background-color: white;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.view-button-3:hover {
+    background-color: lightblue;
+    color: black;
+}
+.view-button-edit:hover {
+    color: white;
+    background-color: green;
+}
+.view-button-delete:hover {
+    color: white;
+    background-color: red;
+}
+.table-padding {
+    padding: 5px;
+}
+
+/*ADD DATA*/
+.input-data {
+    width: 200px;
+}
+.input-data-padding {
+    padding-left:10px;
+    padding-right:10px;
+}
+.input-data-button {
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.input-data-button:hover {
+    background-color: lightblue;
+    color: black;
+}

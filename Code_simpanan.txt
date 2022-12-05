@@ -1,0 +1,7 @@
+<?php if(isset($data['Code_Voucher'])) : ?>
+    <p><?= $data['Price_Discount']?></p>
+<?php else : ?>
+    <p>0</p>
+<?php endif; ?>
+
+<!-- <p class="order-text-5" style="margin-top:8px; margin-left:5px">Voucher berhasil diaplikasikan!</p> -->
